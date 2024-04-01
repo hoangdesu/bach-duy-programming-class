@@ -111,7 +111,7 @@ public class Mar31_Day1and2 {
 
 //        HW1: BMI calculator
 
-        lv1:
+//        lv1:
 
 //        enter your weight in kg: 85
 //        enter your height in m: 1.74
