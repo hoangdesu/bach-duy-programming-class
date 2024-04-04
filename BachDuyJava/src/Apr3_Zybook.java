@@ -108,6 +108,42 @@ public class Apr3_Zybook {
 //        1. if x + key > range
 //        2. x + key % range -> xoay vong
 
+        // lowercase
+//        if ((int) (ascii >= 97 && ascii <= 122)) -> boolean: evaluate to true || false
+//        if ((int) ascii >= 97 && (int) ascii <= 122) {
+//            (ascii + key) % 122
+////            (ascii % 90) + 64
+//            always limit in the range 97 - 122
+//                base = 97
+//
+//                        key % 26
+
+        //encrypt
+//        String ""
+
+//        for (int i = 0; i < plainText.length(); i++) {
+//            int ascii = (int) plainText.charAt(i);
+//            // lowercase
+//            if (ascii >= 97 && ascii <= 122) {
+//                // transform lowercase
+////                if check overflow
+//                int encryptedAscii = ascii + key;
+//            } else if (ascii >= 65 && ascii <= 90) {
+//
+//            } else {
+//                encryptedText += String.valueOf(ascii);
+//            }
+//
+//            // uppercase
+//        }
+
+//        pseudocode
+
+
+
+        // uppercase
+//        if (ascii >= 65 && ascii <= 90)
+
 
 //        Lv2: Decrypt message with a key
 
