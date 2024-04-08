@@ -37,10 +37,37 @@ public class Apr4_Palindrome {
             System.out.println(text + " is NOT palindrome");
         }
 
+
 //        Lv 2: case-insensitive palindrome checker
+        // OK
 
 //        Lv 3: check palindrome, ignoring special characters
 //        > 2 approaches
 //        for vs while
+
+//        loop thru each char:
+//
+//        if headChar && tailChar in range a-z:
+//            if headChar != tailChair
+//        else:
+//            if headChar is special char:
+//                move head to right 1 index
+
+//        option 2: clean up string + 2 pointers
+//
+//        "Step not on pets" -> "stepnotonpets"
+
+
+//        option 3: split & compare strings
+
+//        s1 = "stepno";
+//        s2 = "onpets";
+//
+//        3a: sort strings
+//        s1 = "enopst";
+//        s2 = "enopst";
+//
+//        if s1.equals(s2) -> palindrome
+
     }
 }
