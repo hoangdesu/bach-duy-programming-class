@@ -1,0 +1,2 @@
+hello \n from hi.txt
+this line is invisible
