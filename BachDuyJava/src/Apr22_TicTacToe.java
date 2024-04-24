@@ -61,6 +61,8 @@ public class Apr22_TicTacToe {
 //                | 7 | 8 | 9 |
 //                -------------
 
+//        String[] moves = {1,2,3};
+
     }
 
     // method to print board
