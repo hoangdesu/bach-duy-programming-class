@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
 public class May17_Methods {
 
@@ -21,12 +22,21 @@ public class May17_Methods {
 //        2. Hashmap
 
         String text = "hi hey hello Hello hi hey hey hi";
-        text = "It acts as a single entry point, hiding all the internal implementation details and promoting easier interaction with the underlying functionalities. It acts as a gateway, shielding clients from intricate details.";
-        text = "You might have a Node.js application that interacts with multiple external services, each requiring specific configuration parameters. Using the Singleton pattern, you can create a ConfigManager class responsible for handling these configurations in a centralized manner.";
+//        text = "It acts as a single entry point, hiding all the internal implementation details and promoting easier interaction with the underlying functionalities. It acts as a gateway, shielding clients from intricate details.";
+//        text = "You might have a Node.js application that interacts with multiple external services, each requiring specific configuration parameters. Using the Singleton pattern, you can create a ConfigManager class responsible for handling these configurations in a centralized manner.";
 
         ArrayList<String[]> wordFrequency = getWordFrequency(text);
 
         for (String[] entry : wordFrequency) {
+//            System.out.println(Arrays.toString(entry));
+            System.out.print(entry[0] + ": " + entry[1]);
+            System.out.println();
+        }
+
+        System.out.println("-------");
+
+        ArrayList<String[]> wordFrequency2 = getWordFrequencyByRemovingDuplication(text);
+        for (String[] entry : wordFrequency2) {
 //            System.out.println(Arrays.toString(entry));
             System.out.print(entry[0] + ": " + entry[1]);
             System.out.println();
@@ -53,8 +63,7 @@ public class May17_Methods {
     }
 
     public static ArrayList<String[]> getWordFrequency(String text) {
-        text = text.toLowerCase();
-        text = text.replaceAll("[-+.^:,]",""); // remove all special characters from the string
+        text = text.toLowerCase().replaceAll("[-+.^:,]",""); // remove all special characters from the string
 
         String[] words = text.split(" ");
 
@@ -87,6 +96,39 @@ public class May17_Methods {
             }
         }
 
+        return wordFrequency;
+    }
+
+    public static ArrayList<String[]> getWordFrequencyByRemovingDuplication(String text) {
+        text = text.toLowerCase().replaceAll("[-+.^:,]", "");
+
+        ArrayList<String> words = new ArrayList<>(List.of(text.split(" ")));
+
+//        System.out.println(words);
+
+//        [hi, hey, hello]
+
+        ArrayList<String[]> wordFrequency = new ArrayList<>();
+
+//        wordFrequency.add();
+
+        for (int i = 0; i < words.size(); i++) {
+            String key = words.get(i);
+            int frequency = 1;
+            int j = i + 1;
+
+            while (j < words.size()) {
+                if (words.get(j).equals(key)) {
+                    frequency++;
+                    words.remove(j);
+                } else {
+                    j++;
+                }
+            }
+
+            wordFrequency.add(new String[]{key, String.valueOf(frequency)});
+        }
+//        System.out.println(words);
         return wordFrequency;
     }
 }
