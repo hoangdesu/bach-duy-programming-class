@@ -5,6 +5,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class HelloController {
+//    1. retrieve element from FXML using id
     @FXML
     private Label welcomeText;
 
@@ -23,7 +24,9 @@ public class HelloController {
         showText = !showText; // toggle showText boolean
     }
 
-    @FXML public void moveRandom() {
+    // 2. implement logic for the retrieved component
+    @FXML
+    public void moveRandom() {
         double x = 500 + Math.random() * 500;
         double y = 500 + Math.random() * 500;
         noButton.setLayoutX(x);

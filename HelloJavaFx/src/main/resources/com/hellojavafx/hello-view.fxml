@@ -16,6 +16,7 @@
     <Button text="Click me!!!" onAction="#onHelloButtonClick"/>
 
     <Label text="=Do you love me?" />
-    <Button text="YESSSS!!!" />
+    <Button text="YESSSS!!!" layoutX="100" layoutY="200" />
     <Button fx:id="noButton" text="No" onMouseEntered="#moveRandom" />
+
 </Pane>
