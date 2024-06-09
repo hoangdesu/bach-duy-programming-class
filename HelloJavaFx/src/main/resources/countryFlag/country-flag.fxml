@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!--        fx:controller="countryFlag.CountryFlag"-->
+
+<?import javafx.scene.control.Button?>
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="countryFlag.CountryFlagController">
+    <GridPane hgap="8.0" vgap="8.0">
+        <ImageView fitWidth="400" fitHeight="268" GridPane.columnIndex="0" GridPane.rowIndex="0" fx:id="vietnamFlag" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited">
+            <Image url="@images/vietnam.png" />
+        </ImageView>
+
+        <ImageView fitWidth="400" fitHeight="268" GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="taiwanFlag" onMouseEntered="#onMouseEntered">
+            <Image url="@images/taiwan.jpg" />
+        </ImageView>
+
+        <ImageView fitWidth="400" fitHeight="268" GridPane.columnIndex="0" GridPane.rowIndex="1" fx:id="usaFlag">
+            <Image url="@images/usa.png" />
+        </ImageView>
+
+        <ImageView fitWidth="400" fitHeight="268" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="japanFlag">
+            <Image url="@images/japan.jpg" />
+        </ImageView>
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+<!--        <columnConstraints>-->
+<!--            <ColumnConstraints/>-->
+<!--        </columnConstraints>-->
+<!--        <rowConstraints>-->
+<!--            <RowConstraints/>-->
+<!--        </rowConstraints>-->
+    </GridPane>
+
+    <AnchorPane>
+      <children>
+           <Label fx:id="countryName" layoutX="155.0" prefHeight="39.0" prefWidth="485.0" text="Click on 1 of the country flags above" textAlignment="CENTER" textFill="#c95151">
+            <font>
+               <Font size="32.0" />
+            </font>
+            <padding>
+               <Insets bottom="20.0" top="20.0" />
+            </padding>
+         </Label>
+      </children>
+    </AnchorPane>
+
+
+</VBox>

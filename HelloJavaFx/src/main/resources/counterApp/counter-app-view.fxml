@@ -8,6 +8,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.HBox?>
 
+<!--Stage-->
+<!--Scene-->
+<?import javafx.scene.layout.GridPane?>
 <HBox xmlns:fx="http://javafx.com/fxml"
       fx:controller="counterApp.CounterController">
 
@@ -19,5 +22,15 @@
     <Label fx:id="lbValue">1</Label>
     <Button fx:id="btnIncrease" onMouseClicked="#increase">+</Button>
     <Label fx:id="error" />
+
+<!--    <Pane>-->
+<!--        <HBox>-->
+
+<!--            <VBox>-->
+<!--                <GridPane></GridPane>-->
+<!--            </VBox>-->
+<!--            <VBox></VBox>-->
+<!--        </HBox>-->
+<!--    </Pane>-->
 
 </HBox>

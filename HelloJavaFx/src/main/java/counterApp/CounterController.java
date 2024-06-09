@@ -43,7 +43,7 @@ public class CounterController {
 
     public void decrease() {
         if (this.value == 0) {
-            error.setTextFill(Color.RED);
+            error.setTextFill(new Color(1.0, 0, 0, 0.8));
             error.setText("Error: cannot go negative");
         } else {
             this.value--;

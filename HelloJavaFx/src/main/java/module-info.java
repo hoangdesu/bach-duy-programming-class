@@ -7,4 +7,7 @@ module com.hellojavafx {
 
     opens counterApp to javafx.fxml;
     exports counterApp;
+
+    opens countryFlag to javafx.fxml;
+    exports countryFlag;
 }
