@@ -28,8 +28,6 @@ public class CountryFlagApp extends Application {
 //
 //        });
 
-
-
         stage.setScene(scene);
         stage.setTitle("Country Flags");
         stage.show();
