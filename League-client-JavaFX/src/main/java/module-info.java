@@ -6,4 +6,7 @@ module com.leagueclientjavafx {
 
     opens com.leagueclientjavafx to javafx.fxml;
     exports com.leagueclientjavafx;
+    exports com.leagueclientjavafx.controller;
+    opens com.leagueclientjavafx.controller to javafx.fxml;
+    exports com.leagueclientjavafx.model;
 }
