@@ -28,6 +28,9 @@ public class ChampionSceneController implements Initializable {
     @FXML
     ImageView bgSplash;
 
+    @FXML
+    Label lbTitle;
+
 
 //    Champion selectedChamp;
 //    EnhancedChampContainer enhancedChampContainer;
@@ -47,6 +50,8 @@ public class ChampionSceneController implements Initializable {
         System.out.println(champion);
         String splash = champion.getImage().replace("default_skins", "splash");
         bgSplash.setImage(new Image(splash));
+
+        lbTitle.setText(champion.getTitle());
 
 
 //        System.out.println(SelectedChampion.champion.getName());
