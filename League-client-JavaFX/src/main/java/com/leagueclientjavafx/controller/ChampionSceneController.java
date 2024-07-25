@@ -43,6 +43,8 @@ public class ChampionSceneController implements Initializable {
 
         champion = SelectedChampion.champion;
 
+//        Champion.game
+
 //        champion.getName?
 //        Champion selectedChamp = EnhancedChampContainer.getSelectedChamp();
 //        Champion selectedChamp = App.selectedChamp;

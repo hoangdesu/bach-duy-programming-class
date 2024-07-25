@@ -76,8 +76,8 @@ public class EnhancedChampContainer extends VBox {
 
             FXMLLoader championViewLoader = new FXMLLoader(App.class.getResource("champion-view.fxml"));
 
-//            System.out.println("App.class: " + App.class.getResource("champion-view.fxml"));
-//            System.out.println("getClass: " + getClass().getResource("champion-view.fxml"));
+            // System.out.println("App.class: " + App.class.getResource("champion-view.fxml"));
+            // System.out.println("getClass: " + getClass().getResource("champion-view.fxml"));
 
 
             SelectedChampion.champion = champion;

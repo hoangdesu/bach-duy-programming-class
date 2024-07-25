@@ -12,6 +12,8 @@ public class Champion {
     private String image;
     private String[] skins;
 
+//    public static String game = "LoL";
+
     public Champion(String id, String name, String title, String image, String[] roles) {
         this.id = id;
         this.name = name;

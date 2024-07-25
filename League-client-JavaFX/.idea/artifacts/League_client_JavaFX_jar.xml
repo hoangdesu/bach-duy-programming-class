@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact name="League-client-JavaFX:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/League_client_JavaFX_jar</output-path>
+    <root id="root">
+      <element id="archive" name="League-client-JavaFX.jar">
+        <element id="module-output" name="League-client-JavaFX" />
+      </element>
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:mac-aarch64:21-ea+24" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:21-ea+24" />
+      <element id="library" level="project" name="Maven: org.json:json:20240303" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:21-ea+24" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:21-ea+24" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:21-ea+24" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:21-ea+24" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:mac-aarch64:21-ea+24" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:mac-aarch64:21-ea+24" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:mac-aarch64:21-ea+24" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:mac-aarch64:21-ea+24" />
+    </root>
+  </artifact>
+</component>
