@@ -1,7 +1,9 @@
 # League of Legends client in JavaFX
 
-Home screen
+<p align="center">Home screen</p>
+
 ![Home screen](images/home.jpg)
 
-Champion view screen
+<p align="center">Champion view screen</p>
+
 ![Champion view screen](images/zed.jpg)
