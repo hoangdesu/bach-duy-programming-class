@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <form action="/link-to-server" id="register-form">
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" autocomplete="off" />
+      </div>
+      <div>
+        <label for="pwd-input">Password</label>
+        <input type="password" name="" id="pwd-input" />
+      </div>
+
+      <div>
+        <label for="">Phone Number</label>
+        <input type="number">
+      </div>
+
+      <!-- one selection / multiple choices -->
+      <!-- must have the same name attribute -->
+      <div>
+        <label for="male">
+          <input type="radio" name="gender" id="male" />
+          Male
+        </label>
+        <label for="female">
+          <input type="radio" name="gender" id="female" />
+          Female
+        </label>
+        <label for="others">
+          <input type="radio" name="gender" id="others" />
+          Others
+        </label>
+      </div>
+
+      <div>
+        <label for="schorlarship">Scholarship?</label>
+        <input type="checkbox" name="schorlarship" id="schorlarship">
+        <!-- <input type="checkbox" name="schorlarship" id=""> -->
+      </div>
+
+      <div>
+        <label for="">Email</label>
+        <input type="email" name="" id="">
+      </div>
+
+      <div>
+        <label for="">Upload your CV</label>
+        <input type="file" name="" id="">
+      </div>
+
+      <div>
+        <label for="">Date of Birth</label>
+        <input type="date">
+      </div>
+
+      <div>
+        <input type="range">
+      </div>
+
+      <div>
+        <label for="">Lane</label>
+        <select name="lane" id="">
+            <option value="Top">Top</option>
+            <option value="Jungle">Jungle</option>
+            <option value="Mid">Mid</option>
+            <option value="ADC">ADC</option>
+            <option value="Support">Support</option>
+            <optgroup label="Programming Languages">
+                <option value="">A</option>
+                <option value="">B</option>
+                <option value="">C</option>
+            </optgroup>
+        </select>
+        <!-- lane="Mid" -->
+      </div>
+
+      <div>
+        <textarea name="" id="" rows="10" cols="50" placeholder="enter something"></textarea>
+      </div>
+
+      <div>
+        <label for="cars">Cars</label>
+        <input list="cars" type="text">
+        <datalist id="cars">
+            <option value="BMW" />
+            <option value="Bentley" />
+            <option value="Mercedes" />
+            <option value="Audi" />
+            <option value="Volkswagen" />
+        </datalist>
+      </div>
+
+      
+
+      <!-- not gonna submit the form -->
+      <!-- <input type="button" value="Register"> -->
+      <button>Register</button>
+      <!-- <input type="submit" value="Login" /> -->
+
+      <!-- <table>
+        <tr>
+          <td><label for="username">Username</label></td>
+          <td><input type="text" id="username" /></td>
+        </tr>
+        <tr>
+          <td><label for="pwd-input">Password</label></td>
+          <td><input type="password" name="" id="pwd-input" /></td>
+        </tr>
+        <tr>
+            <td><button>Login</button></td>
+            <td><input type="reset"></td>
+        </tr>
+      </table> -->
+
+      <!-- comment: ctr + / -->
+    </form>
+
+    <fieldset form="register-form">
+        <legend>JAVA:</legend>
+        Title:
+        <input type="text">
+        <br> Link:
+        <input type="text">
+        <br> User ID:
+        <input type="text">
+    </fieldset>
+
+    <div>
+        <label for="">Search for sth</label>
+        <input type="search" name="" id="" placeholder="search me...">
+    </div>
+
+    <!-- form's event: submit can be triggered by either:
+        - hit enter
+        - click on a button/input of type submit -->
+
+    <!-- input type submit == button (default) -->
+
+    <!-- for="element id" => improve user experience -->
+
+    <!-- inline elements -->
+  </body>
+</html>
