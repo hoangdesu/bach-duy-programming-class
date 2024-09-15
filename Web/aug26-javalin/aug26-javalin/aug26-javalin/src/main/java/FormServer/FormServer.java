@@ -63,6 +63,17 @@ public class FormServer {
     //        },
 //        ]
 
+
+        app.get("/delete/{name}", ctx -> {
+//            trigger delete function
+//            find if lang is in list -> delete
+//            if not, then stop
+
+//            after all, notify user
+
+//            redirect back to homepage
+        });
+
         app.post("/login", ctx -> {
 //            System.out.println(ctx.body());
 //            query string
@@ -93,6 +104,12 @@ public class FormServer {
                 ctx.result("Login failed :(");
             }
         });
+
+//        <a href="/{java}/delete">[DELETE]</a>
+//        server:
+//        app.get("/{java}/delete", ctx -> {
+//
+//        })
 
         app.start(6789);
     }
