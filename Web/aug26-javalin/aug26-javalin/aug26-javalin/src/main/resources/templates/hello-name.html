@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="templates/style.css">
+</head>
+<body>
+    <h1 th:text="${userName}"></h1>
+    <p th:text="${'You were born in ' + year}"></p>
+
+    <div>
+        <ul>
+            <li th:each="car: ${cars}">
+                <h3 th:text="${car.name}"></h3>
+                <p th:text="${'$' + car.price}"></p>
+                <img th:src="${car.image}" th:alt="${car.name}">
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
