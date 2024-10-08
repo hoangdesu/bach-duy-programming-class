@@ -1,12 +1,12 @@
 package MongoDB_Java;
 
-import com.mongodb.client.MongoClient;
-import com.mongodb.client.MongoClients;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.*;
 import com.mongodb.client.model.Filters;
 import io.javalin.Javalin;
 import org.bson.Document;
+
+import javax.print.Doc;
+import java.util.ArrayList;
 
 import static com.mongodb.client.model.Filters.eq;
 
@@ -47,6 +47,33 @@ public class Javalin_MongoDB {
                         }
                     }
                 });
+
+        app.get("/movies/{movieName}", ctx -> {
+//            String movieName = ctx.body().split("=")[1].replaceAll("[+]", " "); // movieName=caigido
+//            System.out.println("movieName: " + movieName);
+
+            String movieName = ctx.pathParam("movieName");
+
+            try (MongoClient mongoClient = MongoClients.create(uri)) {
+                MongoDatabase database = mongoClient.getDatabase("sample_mflix");
+                MongoCollection<Document> movieCollection = database.getCollection("movies");
+
+                FindIterable<Document> documents = movieCollection.find(Filters.regex("title", String.format(".*%s.*", movieName), "i"));
+                MongoCursor<Document> cursor = documents.iterator();
+
+//                int count = 0;
+                ArrayList<String> results = new ArrayList<>();
+                while (cursor.hasNext()) {
+//                    System.out.println(cursor.next());
+//                    count++;
+//                    if (count == 3) break;
+                    Document doc = cursor.next();
+                    results.add(doc.toJson());
+                }
+
+                ctx.json(results.toString());
+            }
+        });
 
         app.start(6789);
     }
