@@ -1,0 +1,11 @@
+{
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:Bach Duy - Programming}/learn-sqlite/duy-db.db",
+            "name": "duy-db"
+        }
+    ]
+}

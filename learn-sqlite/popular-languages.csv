@@ -1,0 +1,131 @@
+CountryCode,Name,Language,IsOfficial,Percentage
+BMU,Bermuda,English,1,100
+SLV,El Salvador,Spanish,1,100
+FRO,Faroe Islands,Faroese,1,100
+CUB,Cuba,Spanish,1,100
+ESH,Western Sahara,Arabic,1,100
+MDV,Maldives,Dhivehi,1,100
+RWA,Rwanda,Rwanda,1,100
+SMR,San Marino,Italian,1,100
+PRK,North Korea,Korean,1,99.9
+KOR,South Korea,Korean,1,99.9
+YEM,Yemen,Arabic,1,99.6
+BIH,Bosnia and Herzegovina,Serbo-Croatian,1,99.2
+JPN,Japan,Japanese,1,99.1
+COL,Colombia,Spanish,1,99
+PRT,Portugal,Portuguese,1,99
+KIR,Kiribati,Kiribati,1,98.9
+MDG,Madagascar,Malagasy,1,98.9
+EGY,Egypt,Arabic,1,98.8
+GRC,Greece,Greek,1,98.5
+HUN,Hungary,Hungarian,1,98.5
+IRL,Ireland,English,1,98.4
+SOM,Somalia,Somali,1,98.3
+TON,Tonga,Tongan,1,98.3
+BDI,Burundi,Kirundi,1,98.1
+DOM,Dominican Republic,Spanish,1,98
+ALB,Albania,Albaniana,1,97.9
+JOR,Jordan,Arabic,1,97.9
+BGD,Bangladesh,Bengali,1,97.7
+NIC,Nicaragua,Spanish,1,97.6
+POL,Poland,Polish,1,97.6
+BRA,Brazil,Portuguese,1,97.5
+CRI,Costa Rica,Spanish,1,97.5
+GBR,United Kingdom,English,1,97.3
+HND,Honduras,Spanish,1,97.2
+VEN,Venezuela,Spanish,1,96.9
+ARG,Argentina,Spanish,1,96.8
+MHL,Marshall Islands,Marshallese,1,96.8
+NOR,Norway,Norwegian,1,96.6
+LBY,Libyan Arab Jamahiriya,Arabic,1,96
+HRV,Croatia,Serbo-Croatian,1,95.9
+MLT,Malta,Maltese,1,95.8
+ISL,Iceland,Icelandic,1,95.7
+URY,Uruguay,Spanish,1,95.7
+NLD,Netherlands,Dutch,1,95.6
+SAU,Saudi Arabia,Arabic,1,95
+ITA,Italy,Italian,1,94.1
+FRA,France,French,1,93.6
+DNK,Denmark,Danish,1,93.5
+ARM,Armenia,Armenian,1,93.4
+ECU,Ecuador,Spanish,1,93
+LBN,Lebanon,Arabic,1,93
+FIN,Finland,Finnish,1,92.7
+TUV,Tuvalu,Tuvalu,1,92.5
+MEX,Mexico,Spanish,1,92.1
+AUT,Austria,German,1,92
+CHN,China,Chinese,1,92
+DEU,Germany,German,1,91.3
+ROM,Romania,Romanian,1,90.7
+ASM,American Samoa,Samoan,1,90.6
+SYR,Syria,Arabic,1,90
+SWZ,Swaziland,Swazi,1,89.9
+CHL,Chile,Spanish,1,89.7
+SWE,Sweden,Swedish,1,89.5
+AZE,Azerbaijan,Azerbaijani,1,89
+LIE,Liechtenstein,German,1,89
+GIB,Gibraltar,English,1,88.9
+KHM,Cambodia,Khmer,1,88.6
+SVN,Slovenia,Slovene,1,87.9
+BOL,Bolivia,Spanish,1,87.7
+TUR,Turkey,Turkish,1,87.6
+GRL,Greenland,Greenlandic,1,87.5
+NZL,New Zealand,English,1,87
+VNM,Vietnam,Vietnamese,1,86.8
+RUS,Russian Federation,Russian,1,86.6
+ANT,Netherlands Antilles,Papiamento,1,86.2
+USA,United States,English,1,86.2
+DZA,Algeria,Arabic,1,86
+SVK,Slovakia,Slovak,1,85.6
+LSO,Lesotho,Sotho,1,85
+BGR,Bulgaria,Bulgariana,1,83.2
+PLW,Palau,Palau,1,82.2
+VIR,"Virgin Islands, U.S.",English,1,81.7
+LTU,Lithuania,Lithuanian,1,81.6
+AUS,Australia,English,1,81.2
+CZE,Czech Republic,Czech,1,81.2
+PER,Peru,Spanish,1,79.8
+MNG,Mongolia,Mongolian,1,78.8
+KWT,Kuwait,Arabic,1,78.1
+IRQ,Iraq,Arabic,1,77.2
+SGP,Singapore,Chinese,1,77.1
+PAN,Panama,Spanish,1,76.8
+OMN,Oman,Arabic,1,76.7
+TKM,Turkmenistan,Turkmenian,1,76.7
+YUG,Yugoslavia,Serbo-Croatian,1,75.2
+COM,Comoros,Comorian,1,75
+ESP,Spain,Spanish,1,74.4
+CYP,Cyprus,Greek,1,74.1
+UZB,Uzbekistan,Uzbek,1,72.6
+GEO,Georgia,Georgiana,1,71.7
+TUN,Tunisia,Arabic,1,69.9
+MMR,Myanmar,Burmese,1,69
+BHR,Bahrain,Arabic,1,67.7
+LAO,Laos,Lao,1,67.2
+MKD,Macedonia,Macedonian,1,66.5
+BLR,Belarus,Belorussian,1,65.6
+EST,Estonia,Estonian,1,65.3
+MAR,Morocco,Arabic,1,65
+GTM,Guatemala,Spanish,1,64.7
+UKR,Ukraine,Ukrainian,1,64.7
+LUX,Luxembourg,Luxembourgish,1,64.4
+CHE,Switzerland,German,1,63.6
+ISR,Israel,Hebrew,1,63.1
+TJK,Tajikistan,Tadzhik,1,62.2
+MDA,Moldova,Romanian,1,61.9
+CAN,Canada,English,1,60.4
+LKA,Sri Lanka,Singali,1,60.3
+KGZ,Kyrgyzstan,Kirgiz,1,59.7
+BEL,Belgium,Dutch,1,59.2
+MYS,Malaysia,Malay,1,58.4
+MWI,Malawi,Chichewa,1,58.3
+NRU,Nauru,Nauru,1,57.5
+VUT,Vanuatu,Bislama,1,56.6
+LVA,Latvia,Latvian,1,55.1
+PRY,Paraguay,Spanish,1,55.1
+THA,Thailand,Thai,1,52.6
+AFG,Afghanistan,Pashto,1,52.4
+PRI,Puerto Rico,Spanish,1,51.3
+BLZ,Belize,English,1,50.8
+FJI,Fiji Islands,Fijian,1,50.8
+NPL,Nepal,Nepali,1,50.4
