@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/genre.css">
+</head>
+<body>
+    <h1>Genres</h1>
+    <img src="/logo.png" alt="">
+
+    <form action="/movies/genre" method="get">
+        <select name="q" id="">
+            <option value="comedy">Comedy</option>
+            <option value="sci fi">Sci-fi</option>
+            <option value="horror">Horror</option>
+            <option value="drama">Drama</option>
+            <option value="suspen">Suspen</option>
+        </select>
+        <button>🔎</button>
+    </form>
+
+    <table border="1" th:if="${movies.size() > 0}"> 
+        <!-- <p>has movies</p> -->
+         <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Year</th>
+                <th>Genre</th>
+            </tr>
+         </thead>
+        <tr th:each="m: ${movies}">
+            <td th:text="${m.id}" />
+            <td th:text="${m.name}" />
+            <td th:text="${m.year}" />
+            <td th:text="${m.genre}" />
+        </tr>
+    </table>
+</body>
+</html>

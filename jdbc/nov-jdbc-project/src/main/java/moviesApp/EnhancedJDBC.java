@@ -20,20 +20,20 @@ public class EnhancedJDBC {
 
     public EnhancedJDBC() {
         // try {
-        //     connection = DriverManager.getConnection(CONNECTION_STRING); 
-        //     statement = connection.createStatement();
-        //     statement.setQueryTimeout(30);
+        // connection = DriverManager.getConnection(CONNECTION_STRING);
+        // statement = connection.createStatement();
+        // statement.setQueryTimeout(30);
 
-        //     // TODO: use singleton to limit to 1 instance of db connection
-        //     System.out.println("Connected to database");
+        // // TODO: use singleton to limit to 1 instance of db connection
+        // System.out.println("Connected to database");
         // } catch (SQLException e) {
-        //     System.err.println(e.getMessage());
+        // System.err.println(e.getMessage());
         // } finally {
         // }
     }
 
-    public Connection getConnection() {
-        // connection = DriverManager.getConnection(CONNECTION_STRING); 
+    public Connection getConnection() throws SQLException {
+        connection = DriverManager.getConnection(CONNECTION_STRING);
         System.out.println("Connected to database");
         return this.connection;
     }
@@ -92,9 +92,12 @@ public class EnhancedJDBC {
         } catch (SQLException e) {
             System.err.println("Error: " + e.getStackTrace().toString());
         } finally {
-            if (results != null) results.close(); // close buffer #3
-            if (pstmt != null) pstmt.close(); // close buffer #2
-            if (this.connection != null) this.connection.close(); // close buffer #1
+            if (results != null)
+                results.close(); // close buffer #3
+            if (pstmt != null)
+                pstmt.close(); // close buffer #2
+            if (this.connection != null)
+                this.connection.close(); // close buffer #1
         }
 
         return movies;
@@ -106,20 +109,21 @@ public class EnhancedJDBC {
         ArrayList<Movie> movies = new ArrayList<>();
 
         String query = """
-                    SELECT MVTITLE, MPAA FROM MOVIE
-                    WHERE MPAA LIKE ?
-                    """;
+                SELECT MVTITLE, MPAA FROM MOVIE
+                WHERE MPAA LIKE ?
+                """;
 
         // try-with-resources
-        // all the resources will automatically be closed when reaching the end of try block
+        // all the resources will automatically be closed when reaching the end of try
+        // block
         try (Connection conn = this.getConnection()) { // resource #1
             try (PreparedStatement pstmt = conn.prepareStatement(query)) { // resource #2
                 pstmt.setString(1, rating);
-                try (ResultSet results = pstmt.executeQuery()) {  // resource #3
+                try (ResultSet results = pstmt.executeQuery()) { // resource #3
                     while (results.next()) {
                         String title = results.getString("MVTITLE");
                         String mpaa = results.getString("MPAA");
-        
+
                         movies.add(new Movie(title, mpaa));
                     }
                 } catch (SQLException e) {
@@ -134,44 +138,41 @@ public class EnhancedJDBC {
             e.printStackTrace();
         } // no need finally
 
-
         // gom het ca 3 thang vao 1 try
         // try (
-        //     Connection conn = this.getConnection();
-        //     PreparedStatement pstmt = conn.prepareStatement(query);
-        //     ResultSet results = pstmt.executeQuery();
+        // Connection conn = this.getConnection();
+        // PreparedStatement pstmt = conn.prepareStatement(query);
+        // ResultSet results = pstmt.executeQuery();
         // ) {
-        //     // lam het tat ca 1 lan
+        // // lam het tat ca 1 lan
         // } catch (SQLException e) {
-        //     // nhung co loi thi ko biet thang nao gay loi
+        // // nhung co loi thi ko biet thang nao gay loi
         // }
-
 
         return movies;
     }
 
     // User getUserLogin(String usrName, String usrPwd) {
-        
-    //     // usrName = "Duy"
-    //     usrName = "blabla OR 1 = 1;"
-    //     usrPwd = "helloKitty";
-        
-    //     String query = """
-    //             SELECT FROM User
-    //             WHERE username = {usrName} AND password = {usrPwd}
-    //             """;
 
-    //     query.replace("{usrName}", usrName);
+    // // usrName = "Duy"
+    // usrName = "blabla OR 1 = 1;"
+    // usrPwd = "helloKitty";
 
-    //     String.format("""
-    //             SELECT FROM User
-    //             WHERE username = %s AND password = %s
-    //             """, usrName, usrPwd);
+    // String query = """
+    // SELECT FROM User
+    // WHERE username = {usrName} AND password = {usrPwd}
+    // """;
 
-    //     // SQL Inject attack
-    //             SELECT FROM User
-    //             WHERE username = blabla OR 1 = 1; AND password = {usrPwd}
-                
+    // query.replace("{usrName}", usrName);
 
-    }
+    // String.format("""
+    // SELECT FROM User
+    // WHERE username = %s AND password = %s
+    // """, usrName, usrPwd);
+
+    // // SQL Inject attack
+    // SELECT FROM User
+    // WHERE username = blabla OR 1 = 1; AND password = {usrPwd}
+
+    // }
 }

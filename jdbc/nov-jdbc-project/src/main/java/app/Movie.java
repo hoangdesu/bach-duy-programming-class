@@ -44,4 +44,8 @@ public class Movie {
       this.name = name;
       this.rating = rating;
    }
+
+   public String toString() {
+      return String.format("%d - %s - %d - %s", id, name, year, genre);
+   }
 }

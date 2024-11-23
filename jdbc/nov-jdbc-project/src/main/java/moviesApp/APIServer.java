@@ -30,6 +30,8 @@ public class APIServer {
 
     public static void configureRoutes(Javalin app) {
         app.get("/movies", new IndexRouteHandler());
+
+        app.get("/movies/genre", new GenrePage());
         
         app.get("/movies/genre/:genre", ctx -> {
             routeHandlers.getMoviesByGenre(ctx);
