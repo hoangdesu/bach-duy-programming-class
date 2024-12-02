@@ -39,5 +39,4 @@ public class APIServer {
 
         app.get("/movies/rating/:rating", new GetMovieByAgeRatingHandler());
     }
-
 }
