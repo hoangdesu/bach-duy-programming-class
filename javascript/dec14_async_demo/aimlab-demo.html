@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #crosshair, #fire {
+            position: absolute;
+            pointer-events: none;
+        }
+
+        #fire {
+            display: none;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Aimlabs</h1>
+
+    <img src="crosshair.webp" alt="" width="100" id="crosshair">
+
+    <img src="fire.png" alt="" id="fire" width="300">
+
+    <script>
+        const crosshair = document.querySelector('#crosshair');
+
+        window.addEventListener('mousemove', (event) => {
+            console.log(event);
+            crosshair.style.left = event.x - (crosshair.width / 2) + 'px';
+            crosshair.style.top = event.y - (crosshair.width / 2) + 'px';
+        });
+
+        const fire = document.querySelector('#fire');
+
+        window.addEventListener('click', (event) => {
+            fire.style.left = event.x - (fire.width / 2) + 65 + 'px';
+            fire.style.top = event.y - (fire.width / 2) + 65 + 'px';
+            
+            fire.style.display = 'block';
+            setTimeout(() => {
+                fire.style.display = 'none';
+            }, 100);
+        });
+    </script>
+</body>
+</html>

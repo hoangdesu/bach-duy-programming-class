@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #timer {
+            color: red;
+            font-size: 3rem;
+        }
+
+        #defuseBtn {
+            position: absolute;
+            padding: 16px;
+            color: black;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Defuse the bomb ASAP!!</h1>
+
+    <p id="timer">10</p>
+
+    <button id="defuseBtn">DEFUSE!</button>
+
+    <!-- <img src="" alt=""> -->
+
+    <script>
+        let time = 10;
+        const timer = document.querySelector('#timer');
+
+
+        const bombTimer = setInterval(() => {
+            time--;
+            timer.textContent = time;
+            if (time < 0) {
+                timer.textContent = 'KABOOM 💣💥💥💥💥';
+                defuseBtn.style.display = 'none';
+                clearInterval(bombTimer);
+            }
+
+            console.log(time);
+            
+        }, 1000)
+
+        const defuseBtn = document.querySelector('#defuseBtn');
+        defuseBtn.addEventListener('click', () => {
+            timer.textContent = "You're safe! 😮‍💨";
+            defuseBtn.style.display = 'none';
+            clearInterval(bombTimer);
+        });
+
+        defuseBtn.addEventListener('mouseenter', (event) => {
+            // console.log(event.screenX);
+            const gap = 200;
+
+            const newX = Math.random() * window.innerWidth + gap;
+            const newY = Math.random() * window.innerHeight + gap;
+
+            console.log(newX, newY);
+            
+            setTimeout(() => {
+                defuseBtn.style.left = newX + 'px';
+                defuseBtn.style.top = newY + 'px';
+            }, 100);
+        });
+
+        // let i = 0;
+        // while (true) {
+        //     i++;
+        //     if (i === 3000000000) {
+        //         console.log('reach ', i);
+                
+        //         break;
+        //     }
+        // }
+
+
+    </script>
+
+</body>
+</html>
