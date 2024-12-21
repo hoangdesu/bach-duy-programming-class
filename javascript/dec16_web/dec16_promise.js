@@ -15,6 +15,12 @@ fetch('https://pokeapi.co/api/v2/pokemon/129')
         console.log(data);
         pokemon = data;
 
+        // fetch('https://pokeapi.co/api/v2/pokemon/name/image')
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         image.src = data.sprites.front_default;
+        //     })
+
         name.textContent = data.name
         image.src = data.sprites.front_default;
     })
@@ -24,10 +30,11 @@ fetch('https://pokeapi.co/api/v2/pokemon/129')
     });
 
 
-// text.textContent = data.pokemon
-// console.log('outside:', data);
+text.textContent = data.pokemon
+console.log('outside:', data);
 
 // setTimeout(() => {
 //     name.textContent = pokemon.name
 //     image.src = pokemon.sprites.front_default;
 // }, 1000);
+
