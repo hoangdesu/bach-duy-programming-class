@@ -844,4 +844,8 @@ const champions = [
         "link": "https://www.leagueoflegends.com/en-us/champions/zyra/",
         "img": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/814b13e8307739b0f8dc5b29029fb948932fe7b3-496x560.jpg?auto=format&amp;fit=fill&amp;q=80&amp;w=496"
     }
-]
+];
+
+module.exports = {
+    champions
+}
