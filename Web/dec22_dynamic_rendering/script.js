@@ -43,7 +43,7 @@ for (const champ of champions) {
 
 const search = document.querySelector('#search');
 
-search.addEventListener('input', (evt) => {
+const onSearchHandler = (evt) => {
     // console.log('up');
     console.log(evt.target);
     
@@ -56,9 +56,15 @@ search.addEventListener('input', (evt) => {
     const filteredChampions = champions.filter(champ => champ.name.toLowerCase().includes(query));
 
     // clear the current container
-    container.innerHTML = '';
+    // container.innerHTML = '';
 
     console.log(filteredChampions);
+
+    if (filteredChampions.length === 0) {
+        container.append('not found');
+
+        return;
+    }
 
     for (const champ of filteredChampions) {
         const div = document.createElement('div');
@@ -78,7 +84,18 @@ search.addEventListener('input', (evt) => {
         div.className = 'champ-container';
         container.append(div);
     }
-    
+}
+ 
+const spinner = document.querySelector('#spinner');
+search.addEventListener('input', (evt) => {
 
-    
-})
+    // UI feedback
+    container.innerHTML = '';
+    spinner.style.display = 'block';
+
+    // button debouncing
+    setTimeout(() => {
+        onSearchHandler(evt);
+        spinner.style.display = 'none';
+    }, 1000);
+});
