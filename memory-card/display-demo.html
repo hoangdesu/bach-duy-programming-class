@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="display-demo.css">
+</head>
+<body>
+    <h1>Display Layouts demo: Flexbo vs Grid</h1>
+
+    <h2>Flexbox: flexible box</h2>
+
+    <div id="flexbox1">
+        <!-- <p>text 1</p> -->
+        <img src="https://chargeraccount.org/wp-content/uploads/2023/06/K7Kk3DSxN0r4AVhONa9ruggbas3DWRIrbnHw1dJc-1-900x600.jpg" alt="" width="100">
+        <p>text 2</p>
+        <p style="height: 80px">text 3</p>
+       
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, veritatis!</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla sapiente corporis facere ipsum exercitationem ipsam, quam numquam sed voluptas sequi illum, voluptatibus facilis? Nemo doloremque veritatis voluptatem id ex minus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla sapiente corporis facere ipsum exercitationem ipsam, quam numquam sed voluptas sequi illum, voluptatibus facilis? Nemo doloremque veritatis voluptatem id ex minus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla sapiente corporis facere ipsum exercitationem ipsam, quam numquam sed voluptas sequi illum, voluptatibus facilis? Nemo doloremque veritatis voluptatem id ex minus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla sapiente corporis facere ipsum exercitationem ipsam, quam numquam sed voluptas sequi illum, voluptatibus facilis? Nemo doloremque veritatis voluptatem id ex minus?</p>
+    </div>
+
+    <h2>Grid</h2>
+    
+    <div id="grid-container">
+        <!-- // dynamically render the cards here -->
+    </div>
+
+    <script>
+        const gridContainer = document.getElementById('grid-container');
+        const cards = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
+        
+        // shuffle card array
+
+        cards.forEach(row => {
+            row.forEach(card => {
+                const div = document.createElement('div');
+                div.textContent = card;
+                div.className = 'card-container';
+                gridContainer.appendChild(div);
+            })
+        });
+    </script>
+</body>
+</html>

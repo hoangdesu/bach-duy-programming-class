@@ -88,8 +88,13 @@ const tin = {
 }
 
 // rename fields after destructure
-const { age: age2, name: name2 } = tin;
+let { age: age2, name: name2 } = tin;
 console.log(name2, age2);
+
+name2 = 'hahah';
+
+console.log(tin);
+
 
 
 const champions = ['Zed', 'Ahri', 'LeBlanc', (name) => {console.log('Champion: ' + name)}, 1];
