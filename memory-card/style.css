@@ -1,0 +1,25 @@
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 50%;
+    margin: auto;
+    gap: 16px;
+
+    border: 1px solid red;
+    
+
+    /* new nested css feature 2024 */
+    div {
+
+        object-fit: cover;
+        user-select: none;
+
+        img {
+            width: 100%;
+            pointer-events: none;
+        }   
+
+    }
+
+}
+

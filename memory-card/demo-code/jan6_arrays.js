@@ -27,7 +27,7 @@ console.log(grid);
 
 
 // shuffle 
-...
+// ...
 
 const shuffle = (array) => {
     const shuffledArray = [];
