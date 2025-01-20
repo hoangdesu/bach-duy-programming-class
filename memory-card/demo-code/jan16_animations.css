@@ -1,0 +1,34 @@
+/* h1 {
+    color: red;
+    font-size: 1rem;
+    transition: color 1s ease;
+} */
+
+/* pseudo-class */
+/* h1:hover {
+    color: yellow;
+    font-size: 2rem;
+} */
+
+.animated {
+    color: yellow !important;
+    font-size: 2rem !important;
+    /* text-align: center; */
+    /* margin-left: auto; */
+}
+
+.small-text {
+    font-size: 1rem;
+}
+
+.base {
+    transition: 1s all ease;
+}
+
+.red-text {
+    color: red;
+}
+
+.black-background {
+    background-color: black;
+}

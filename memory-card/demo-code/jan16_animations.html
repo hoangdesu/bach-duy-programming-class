@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jan16_animations.css">
+</head>
+<body>
+    <h1 class="base small-text red-text black-background">Hover me</h1>
+
+    <script>
+        let isClicked = false;
+        const h1 = document.querySelector('h1');
+
+        h1.addEventListener('click', () => {
+            
+            // h1.className = 'animated';
+            // console.log(h1.className);
+            // console.log(h1.classList);
+
+            if (!isClicked) {
+                h1.classList.add('animated');
+                h1.disabled = true;
+                
+            } else {
+                h1.classList.remove('animated');
+            }
+
+            isClicked = !isClicked;
+            
+            // h1.classList.add()
+            
+        });
+    </script>
+</body>
+</html>
