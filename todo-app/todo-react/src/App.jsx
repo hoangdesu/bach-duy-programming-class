@@ -1,6 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-// const drinks = ['coffee', 'water', 'orange juice'];
+// const drinksArray = ['coffee', 'water', 'orange juice'];
+
+const drinksData = [
+  {
+    id: 1,
+    name: 'coffee'
+  },
+  {
+    id: 2,
+    name: 'water'
+  },
+  {
+    id: 3,
+    name: 'orange juice'
+  }
+];
 
 function App() {
   let name = "Bach Duy";
@@ -15,9 +30,24 @@ function App() {
 
   // const countState = useState(10);
 
+  const initialDrinkState = drinksData.map(d => {
+    return {
+      ...d,
+      isEditing: false
+    }
+  });
 
-  const [drinks, setDrinks] = useState(['coffee', 'water', 'orange juice']);
-  
+
+  const [drinks, setDrinks] = useState(initialDrinkState);
+  const [len, setLen] = useState(drinks.length);
+
+  const [isOn, setIsOn] = useState(false);
+
+
+  // const [isEditing, setIsEditing] = useState(false);
+
+  // Derived value
+  // const len = drinks.length;
 
   const increase = () => {
     // count++;
@@ -30,23 +60,78 @@ function App() {
 
   // console.log(count);
 
+  // Only called once when the component is mounted to the screen
+  // componentDidMount()
+  useEffect(() => {
+    console.log('App mounted!!!')
+  }, []);
+
+  // changing state A will change state B
+
+  // Will only update length after drinks state has finished updating
+  // componentDidUpdate()
+  useEffect(() => {
+    setLen(drinks.length);
+  }, [drinks]);
+
+
+  // Without deps array: run AFTER every update
+  // componentDidUpdate()
+  useEffect(() => {
+    console.log('no dependency array');
+    console.log('after render:', drinks, len);
+  });
+  
+
   const decrease = () => {
     setCount(count - 1);
   }
 
   const onEditClick = (drink) => {
     console.log(drink);
+    const updatedDrinks = [...drinks];
+
+    // linear search
+    for (const updatedDrink of updatedDrinks) {
+      if (updatedDrink.id === drink.id) {
+        updatedDrink.isEditing = true;
+      }
+    }
+
+    setDrinks(updatedDrinks);
+  }
+
+  const deleteHandler = drink => {
+    const newDrinks = [...drinks];
+    newDrinks.splice(drinks.indexOf(drink), 1);
+    // console.log('new drinks has been set');
+
+    setDrinks(newDrinks); // async function
+    // setLen(drinks.length); // 
   }
 
   const drinkList = drinks.map(drink => (
-          <li key={drink} style={{ display: 'flex', width: '400px', justifyContent: 'space-between' }}>
-            <span>{drink}</span>
+          <li key={drink.id} style={{ display: 'flex', width: '400px', justifyContent: 'space-between' }}>
+            {drink.isEditing ? (
+              <input defaultValue={drink.name}></input>
+              ) : (
+              <span>{drink.name}</span>
+              )}
             <div>
-              <button onClick={() => onEditClick(drink)}>Edit</button>
-              <button>Delete</button>
+              {drink.isEditing ? (
+                <>
+                  <button onClick={() => {}}>Save</button>
+                  <button onClick={() => {}}>Cancel</button>
+                </>
+              ) : (
+                <>
+                  <button onClick={() => onEditClick(drink)}>Edit</button>
+                  <button onClick={() => deleteHandler(drink)}>Delete</button>
+                </>
+              )}
             </div>
           </li>
-        ))
+        ));
 
   console.log(drinkList);
 
@@ -57,13 +142,28 @@ function App() {
     // console.log(evt);
 
     const value = evt.target[0].value;
+
+    // guard clause: early return
+    if (drinks.includes(value)) {
+      alert('Drink already exists');
+      evt.target[0].value = '';
+      return;
+    }
+
+    // reset the input
+    evt.target[0].value = '';
+
     console.log(value);
 
-    setDrinks([...drinks, value])
+    setDrinks([...drinks, {
+      id: Math.random(),
+      name: value,
+      isEditing: false
+    }]);
   }
 
   return (
-    <div>
+    <>
       <h1>Hello React :D</h1>
       <p>{name}'s todo app {"{}"}</p>
 
@@ -73,11 +173,16 @@ function App() {
         <button onClick={increase}>+</button>
       </div>
 
+      <div>
+        <button onClick={() => setIsOn(!isOn)}>{isOn ? 'ON' : 'OFF'}</button>
+      </div>
+
       <h1>Drinks</h1>
       <form action="" onSubmit={onAddDrinkSubmit}>
         <input type="text" />
         <button>Add drink</button>
       </form>
+      <p>There are {len} drinks</p>
       <ul>
         {drinkList}
 
@@ -85,8 +190,9 @@ function App() {
           <li>1</li>,
           <li>2</li>
         ]} */}
+
       </ul>
-    </div>
+    </>
   )
 }
 
