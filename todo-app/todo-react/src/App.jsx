@@ -101,6 +101,20 @@ function App() {
     setDrinks(updatedDrinks);
   }
 
+  const onCancelClicked = (drink) => {
+    console.log(drink);
+    const updatedDrinks = [...drinks];
+
+    // linear search
+    for (const updatedDrink of updatedDrinks) {
+      if (updatedDrink.id === drink.id) {
+        updatedDrink.isEditing = false;
+      }
+    }
+
+    setDrinks(updatedDrinks);
+  }
+
   const deleteHandler = drink => {
     const newDrinks = [...drinks];
     newDrinks.splice(drinks.indexOf(drink), 1);
@@ -110,26 +124,66 @@ function App() {
     // setLen(drinks.length); // 
   }
 
+  const onSaveHandler = (evt, drink) => {
+    console.log(evt);
+    
+    evt.preventDefault();
+
+    console.log('saving', drink.name);
+    console.log(evt.target[0].value);
+
+    const updatedDrinks = [...drinks];
+
+    for (const d of updatedDrinks) {
+      if (d.id === drink.id) {
+        d.name = evt.target[0].value;
+        d.isEditing = false;
+      }
+    }
+
+    setDrinks(updatedDrinks);
+  }
+
   const drinkList = drinks.map(drink => (
-          <li key={drink.id} style={{ display: 'flex', width: '400px', justifyContent: 'space-between' }}>
+          // <li key={drink.id} style={{ display: 'flex', width: '400px', justifyContent: 'space-between' }}>
+          //   {drink.isEditing ? (
+          //     <input defaultValue={drink.name} onKeyDown={e => e.key === 'Enter' && onSaveHandler(drink)}></input>
+          //     ) : (
+          //     <span>{drink.name}</span>
+          //     )}
+          //   <div>
+          //     {drink.isEditing ? (
+          //       <>
+          //         <button onClick={() => onSaveHandler(drink)}>Save</button>
+          //         <button onClick={() => {}}>Cancel</button>
+          //       </>
+          //     ) : (
+          //       <>
+          //         <button onClick={() => onEditClick(drink)}>Edit</button>
+          //         <button onClick={() => deleteHandler(drink)}>Delete</button>
+          //       </>
+          //     )}
+          //   </div>
+          // </li>
+
+          <li key={drink.id} draggable={true}>
             {drink.isEditing ? (
-              <input defaultValue={drink.name}></input>
-              ) : (
-              <span>{drink.name}</span>
-              )}
-            <div>
-              {drink.isEditing ? (
-                <>
-                  <button onClick={() => {}}>Save</button>
-                  <button onClick={() => {}}>Cancel</button>
-                </>
-              ) : (
-                <>
+              <form style={{ display: 'flex', width: '400px', justifyContent: 'space-between' }} onSubmit={(evt) => onSaveHandler(evt, drink)}>
+                <input defaultValue={drink.name} />
+                <div>
+                  <button>Save</button>
+                  <button type="button" onClick={() => onCancelClicked(drink)}>Cancel</button>
+                </div>
+              </form>
+            ) : (
+              <div style={{ display: 'flex', width: '400px', justifyContent: 'space-between' }}>
+                <span>{drink.name}</span>
+                <div>
                   <button onClick={() => onEditClick(drink)}>Edit</button>
                   <button onClick={() => deleteHandler(drink)}>Delete</button>
-                </>
-              )}
-            </div>
+                </div>
+              </div>
+            )}
           </li>
         ));
 
@@ -184,6 +238,7 @@ function App() {
       </form>
       <p>There are {len} drinks</p>
       <ul>
+        
         {drinkList}
 
         {/* {[
