@@ -1,0 +1,23 @@
+.pokemon-grid {
+    display: grid;
+    /* grid-template-columns: 2fr 200px 2fr 2fr; */
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.pokemon-card {
+    border: 1px solid red;  
+    padding: 16px;
+
+    transition: 0.2s all ease;
+
+    img {
+        width: 100%;
+    }
+}
+
+.pokemon-card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}

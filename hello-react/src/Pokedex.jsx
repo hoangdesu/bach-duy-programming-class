@@ -4,7 +4,9 @@ import { useEffect, useState } from "react"
 // -> we can import under any name
 import PKMCard from "./components/PokemonCard";
 
-const QUERY = 'https://pokeapi.co/api/v2/pokemon?limit=1000&offset=0';
+import './pokemon.css';
+
+const QUERY = 'https://pokeapi.co/api/v2/pokemon?limit=30&offset=0';
 
 export default function Pokedex() {
     const [pokemons, setPokemons] = useState([]);
@@ -24,18 +26,63 @@ export default function Pokedex() {
             // Fetch API
             fetch(QUERY)
                 .then(response => response.json())
-                .then(data => {
+                .then(async (data) => {
                     console.log(data);
-                    const { results: pokemonList } = data;
+                    const { results } = data;
 
                     
                     // setTimeout(() => {
                     // }, 3000);
 
+                    // setPokemons(pokemonList);
+                    // setIsLoading(false);
+                    
+                    console.log(results);
+
+                    const pokemonList = [];
+
+                    // results.forEach(pkm => {
+                    //     const fetchData = async (pkm) => {
+                    //         try {
+                    //             const pokemonDetailResponse = await fetch(pkm.url);
+                    //             const pokemonDetailData = await pokemonDetailResponse.json();
+                    //             // console.log('> result for:', pkm.name);
+                    //             // console.log('> pokemonDetailData:', pokemonDetailData);
+                    //             pokemonList.push(pokemonDetailData.name)
+
+                    //         } catch (err) {
+                    //             console.log(err);
+                                
+                    //         }
+                    //     }
+
+                    //     fetchData(pkm);
+                        
+                    // });
+
+                    for (const pkm of results) {
+                        try {
+                            const pokemonDetailResponse = await fetch(pkm.url);
+                            const pokemonDetailData = await pokemonDetailResponse.json();
+                            // console.log('> result for:', pkm.name);
+                            // console.log('> pokemonDetailData:', pokemonDetailData);
+                            const pokemonObject = {
+                                id: pokemonDetailData.id,
+                                name: pokemonDetailData.name,
+                                sprite: pokemonDetailData['sprites']['other']['official-artwork']['front_default'],
+                                types: []
+                            }
+                            pokemonList.push(pokemonObject);
+
+                            
+                        } catch (err) {
+                            console.log(err);   
+                        }
+                    }
+
+                    console.log('pokemonlist: ', pokemonList);
                     setPokemons(pokemonList);
                     setIsLoading(false);
-                    
-                    // console.log(pokemonList);
                     
                 })
                 .catch(err => {
@@ -43,7 +90,7 @@ export default function Pokedex() {
                     setFailed(true);
                     setIsLoading(false);
                 });
-        }, 3000);
+        }, 0);
         
     }, []);
 
@@ -80,8 +127,8 @@ export default function Pokedex() {
                 <div>Fetch failed {":("}</div>
             )}
 
-            {!isLoading && (
-                <div>
+            {!isLoading && pokemons.length > 0 && (
+                <div className="pokemon-grid">
                     {pokemons.map(pkm => <PKMCard key={pkm.name} pokemon={pkm} />)}
                 </div>
             )}
