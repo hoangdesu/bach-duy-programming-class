@@ -6,13 +6,18 @@ import PKMCard from "./components/PokemonCard";
 
 import './pokemon.css';
 
-const QUERY = 'https://pokeapi.co/api/v2/pokemon?limit=30&offset=0';
+
 
 export default function Pokedex() {
     const [pokemons, setPokemons] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [failed, setFailed] = useState(false);
 
+    const [page, setPage] = useState(1);
+    const limit = 12;
+    let offset = (page - 1) * limit; // derived value
+
+    let QUERY = `https://pokeapi.co/api/v2/pokemon?limit=12&offset=${offset}`;
     
     // Put fetch inside a useEffect to fetch data on initial render only
     useEffect(() => {
@@ -22,75 +27,76 @@ export default function Pokedex() {
         setIsLoading(true);
 
         // Artificial delay
-        setTimeout(() => {
-            // Fetch API
-            fetch(QUERY)
-                .then(response => response.json())
-                .then(async (data) => {
-                    console.log(data);
-                    const { results } = data;
+        // setTimeout(() => {
+        //     ...
+        // }, 0);
 
-                    
-                    // setTimeout(() => {
-                    // }, 3000);
+        // Fetch API
+        fetch(QUERY)
+            .then(response => response.json())
+            .then(async (data) => {
+                console.log(data);
+                const { results } = data;
 
-                    // setPokemons(pokemonList);
-                    // setIsLoading(false);
-                    
-                    console.log(results);
+                
+                // setTimeout(() => {
+                // }, 3000);
 
-                    const pokemonList = [];
+                // setPokemons(pokemonList);
+                // setIsLoading(false);
+                
+                console.log(results);
 
-                    // results.forEach(pkm => {
-                    //     const fetchData = async (pkm) => {
-                    //         try {
-                    //             const pokemonDetailResponse = await fetch(pkm.url);
-                    //             const pokemonDetailData = await pokemonDetailResponse.json();
-                    //             // console.log('> result for:', pkm.name);
-                    //             // console.log('> pokemonDetailData:', pokemonDetailData);
-                    //             pokemonList.push(pokemonDetailData.name)
+                const pokemonList = [];
 
-                    //         } catch (err) {
-                    //             console.log(err);
-                                
-                    //         }
-                    //     }
+                // results.forEach(pkm => {
+                //     const fetchData = async (pkm) => {
+                //         try {
+                //             const pokemonDetailResponse = await fetch(pkm.url);
+                //             const pokemonDetailData = await pokemonDetailResponse.json();
+                //             // console.log('> result for:', pkm.name);
+                //             // console.log('> pokemonDetailData:', pokemonDetailData);
+                //             pokemonList.push(pokemonDetailData.name)
 
-                    //     fetchData(pkm);
-                        
-                    // });
-
-                    for (const pkm of results) {
-                        try {
-                            const pokemonDetailResponse = await fetch(pkm.url);
-                            const pokemonDetailData = await pokemonDetailResponse.json();
-                            // console.log('> result for:', pkm.name);
-                            // console.log('> pokemonDetailData:', pokemonDetailData);
-                            const pokemonObject = {
-                                id: pokemonDetailData.id,
-                                name: pokemonDetailData.name,
-                                sprite: pokemonDetailData['sprites']['other']['official-artwork']['front_default'],
-                                types: []
-                            }
-                            pokemonList.push(pokemonObject);
-
+                //         } catch (err) {
+                //             console.log(err);
                             
-                        } catch (err) {
-                            console.log(err);   
-                        }
-                    }
+                //         }
+                //     }
 
-                    console.log('pokemonlist: ', pokemonList);
-                    setPokemons(pokemonList);
-                    setIsLoading(false);
+                //     fetchData(pkm);
                     
-                })
-                .catch(err => {
-                    console.log('network error');
-                    setFailed(true);
-                    setIsLoading(false);
-                });
-        }, 0);
+                // });
+
+                for (const pkm of results) {
+                    try {
+                        const pokemonDetailResponse = await fetch(pkm.url);
+                        const pokemonDetailData = await pokemonDetailResponse.json();
+                        // console.log('> result for:', pkm.name);
+                        // console.log('> pokemonDetailData:', pokemonDetailData);
+                        const pokemonObject = {
+                            id: pokemonDetailData.id,
+                            name: pokemonDetailData.name,
+                            sprite: pokemonDetailData['sprites']['other']['official-artwork']['front_default'],
+                            types: []
+                        }
+                        pokemonList.push(pokemonObject);
+
+                        
+                    } catch (err) {
+                        console.log(err);   
+                    }
+                }
+
+                console.log('pokemonlist: ', pokemonList);
+                setPokemons(pokemonList);
+                setIsLoading(false);
+            })
+            .catch(err => {
+                console.log('network error');
+                setFailed(true);
+                setIsLoading(false);
+            });
         
     }, []);
 
@@ -115,6 +121,57 @@ export default function Pokedex() {
     //     sprite: '.img'
     // }
 
+
+
+    const fetchMoreData = () => {
+
+        // setIsLoading(true);
+        fetch(QUERY)
+            .then(response => response.json())
+            .then(async (data) => {
+                console.log(data);
+                const { results } = data;
+                
+                console.log(results);
+
+                const pokemonList = [...pokemons];
+
+                for (const pkm of results) {
+                    try {
+                        const pokemonDetailResponse = await fetch(pkm.url);
+                        const pokemonDetailData = await pokemonDetailResponse.json();
+                        const pokemonObject = {
+                            id: pokemonDetailData.id,
+                            name: pokemonDetailData.name,
+                            sprite: pokemonDetailData['sprites']['other']['official-artwork']['front_default'],
+                            types: []
+                        }
+                        pokemonList.push(pokemonObject);
+                        
+                    } catch (err) {
+                        console.log(err);   
+                    }
+                }
+
+                console.log('pokemonlist: ', pokemonList);
+                setPokemons(pokemonList);
+                // setIsLoading(false);
+                
+            })
+            .catch(err => {
+                console.log('network error');
+                setFailed(true);
+                setIsLoading(false);
+            });
+    }
+
+    useEffect(() => {
+        fetchMoreData();
+        // setTimeout(() => {
+            
+        // }, 2000);
+    }, [page]);
+
     return (
         <>
             <h1>Pokédex</h1>
@@ -132,6 +189,8 @@ export default function Pokedex() {
                     {pokemons.map(pkm => <PKMCard key={pkm.name} pokemon={pkm} />)}
                 </div>
             )}
+
+            <button onClick={() => setPage(page + 1)}>Show more</button>
         </>
     )
 }
