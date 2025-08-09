@@ -7,10 +7,10 @@
 }
 
 .pokemon-card {
-    border: 1px solid red;  
+    border: 1px solid rgb(78, 68, 68);  
     padding: 16px;
 
-    transition: 0.2s all ease;
+    transition: 0.2s transform ease;
 
     img {
         width: 100%;
@@ -20,4 +20,8 @@
 .pokemon-card:hover {
     transform: translateY(-5px);
     cursor: pointer;
+}
+
+.pokemon-card-selected {
+    border: 2px solid red; 
 }

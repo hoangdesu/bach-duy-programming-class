@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { use, useEffect, useRef, useState } from "react"
 
 // PokemonCard component uses default export
 // -> we can import under any name
@@ -6,22 +6,34 @@ import PKMCard from "./components/PokemonCard";
 
 import './pokemon.css';
 
-
-
 export default function Pokedex() {
     const [pokemons, setPokemons] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [failed, setFailed] = useState(false);
+    const [selectedPokemons, setSelectedPokemons] = useState([]);
+    const [favoritePokemons, setFavoritePokemons] = useState([]);
+
+    // preserve this ref value over renders
+    const isFirstRender = useRef(true);
+
+    // let isTrue = true;
+
+    // console.log('isTrueRef', isTrueRef);
 
     const [page, setPage] = useState(1);
     const limit = 12;
-    let offset = (page - 1) * limit; // derived value
+    const offset = (page - 1) * limit; // derived value
 
-    let QUERY = `https://pokeapi.co/api/v2/pokemon?limit=12&offset=${offset}`;
+    const QUERY = `https://pokeapi.co/api/v2/pokemon?limit=12&offset=${offset}`;
     
     // Put fetch inside a useEffect to fetch data on initial render only
     useEffect(() => {
         // console.log('fetching pokemons...');
+
+        console.log('useeffect with no deps');
+
+        // isTrue = false;
+        // isTrueRef.current = false;
 
         // before fetching the data
         setIsLoading(true);
@@ -91,6 +103,7 @@ export default function Pokedex() {
                 console.log('pokemonlist: ', pokemonList);
                 setPokemons(pokemonList);
                 setIsLoading(false);
+                
             })
             .catch(err => {
                 console.log('network error');
@@ -165,32 +178,78 @@ export default function Pokedex() {
             });
     }
 
+    // This will ALSO run on initial load AND when state of page changes!
     useEffect(() => {
+        console.log('useeffect with page changes');
+
+        // prevent duplicated fetching with useRef
+        if (isFirstRender.current) {
+            isFirstRender.current = false;
+            return;
+        }
+
+        console.log('fetching more pokemons...');
+        
         fetchMoreData();
         // setTimeout(() => {
             
         // }, 2000);
+        
+
     }, [page]);
+
+    // Lifting the state up
+    const onPokemonClickedHandler = (pokemon, selected) => {
+        if (selected) {
+            console.log();
+            console.log('selected pokemon: ', pokemon.name);
+
+            setSelectedPokemons([...selectedPokemons, pokemon]);
+        } else {
+            console.log('removing...', pokemon.name);
+        }
+    }
 
     return (
         <>
-            <h1>Pokédex</h1>
-
-            {isLoading && (
-                <div>Loading...</div>
-            )}
-
-            {failed && (
-                <div>Fetch failed {":("}</div>
-            )}
-
-            {!isLoading && pokemons.length > 0 && (
-                <div className="pokemon-grid">
-                    {pokemons.map(pkm => <PKMCard key={pkm.name} pokemon={pkm} />)}
+            <div>
+                <h1>My Pokemons</h1>
+                {/* {...} */}
+                <div>
+                    {selectedPokemons.map(pkm => (
+                        <div>{pkm.name}</div>
+                    ))}
                 </div>
-            )}
+            </div>
 
-            <button onClick={() => setPage(page + 1)}>Show more</button>
+
+            <div>
+                <h1>Pokédex</h1>
+
+                {isLoading && (
+                    <div>Loading...</div>
+                )}
+
+                {failed && (
+                    <div>Fetch failed {":("}</div>
+                )}
+
+                {!isLoading && pokemons.length > 0 && (
+                    <div className="pokemon-grid">
+                        {pokemons.map(pkm => (
+                            <PKMCard
+                                key={pkm.name} 
+                                pokemon={pkm} 
+                                onPokemonClicked={onPokemonClickedHandler}
+                            />
+                        ))}
+
+                        <div onClick={()=>console.log('clickme btn')}>click me</div>
+                    </div>
+                )}
+
+                <button onClick={() => setPage(page + 1)}>Show more</button>
+            </div>
         </>
     )
 }
