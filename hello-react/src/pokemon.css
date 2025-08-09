@@ -25,3 +25,29 @@
 .pokemon-card-selected {
     border: 2px solid red; 
 }
+
+.search-container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-search {
+    width: 90%;
+    padding: 8px 16px;
+    font-size: 2rem;
+    text-align: center;
+    /* margin-bottom: 16px; */
+}
+
+.search-result-box {
+    border: 1px solid black;
+    position: absolute;
+    top: 56px;
+    left: 12px;
+    width: 97%;
+    background-color: white;
+    padding: 16px;
+    z-index: 100;
+}
