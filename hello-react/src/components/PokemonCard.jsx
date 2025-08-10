@@ -1,8 +1,14 @@
 import { useEffect, useState } from 'react';
 import '../pokemon.css';
+import { Link, useLocation } from 'react-router';
 
 export default function PokemonCardComponent(props) {
     const { pokemon, onPokemonClicked } = props;
+
+    const location = useLocation(); // extract current pathname
+
+    // console.log('location:', location);
+    
 
     const [selected, setSelected] = useState(false);
 
@@ -23,15 +29,20 @@ export default function PokemonCardComponent(props) {
     
 
     return (
-        <div
-            className={`pokemon-card ${selected && 'pokemon-card-selected'}`} 
-            onClick={onPokemonSelected}
-            onDelete
+        // <div
+        //     className={`pokemon-card ${selected && 'pokemon-card-selected'}`} 
+        //     onClick={onPokemonSelected}
+        // >
+
+        <Link 
+            to={`${location.pathname}/${pokemon.id}`} 
+            className="pokemon-card" 
         >
             <img src={pokemon.sprite} alt="" />
             <p>#{pokemon.id}</p>
             <p>{toTitleCase(pokemon.name)}</p>
-        </div>
+        </Link>
+        // </div>
     )
 
 }

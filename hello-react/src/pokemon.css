@@ -10,6 +10,9 @@
     border: 1px solid rgb(78, 68, 68);  
     padding: 16px;
 
+    text-decoration: none;
+    color: black;
+
     transition: 0.2s transform ease;
 
     img {
@@ -20,6 +23,7 @@
 .pokemon-card:hover {
     transform: translateY(-5px);
     cursor: pointer;
+    border: 2px solid rgb(241, 30, 30);  
 }
 
 .pokemon-card-selected {

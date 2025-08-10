@@ -1,10 +1,20 @@
-import { use, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 // PokemonCard component uses default export
 // -> we can import under any name
 import PKMCard from './components/PokemonCard';
 
 import './pokemon.css';
+
+// const mockpkms = [
+//     {
+//         id...,
+//         name:...
+//     },
+//     {
+
+//     }
+// ]
 
 export default function Pokedex() {
   const [pokemons, setPokemons] = useState([]);
@@ -97,6 +107,7 @@ export default function Pokedex() {
             const pokemonDetailData = await pokemonDetailResponse.json();
             // console.log('> result for:', pkm.name);
             // console.log('> pokemonDetailData:', pokemonDetailData);
+            
             const pokemonObject = {
               id: pokemonDetailData.id,
               name: pokemonDetailData.name,
@@ -106,6 +117,7 @@ export default function Pokedex() {
                 ],
               types: [],
             };
+
             pokemonList.push(pokemonObject);
           } catch (err) {
             console.log(err);
