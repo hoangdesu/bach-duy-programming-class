@@ -20,6 +20,12 @@
     }
 }
 
+/* some browsers still haven't supported CSS nesting */
+/* 
+.pokemon-card img {
+    width: 100%;
+} */
+
 .pokemon-card:hover {
     transform: translateY(-5px);
     cursor: pointer;
@@ -55,3 +61,11 @@
     padding: 16px;
     z-index: 100;
 }
+
+/* Media query */
+/* apply this specific style on mobile screen */
+/* @media screen and (max-width: 768px) {
+    .pokemon-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }   
+} */

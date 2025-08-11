@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import PKMCard from './components/PokemonCard';
 
 import './pokemon.css';
+import useWindowDimensions from './hooks/useWindowDimensions';
 
 // const mockpkms = [
 //     {
@@ -34,6 +35,13 @@ export default function Pokedex() {
   console.log('inputSearchRef:', inputSearchRef);
 
   
+  // Custom hook
+
+  // console.log('dimensions:', window.innerWidth, window.innerHeight);
+
+  const [windowWidth, windowHeight] = useWindowDimensions();
+  // width -> dimensions[0]
+  console.log('dimensions:', windowWidth, windowHeight);
   
 
   // let isTrue = true;
@@ -294,7 +302,7 @@ export default function Pokedex() {
             />
 
             {searchResults.length > 0 && (
-                <div className='search-result-box'>
+                <div className='search-result-box'>j
                     {searchResults.map(pkm => (
                         <div>
                             {pkm.id}. {pkm.name}
@@ -309,7 +317,7 @@ export default function Pokedex() {
         {failed && <div>Fetch failed {':('}</div>}
 
         {!isLoading && pokemons.length > 0 && (
-          <div className='pokemon-grid'>
+          <div className='pokemon-grid' style={{ gridTemplateColumns: windowWidth <= 768 ? 'repeat(2, 1fr)' : 'repeat(4, 1fr)' }}>
             {pokemons.map((pkm) => (
               <PKMCard
                 key={pkm.name}
