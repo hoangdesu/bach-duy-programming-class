@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from 'react';
 
 // PokemonCard component uses default export
 // -> we can import under any name
-import PKMCard from './components/PokemonCard';
+import PKMCard from '../components/PokemonCard';
 
-import './pokemon.css';
-import useWindowDimensions from './hooks/useWindowDimensions';
+import '../pokemon.css';
+import useWindowDimensions from '../hooks/useWindowDimensions';
 
 // const mockpkms = [
 //     {

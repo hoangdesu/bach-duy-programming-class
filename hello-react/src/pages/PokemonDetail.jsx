@@ -1,12 +1,14 @@
-import { useCallback, useEffect, useState } from "react";
+import { use, useCallback, useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
 
-import { toTitleCase as toTitleCaseFunction } from "./helpers/main";
-
+import { toTitleCase as toTitleCaseFunction } from "../helpers/main";
+import AppContext from "../store/AppContext";
 
 export default function PokemonDetail() {
     const { name } = useParams();
     const [pokemon, setPokemon] = useState(null);
+
+    const { favorites, setFavorites } = use(AppContext);
 
     console.log(name);
 
@@ -27,6 +29,9 @@ export default function PokemonDetail() {
               types: [],
             };
 
+            console.log(pokemonObject);
+            
+
             setPokemon(pokemonObject);
             
         } catch (err) {
@@ -38,6 +43,10 @@ export default function PokemonDetail() {
     useEffect(() => {
         fetchData();
     }, [fetchData]);
+
+    const onAddToFavorite = () => {
+        setFavorites([...favorites, pokemon])
+    };
 
     if (!pokemon) {
         return (
@@ -54,6 +63,7 @@ export default function PokemonDetail() {
             <img src={pokemon.sprite} alt="" />
             <p>#{pokemon.id}</p>
             <p></p>
+            <button onClick={onAddToFavorite}>Add to favorites</button>
         </>
     )
 }

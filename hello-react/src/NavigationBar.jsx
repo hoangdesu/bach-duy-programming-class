@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { use, useContext, useState } from 'react'
 import { Link, useLocation } from 'react-router'
+import ContextProvider from './store/ContextProvider';
+import AppContext from './store/AppContext';
 
 const routes = [
     {
@@ -14,6 +16,10 @@ const routes = [
         name: 'Pokedex App',
         path: '/pokedex'
     },
+    // {
+    //     name: 'Favorites',
+    //     path: '/pokedex/favorites'
+    // }
 ];
 
 const style = {
@@ -23,12 +29,12 @@ const style = {
 
 const NavigationBar = () => {
   const { pathname } = useLocation();
-  
+  const ctx = use(AppContext);
+
   // const [activePath, setActivePath] = useState(pathname); // not necessary
 
-
+  console.log('ctx:', ctx);
   console.log('location pathname:', pathname);
-  
 
   return (
     <nav style={style}>
@@ -48,6 +54,18 @@ const NavigationBar = () => {
             </Link>
         </span>
       ))}
+
+      <span>
+        <Link 
+              to={'/pokedex/favorites'}
+              style={{ padding: '8px', background: pathname === '/pokedex/favorites' ? 'red' : 'transparent' }}
+            >
+                <span>Favorites</span>
+                <span style={{ borderRadius: '50%', marginLeft: '8px', padding: '5px', width: '10px', height: '10px', background: 'pink' }}>
+                  {ctx.favorites.length}
+                </span>
+            </Link>
+      </span>
     </nav>
   )
 }

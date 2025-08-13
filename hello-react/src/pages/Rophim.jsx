@@ -1,6 +1,6 @@
 import { useState } from "react"
-import MovieCard from "./components/MovieCard"
-import Footer from "./components/Footer";
+import MovieCard from "../components/MovieCard"
+import Footer from "../components/Footer";
 
 const movieData = [
     {
