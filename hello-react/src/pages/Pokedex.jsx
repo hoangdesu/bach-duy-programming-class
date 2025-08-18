@@ -6,6 +6,7 @@ import PKMCard from '../components/PokemonCard';
 
 import '../pokemon.css';
 import useWindowDimensions from '../hooks/useWindowDimensions';
+import MyButton from '../components/MyButton';
 
 // const mockpkms = [
 //     {
@@ -22,7 +23,6 @@ export default function Pokedex() {
   const [isLoading, setIsLoading] = useState(false);
   const [failed, setFailed] = useState(false);
   const [selectedPokemons, setSelectedPokemons] = useState([]);
-  const [favoritePokemons, setFavoritePokemons] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
 
   // preserve this ref value over renders
@@ -326,11 +326,20 @@ export default function Pokedex() {
               />
             ))}
 
-            <div onClick={() => console.log('clickme btn')}>click me</div>
           </div>
         )}
 
-        <button onClick={() => setPage(page + 1)}>Show more</button>
+        <div style={{ textAlign: 'center', margin: '100px' }}>
+          <MyButton 
+            onClick={() => setPage(page + 1)} 
+            // text="Show more TEXT"  -> no use
+            // onMouseEnter={() => setPage(page + 1)}
+          >
+            <div style={{ padding: '20px' }}>
+              Show More
+            </div>
+          </MyButton>
+        </div>
       </div>
     </>
   );

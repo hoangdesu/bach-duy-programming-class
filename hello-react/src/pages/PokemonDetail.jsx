@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router";
 
 import { toTitleCase as toTitleCaseFunction } from "../helpers/main";
 import AppContext from "../store/AppContext";
+import MyButton from "../components/MyButton";
 
 export default function PokemonDetail() {
     const { name } = useParams();
@@ -63,7 +64,7 @@ export default function PokemonDetail() {
             <img src={pokemon.sprite} alt="" />
             <p>#{pokemon.id}</p>
             <p></p>
-            <button onClick={onAddToFavorite}>Add to favorites</button>
+            <MyButton onClick={onAddToFavorite} text="ADDDDDD">Add to favorites</MyButton>
         </>
     )
 }
