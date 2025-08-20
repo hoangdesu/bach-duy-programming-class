@@ -35,7 +35,7 @@ export default function PokemonCardComponent(props) {
         // >
 
         <Link 
-            to={`${location.pathname}/${pokemon.id}`} 
+            to={`/pokedex/${pokemon.id}`} 
             className="pokemon-card" 
         >
             <img src={pokemon.sprite} alt="" />
