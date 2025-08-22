@@ -12,10 +12,18 @@ export default function ContextProvider({ children }) {
         }
     ]);
 
+    const [deletingPokemon, setDeletingPokemon] = useState(null);
+
+    const [modalOpen, setModalOpen] = useState(false);
+
     // this ctx is the global state
     const ctx = {
         favorites, 
-        setFavorites
+        setFavorites,
+        deletingPokemon,
+        setDeletingPokemon,
+        modalOpen,
+        setModalOpen
     }
 
     return <AppContext value={ctx}>{children}</AppContext>
