@@ -1,3 +1,5 @@
+import btnStyle from './MyButton.module.css';
+
 export default function MyButton(props) {
     // const { text, onClick } = props;
 
@@ -6,7 +8,7 @@ export default function MyButton(props) {
     // Inheritance: kế thừa
     
     return (
-        <button style={{ background: 'red', color: 'white', borderRadius: '16px' }} {...props}>
+        <button className={btnStyle['pkm-btn']} {...props}>
             {props.children}
         </button>
     )
