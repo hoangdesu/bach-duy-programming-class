@@ -6,6 +6,7 @@ import PokemonCardComponent from '../components/PokemonCard';
 import '../pokemon.css';
 import { createPortal } from 'react-dom';
 import Modal from '../components/Modal';
+import DeleteButton from '../components/DeleteButton';
 
 const FavoritePokemons = () => {
   // the `use` hook is the new `useContext` hook in React 19
@@ -33,13 +34,20 @@ const FavoritePokemons = () => {
     <div>
       <h1>Favorites: {ctx.favorites.length}</h1>
 
+      <select>
+        <option>1</option>
+        <option>1</option>
+        <option>1</option>
+        <option>1</option>
+      </select>
+
       <div className='pokemon-grid'>
         {ctx.favorites.length > 0 &&
           ctx.favorites.map((pkm) => (
             <span>
-              <button onClick={() => ctx.setDeletingPokemon(pkm)}>
+              <DeleteButton onClick={() => ctx.setDeletingPokemon(pkm)}>
                 Delete {pkm.name}
-              </button>
+              </DeleteButton>
               <PokemonCardComponent
                 key={pkm.id}
                 pokemon={pkm}
@@ -84,7 +92,7 @@ const FavoritePokemons = () => {
         <Modal>
           <h1>Delete {ctx.deletingPokemon?.name || '<error>'}</h1>
           <div>
-            <button onClick={deleteHandler}>Delete</button>
+            <DeleteButton onClick={deleteHandler} darkmode>Delete</DeleteButton>
             <button onClick={() => ctx.setDeletingPokemon(null)}>Cancel</button>
           </div>
         </Modal>
