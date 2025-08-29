@@ -262,6 +262,17 @@ function App() {
       <BootstrapButton variant="outline-success">Bootstrap Button success</BootstrapButton>
 
       <MUIButton variant="contained">MUI Button</MUIButton>
+
+      <div className="btn btn-primary">Normal button</div>
+
+      <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+
+      <button className="border">Tailwind CSS</button>
+
+      <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">TEXT</button>
+
     </>
   )
 }

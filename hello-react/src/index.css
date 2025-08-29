@@ -67,7 +67,20 @@ button:focus-visible {
   }
 } */
 
+ @import "tailwindcss";
+
+
+/*@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities); */
+
+
 html, body {
   margin: 0;
   padding: 0;
+}
+
+button, input {
+  all: revert;
 }
