@@ -14,6 +14,7 @@ import NavigationBar from './NavigationBar.jsx';
 import PokemonDetail from './pages/PokemonDetail.jsx';
 import FavoritePokemons from './pages/FavoritePokemons.jsx';
 import ContextProvider from './store/ContextProvider.jsx';
+import PokedexNew from './pages/PokedexNew.jsx';
 
 // StrictMode:
 // - render every component twice -> for debugging
@@ -47,7 +48,10 @@ createRoot(document.getElementById('root')).render(
             <Route path='favorites' element={<FavoritePokemons />} />
             <Route path=':name' element={<PokemonDetail />} />
           </Route>
+
+          <Route path='/pokedex-new' element={<PokedexNew />} />
         </Routes>
+        
 
         {/* </BrowserRouter> */}
       </HashRouter>

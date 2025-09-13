@@ -16,6 +16,10 @@ const routes = [
         name: 'Pokedex App',
         path: '/pokedex'
     },
+    {
+        name: 'Pokedex App (NEW)',
+        path: '/pokedex-new'
+    },
     // {
     //     name: 'Favorites',
     //     path: '/pokedex/favorites'

@@ -7,6 +7,9 @@ import PKMCard from '../components/PokemonCard';
 import '../pokemon.css';
 import useWindowDimensions from '../hooks/useWindowDimensions';
 import MyButton from '../components/MyButton';
+import { Skeleton } from '@mui/material';
+import { Card } from 'react-bootstrap';
+import PokemonCardSkeleton from '../components/PokemonCardSkeleton';
 
 // const mockpkms = [
 //     {
@@ -18,7 +21,7 @@ import MyButton from '../components/MyButton';
 //     }
 // ]
 
-export default function Pokedex() {
+export default function PokedexNew() {
   const [pokemons, setPokemons] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [failed, setFailed] = useState(false);
@@ -34,7 +37,6 @@ export default function Pokedex() {
 
   console.log('inputSearchRef:', inputSearchRef);
 
-  
   // Custom hook
 
   // console.log('dimensions:', window.innerWidth, window.innerHeight);
@@ -42,7 +44,6 @@ export default function Pokedex() {
   const [windowWidth, windowHeight] = useWindowDimensions();
   // width -> dimensions[0]
   console.log('dimensions:', windowWidth, windowHeight);
-  
 
   // let isTrue = true;
 
@@ -115,7 +116,7 @@ export default function Pokedex() {
             const pokemonDetailData = await pokemonDetailResponse.json();
             // console.log('> result for:', pkm.name);
             // console.log('> pokemonDetailData:', pokemonDetailData);
-            
+
             const pokemonObject = {
               id: pokemonDetailData.id,
               name: pokemonDetailData.name,
@@ -239,7 +240,7 @@ export default function Pokedex() {
     // setTimeout(() => {
     //      if (inputSearchRef) {
     //          console.log('search:', inputSearchRef.current.value);
-        
+
     // }
     //     }, 500);
 
@@ -252,71 +253,74 @@ export default function Pokedex() {
         // console.log("search:", inputSearchRef.current.value);
         const searchValue = inputSearchRef.current.value;
         if (!searchValue) {
-            setSearchResults([]);
-            return
+          setSearchResults([]);
+          return;
         }
 
         try {
-            const res = await fetch('http://localhost:4321/pokemons')
-            const pokemonsDataList = await res.json();
+          const res = await fetch('http://localhost:4321/pokemons');
+          const pokemonsDataList = await res.json();
 
-            // console.log('searching:', pokemonsDataList);
+          // console.log('searching:', pokemonsDataList);
 
-            const matchedPokemons = pokemonsDataList.filter(pkm => pkm.name.toLowerCase().includes(searchValue))
+          const matchedPokemons = pokemonsDataList.filter((pkm) =>
+            pkm.name.toLowerCase().includes(searchValue)
+          );
 
-
-            console.log('matchedPokemons',matchedPokemons);
-            setSearchResults(matchedPokemons);
-            
-
+          console.log('matchedPokemons', matchedPokemons);
+          setSearchResults(matchedPokemons);
         } catch (err) {
-            console.log(err);
-            
+          console.log(err);
         }
       }
     }, 500);
-
-  }
+  };
 
   return (
     <>
-      {/* <div>
-        <h1>My Pokemons</h1>
-        <div>
-          {selectedPokemons.map((pkm) => (
-            <div>{pkm.name}</div>
-          ))}
-        </div>
-      </div> */}
-
       <div className='container'>
-        <h1 className='text-center'>Pokédex</h1>
+        <h1 className='text-center'>Pokédex NEW</h1>
+        <p className='text-center'>Using Suspense and use() hook</p>
 
         <div className='search-container'>
-            <input 
-                type="text" 
-                className='input-search' 
-                ref={inputSearchRef}
-                onChange={searchHandler}
-            />
+          <input
+            type='text'
+            className='input-search'
+            ref={inputSearchRef}
+            onChange={searchHandler}
+          />
 
-            {searchResults.length > 0 && (
-                <div className='search-result-box'>j
-                    {searchResults.map(pkm => (
-                        <div>
-                            {pkm.id}. {pkm.name}
-                        </div>
-                    ))}
+          {searchResults.length > 0 && (
+            <div className='search-result-box'>
+              j
+              {searchResults.map((pkm) => (
+                <div>
+                  {pkm.id}. {pkm.name}
                 </div>
-            )}
+              ))}
+            </div>
+          )}
         </div>
 
         {isLoading && <div>Loading...</div>}
 
         {failed && <div>Fetch failed {':('}</div>}
 
+        {/* test skeletons UI */}
+        <div className='pokemon-grid'>
+          {Array.from({ length: 16 }).map((_, i) => (
+            <PokemonCardSkeleton key={i} />
+          ))}
+        </div>
+
         {!isLoading && pokemons.length > 0 && (
-          <div className='pokemon-grid' style={{ gridTemplateColumns: windowWidth <= 768 ? 'repeat(2, 1fr)' : 'repeat(4, 1fr)' }}>
+          <div
+            className='pokemon-grid'
+            style={{
+              gridTemplateColumns:
+                windowWidth <= 768 ? 'repeat(2, 1fr)' : 'repeat(4, 1fr)',
+            }}
+          >
             {pokemons.map((pkm) => (
               <PKMCard
                 key={pkm.name}
@@ -324,19 +328,16 @@ export default function Pokedex() {
                 onPokemonClicked={onPokemonClickedHandler}
               />
             ))}
-
           </div>
         )}
 
         <div style={{ textAlign: 'center', margin: '100px' }}>
-          <MyButton 
-            onClick={() => setPage(page + 1)} 
+          <MyButton
+            onClick={() => setPage(page + 1)}
             // text="Show more TEXT"  -> no use
             // onMouseEnter={() => setPage(page + 1)}
           >
-            <div style={{ padding: '20px' }}>
-              Show More
-            </div>
+            <div style={{ padding: '20px' }}>Show More</div>
           </MyButton>
         </div>
       </div>
