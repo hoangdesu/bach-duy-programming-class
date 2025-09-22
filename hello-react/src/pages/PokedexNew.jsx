@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { Suspense, useEffect, useRef, useState } from 'react';
 
 // PokemonCard component uses default export
 // -> we can import under any name
@@ -10,6 +10,7 @@ import MyButton from '../components/MyButton';
 import { Skeleton } from '@mui/material';
 import { Card } from 'react-bootstrap';
 import PokemonCardSkeleton from '../components/PokemonCardSkeleton';
+import TEST1 from '../TEST1';
 
 // const mockpkms = [
 //     {
@@ -276,6 +277,16 @@ export default function PokedexNew() {
     }, 500);
   };
 
+  const empty16Cards = () => {
+    const grid = [];
+
+    for (let i = 0; i < 16; i++) {
+      grid.push(undefined);
+    }
+
+    return grid;
+  }
+
   return (
     <>
       <div className='container'>
@@ -307,11 +318,11 @@ export default function PokedexNew() {
         {failed && <div>Fetch failed {':('}</div>}
 
         {/* test skeletons UI */}
-        <div className='pokemon-grid'>
+        {/* <div className='pokemon-grid'>
           {Array.from({ length: 16 }).map((_, i) => (
             <PokemonCardSkeleton key={i} />
           ))}
-        </div>
+        </div> */}
 
         {!isLoading && pokemons.length > 0 && (
           <div
@@ -328,6 +339,25 @@ export default function PokedexNew() {
                 onPokemonClicked={onPokemonClickedHandler}
               />
             ))}
+
+            <Suspense
+              fallback={
+                <>
+                  {/* <div className='pokemon-grid'> */}
+                    {Array.from({ length: 16 }).map((_, i) => (
+                      <PokemonCardSkeleton key={i} />
+                    ))}
+
+                    {/* {empty16Cards().map(c => (
+                      <PokemonCardSkeleton key={c} />
+                    ))} */}
+                    
+                  {/* </div> */}
+                </>
+              }
+            >
+              <TEST1 pokemons={pokemons} setPokemons={setPokemons} />
+            </Suspense>
           </div>
         )}
 

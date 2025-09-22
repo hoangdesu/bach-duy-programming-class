@@ -4,9 +4,6 @@
 
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
-
-    /* max-width: 80%;
-    margin: auto; */
 }
 
 .pokemon-card {
