@@ -5,7 +5,9 @@ const port = 3456;
 
 // Route handlers / Endpoint handlers
 app.get('/', (req, res) => {
-  res.send('Hello World =D !!');
+    // console.log(req);
+    
+  res.send('<h1>Hello World =D !!</h1>');
 });
 
 
@@ -20,9 +22,9 @@ app.post('/hi', (req, res) => {
 });
 
 
+const menu = ['sua chua viet quat', 'sinh to sapoche', 'ca phe sua da'];
 
 app.get('/menu', (req, res) => {
-    const menu = ['sua chua viet quat', 'sinh to sapoche', 'ca phe sua da'];
     
     // menu.push('water');
 
