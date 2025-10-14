@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello <%= name %></h1>
+    <p>Today: <%= date %></p>
+
+    <p>Hobbies: <%= hobbiesList %></p>
+
+    <!-- <p>Main champs: <%= mainChamps %></p> -->
+
+    <table border="1">
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Lane</th>
+        </tr>
+
+        <% for (let i = 0; i < mainChamps.length; i++) {%>
+            <tr style="color: <%= mainChamps[i].isFavorite ? 'red' : 'black' %>"> 
+                <td><%= i+1 %></td>
+                <td><%= mainChamps[i].name %></td>
+                <td><%= mainChamps[i].lane %></td>
+            </tr>
+        <% } %>
+
+        <!-- {[]} -->
+
+        HW: use the include to design a component-like page
+
+    </table>
+</body>
+</html>
