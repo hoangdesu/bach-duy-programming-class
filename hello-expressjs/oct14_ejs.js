@@ -12,11 +12,13 @@ app.use(express.urlencoded()) // form
 app.set('view engine', 'ejs');
 app.set('views', './templates'); // 'views': folder that store the view files (HTMLs)
 
+console.log(__dirname);
+
+
 
 app.get('/', (req, res) => {
     // const file = path.join(__dirname, 'templates', 'index');
     // res.render('./templates/index');
-    
     
     res.render('index');
 });
@@ -47,7 +49,7 @@ app.get('/hello', (req, res) => {
         date: new Date(),
         hobbiesList: hobbies,
         mainChamps: mains
-    })
+    });
 });
 
 

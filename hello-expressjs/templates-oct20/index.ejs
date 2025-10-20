@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input type="text" placeholder="Enter something..." name="newTodo">
+        <button>Add</button>
+    </form>
+
+    <!-- <ul>
+        <% for (let i = 0; i < todos.length; i++) { %>
+            <li>
+                <span><%= todos[i] %></span>
+                <span>
+                    <form action="" style="display: inline;">
+                        <input type="checkbox" name="" checked>
+                    </form>
+                </span>
+            </li>
+        <% } %>
+    </ul> -->
+
+    <% if (todos.length > 0) { %>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Completed</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <% for (let i = 0; i < todos.length; i++) { %>
+                    <tr>
+                        <td><%= i+1 %></td>
+                        <td>
+                            <span style="text-decoration: <%= todos[i].completed ? 'line-through' : 'none' %>;">
+                                <%= todos[i].content %>
+                            </span>
+                        </td>
+                        <td>
+                            <input type="checkbox" class="todo-checkbox" id="<%= todos[i].id %>" <%= todos[i].completed ? 'checked' : '' %>>
+                        </td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    <% } else { %>
+        <p>Start adding something...</p>
+    <% } %>
+
+    <script>
+        const checkBoxes = document.querySelectorAll('.todo-checkbox');
+
+        checkBoxes.forEach(checkBox => {
+            checkBox.addEventListener('change', () => {
+                console.log('checked', checkBox, checkBox.id);
+
+                fetch(`/check/${checkBox.id}`, {
+                    redirect: 'follow'
+                }).then(() => {
+                    window.location.reload();
+                });
+            })
+        })
+    </script>
+
+</body>
+</html>
