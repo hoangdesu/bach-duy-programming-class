@@ -21,10 +21,9 @@ app.get('/', function (req, res) {
 // Server -> Client
 app.get('/cookies', (req, res) => {
     res.cookie('food', 'udon', { signed: true });
-
     res.cookie('username', 'duy');
     
-    res.send(req.cookies);
+    res.send(req.signedCookies);
 });
 
 app.get('/hehe', (req, res) => {

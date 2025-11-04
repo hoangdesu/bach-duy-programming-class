@@ -9,13 +9,22 @@ app.use(
     secret: 'hehehahahoho', // A strong, random secret for signing the session ID
     resave: false, // Don't save session if unmodified
     saveUninitialized: false, // Don't create session until something is stored
-    cookie: { secure: true }, // Set to true in production with HTTPS
+    cookie: { secure: false }, // Set to true in production with HTTPS
   })
 );
 
 const ss = {
     views: 0
 };
+
+// const ss_user = {
+//   'sid1': {
+//     views: 0
+//   },
+//   'sid2': {
+//     views: 0
+//   },
+// }
 
 app.use((req, res, next) => {
     console.log(`>> current views ${req.session.views}`);
@@ -29,6 +38,7 @@ app.get('/', (req, res) => {
     // ss.views++;
     res.send(`You have visited this page ${req.session.views} times.`);
   } else {
+    // let session.views = 1
     req.session.views = 1;
     res.send('Welcome! This is your first visit.');
   }
