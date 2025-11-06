@@ -31,12 +31,42 @@ const app = express();
 // });
 
 const fs = require('fs');
+const path = require('path');
 
-const file = fs.readFileSync('agents.json');
-const agents = JSON.parse(file)['data'];
+const agentsDataPath = path.join(__dirname, 'data', 'agents');
+console.log('> agentsDataPath', agentsDataPath);
+
+
+const languageOptions = ['en', 'vi', 'jp'];
+let lang = languageOptions[0];
+
+const agentFiles = languageOptions.map(lang => {
+    const agentFilePath = path.join(agentsDataPath, lang)  + '.json';
+    console.log('> agentFile:', agentFilePath);
+    
+    return JSON.parse(fs.readFileSync(agentFilePath))['data'];
+});
+
+// const agents = JSON.parse(file)['data'];
+
+// console.log('> agentFiles', agentFiles);
+
+
+
+// Middlewares
+app.use((req, res, next) => {
+    const { lang } = req.query;
+    if (!lang) req.selectedLang = 'en'
+    else req.selectedLang = lang;
+
+    next();
+});
 
 
 app.get('/api/v1/agents', (req, res) => {
+
+    console.log('selected lang: ', req.selectedLang);
+    
     res.json(agents);
 });
 
@@ -44,9 +74,9 @@ app.get('/api/v1/agents', (req, res) => {
 app.get('/api/v1/agents/:uuid', (req, res) => {
     const { uuid } = req.params;
 
-    for (let i = 0; i < agents.length; i++) {
-        if (agents[i].uuid === uuid) {
-            return res.json(agents[i]);
+    for (const agent of agents) {
+        if (agent.uuid === uuid) {
+            return res.json(agent);
         }
     }
 
