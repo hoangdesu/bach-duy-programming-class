@@ -6,6 +6,12 @@ const PORT = 4567;
 
 const app = express();
 
+// Routers
+const agentsRouter = require('./routes/agents');
+const weaponsRouter = require('./routes/weapons');
+const mapsRouter = require('./routes/maps');
+
+
 // Middlewares
 // app.use(
 //   session({
@@ -63,26 +69,37 @@ app.use((req, res, next) => {
 });
 
 
-app.get('/api/v1/agents', (req, res) => {
+// app.get('/api/v1/agents', (req, res) => {
 
-    console.log('selected lang: ', req.selectedLang);
+//     console.log('selected lang: ', req.selectedLang);
     
-    res.json(agents);
-});
+//     res.json(agents);
+// });
 
 
-app.get('/api/v1/agents/:uuid', (req, res) => {
-    const { uuid } = req.params;
+// app.get('/api/v1/agents/:uuid', (req, res) => {
+//     const { uuid } = req.params;
 
-    for (const agent of agents) {
-        if (agent.uuid === uuid) {
-            return res.json(agent);
-        }
-    }
+//     for (const agent of agents) {
+//         if (agent.uuid === uuid) {
+//             return res.json(agent);
+//         }
+//     }
 
-    return res.status(404).json('Invalid UUID');
-});
+//     return res.status(404).json('Invalid UUID');
+// });
 
+
+// Using Routers
+app.use('/', agentsRouter);
+app.use('/api/v1/weapons/', weaponsRouter);
+app.use('/api/v1/maps/', mapsRouter);
+
+
+// Combined route handlers
+// app.route('/')
+//     .get(callback handler)
+//     .post(callback handler)
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
