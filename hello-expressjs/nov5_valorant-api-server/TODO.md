@@ -3,3 +3,4 @@
 [x] Filter based on role
 [x] Agent lookup by uuid or by name
 [x] protect routes with API KEY
+[ ] Script to download and parse data
