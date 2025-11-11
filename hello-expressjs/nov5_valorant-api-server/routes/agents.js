@@ -8,6 +8,9 @@ router.get('/api/v1/agents', (req, res) => {
     
     // res.json(agents);
 
+    console.log('> req.lang:', req.lang);
+    
+
     res.send('agents');
 });
 

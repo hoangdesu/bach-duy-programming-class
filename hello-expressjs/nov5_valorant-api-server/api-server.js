@@ -62,8 +62,19 @@ const agentFiles = languageOptions.map(lang => {
 // Middlewares
 app.use((req, res, next) => {
     const { lang } = req.query;
-    if (!lang) req.selectedLang = 'en'
-    else req.selectedLang = lang;
+    // if (!lang) req.selectedLang = 'en'
+    // else req.selectedLang = lang;
+
+    // other shorter syntaxes for if-else
+      
+    // req.lang = !lang ? 'en' : lang;
+    // req.lang = lang || 'en';
+    req.lang = lang ?? 'en';
+
+    
+    // Nullish Coalescing Operator
+    // let a = 0 ?? 1; // a = 0 => null & undefined
+    // let b = 0 || 1; // b = 1 => falsy values
 
     next();
 });
