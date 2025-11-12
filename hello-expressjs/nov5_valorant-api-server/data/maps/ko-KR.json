@@ -1,7 +1,7 @@
 [
     {
         "uuid": "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319",
-        "displayName": "أسينت",
+        "displayName": "어센트",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "45°26'BF'N,12°20'Q'E",
@@ -19,7 +19,7 @@
         "yScalarToAdd": 0.573242,
         "callouts": [
             {
-                "regionName": "شجرة",
+                "regionName": "나무",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -31,7 +31,7 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "로비",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -43,7 +43,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -55,7 +55,7 @@
                 "rotation": null
             },
             {
-                "regionName": "نافذة",
+                "regionName": "창문",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -71,7 +71,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -87,9 +87,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 60,
                     "y": 50,
@@ -107,7 +107,7 @@
                 }
             },
             {
-                "regionName": "بهو",
+                "regionName": "로비",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -119,7 +119,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -131,7 +131,7 @@
                 "rotation": null
             },
             {
-                "regionName": "بيت القارب",
+                "regionName": "보트 창고",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -143,9 +143,9 @@
                 "rotation": null
             },
             {
-                "regionName": "قاع",
+                "regionName": "하단부",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 1122.2262,
                     "y": -5951.704,
@@ -159,7 +159,7 @@
                 }
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -171,9 +171,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منصة",
+                "regionName": "통로",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 2315.7944,
                     "y": -4127.2554,
@@ -187,9 +187,9 @@
                 }
             },
             {
-                "regionName": "حجيرة",
+                "regionName": "은신처",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 3387.3167,
                     "y": -5129.764,
@@ -199,9 +199,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 1995.2354,
                     "y": -9744.923,
@@ -219,7 +219,7 @@
                 }
             },
             {
-                "regionName": "حديقة",
+                "regionName": "정원",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -231,9 +231,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سوق",
+                "regionName": "시장",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 1089.1044,
                     "y": -7363.1914,
@@ -243,9 +243,9 @@
                 "rotation": null
             },
             {
-                "regionName": "فناء",
+                "regionName": "안뜰",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 1222.7029,
                     "y": -4586.6,
@@ -255,9 +255,9 @@
                 "rotation": null
             },
             {
-                "regionName": "وصلة",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": -632.0929,
                     "y": -4280.2573,
@@ -267,9 +267,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بيتزا",
+                "regionName": "피자가게",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 1801.5667,
                     "y": -7262.1704,
@@ -279,7 +279,7 @@
                 "rotation": null
             },
             {
-                "regionName": "عوارض خشبية",
+                "regionName": "서까래",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -291,9 +291,9 @@
                 "rotation": null
             },
             {
-                "regionName": "قمة",
+                "regionName": "상단부",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 2753.9297,
                     "y": -2129.6155,
@@ -303,7 +303,7 @@
                 "rotation": null
             },
             {
-                "regionName": "شراب",
+                "regionName": "와인",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -322,7 +322,7 @@
     },
     {
         "uuid": "d960549e-485c-e861-8d71-aa9d1aed12a2",
-        "displayName": "سبليت",
+        "displayName": "스플릿",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "35°41'CD'N,139°41'WX'E",
@@ -340,7 +340,7 @@
         "yScalarToAdd": 0.697578,
         "callouts": [
             {
-                "regionName": "خلفي",
+                "regionName": "후방",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -352,7 +352,7 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "로비",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -364,7 +364,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -376,7 +376,7 @@
                 "rotation": null
             },
             {
-                "regionName": "عوارض خشبية",
+                "regionName": "서까래",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -388,7 +388,7 @@
                 "rotation": null
             },
             {
-                "regionName": "منحدرات",
+                "regionName": "경사로",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -400,7 +400,7 @@
                 "rotation": null
             },
             {
-                "regionName": "شاشات",
+                "regionName": "스크린룸",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -412,7 +412,7 @@
                 "rotation": null
             },
             {
-                "regionName": "مجاري",
+                "regionName": "하수도",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -424,7 +424,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -436,7 +436,7 @@
                 "rotation": null
             },
             {
-                "regionName": "برج",
+                "regionName": "탑",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -448,9 +448,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 1901.97,
                     "y": 59.588867,
@@ -460,7 +460,7 @@
                 "rotation": null
             },
             {
-                "regionName": "زقاق",
+                "regionName": "골목",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -472,7 +472,7 @@
                 "rotation": null
             },
             {
-                "regionName": "خلفي",
+                "regionName": "후방",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -484,7 +484,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -496,7 +496,7 @@
                 "rotation": null
             },
             {
-                "regionName": "كراج",
+                "regionName": "차고",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -508,7 +508,7 @@
                 "rotation": null
             },
             {
-                "regionName": "عوارض خشبية",
+                "regionName": "서까래",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -524,7 +524,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -536,7 +536,7 @@
                 "rotation": null
             },
             {
-                "regionName": "سلالم",
+                "regionName": "계단",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -548,7 +548,7 @@
                 "rotation": null
             },
             {
-                "regionName": "برج",
+                "regionName": "탑",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -560,7 +560,7 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "로비",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -572,9 +572,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 2142.3635,
                     "y": -8964.969,
@@ -584,9 +584,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سفلي",
+                "regionName": "하단부",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 1922.6552,
                     "y": -2899.4626,
@@ -596,9 +596,9 @@
                 "rotation": null
             },
             {
-                "regionName": "البريد",
+                "regionName": "우편실",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 1155.3333,
                     "y": -4808.6436,
@@ -608,9 +608,9 @@
                 "rotation": null
             },
             {
-                "regionName": "علوي",
+                "regionName": "상단부",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 2021.9575,
                     "y": -4596.936,
@@ -620,9 +620,9 @@
                 "rotation": null
             },
             {
-                "regionName": "فتحة تهوية",
+                "regionName": "환기구",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 3155.1648,
                     "y": -5338.5215,
@@ -635,7 +635,7 @@
     },
     {
         "uuid": "b529448b-4d60-346e-e89e-00a4c527a405",
-        "displayName": "فراكتشر",
+        "displayName": "프랙처",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "35°48'BI\"N 106°08'YQ\"W",
@@ -653,9 +653,9 @@
         "yScalarToAdd": 1.155886,
         "callouts": [
             {
-                "regionName": "جسر",
+                "regionName": "다리",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 13204,
                     "y": -756,
@@ -665,7 +665,7 @@
                 "rotation": null
             },
             {
-                "regionName": "مقعد",
+                "regionName": "벤치",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -677,7 +677,7 @@
                 "rotation": null
             },
             {
-                "regionName": "قناطر",
+                "regionName": "오락실",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -689,7 +689,7 @@
                 "rotation": null
             },
             {
-                "regionName": "برج",
+                "regionName": "탑",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -701,7 +701,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -713,7 +713,7 @@
                 "rotation": null
             },
             {
-                "regionName": "مولّد",
+                "regionName": "발전기",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -725,7 +725,7 @@
                 "rotation": null
             },
             {
-                "regionName": "وصلة",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -737,7 +737,7 @@
                 "rotation": null
             },
             {
-                "regionName": "مطعم",
+                "regionName": "식당",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -749,7 +749,7 @@
                 "rotation": null
             },
             {
-                "regionName": "وصلة",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -761,9 +761,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 9156,
                     "y": -677,
@@ -773,7 +773,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -785,7 +785,7 @@
                 "rotation": null
             },
             {
-                "regionName": "شجرة",
+                "regionName": "나무",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -797,7 +797,7 @@
                 "rotation": null
             },
             {
-                "regionName": "نفق",
+                "regionName": "터널",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -809,7 +809,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رواق",
+                "regionName": "복도",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -821,7 +821,7 @@
                 "rotation": null
             },
             {
-                "regionName": "باب",
+                "regionName": "문",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -833,7 +833,7 @@
                 "rotation": null
             },
             {
-                "regionName": "حبل",
+                "regionName": "밧줄",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -845,7 +845,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -857,7 +857,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -869,7 +869,7 @@
                 "rotation": null
             },
             {
-                "regionName": "إمدادات",
+                "regionName": "경사",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -881,7 +881,7 @@
                 "rotation": null
             },
             {
-                "regionName": "صحن",
+                "regionName": "안테나",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -893,7 +893,7 @@
                 "rotation": null
             },
             {
-                "regionName": "بوابة",
+                "regionName": "관문",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -905,9 +905,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 4345.554,
                     "y": -948.4505,
@@ -920,7 +920,7 @@
     },
     {
         "uuid": "2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba",
-        "displayName": "بايند",
+        "displayName": "바인드",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "34°2'A'N,6°51'Z'W",
@@ -938,7 +938,7 @@
         "yScalarToAdd": 0.967566,
         "callouts": [
             {
-                "regionName": "مخرج",
+                "regionName": "출구",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -950,7 +950,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -966,7 +966,7 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "로비",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -978,7 +978,7 @@
                 "rotation": null
             },
             {
-                "regionName": "الممر القصير",
+                "regionName": "짧은 길",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -990,7 +990,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -1002,7 +1002,7 @@
                 "rotation": null
             },
             {
-                "regionName": "ناقل سريع",
+                "regionName": "순간이동기",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -1014,9 +1014,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 161.64832,
                     "y": 77.51108,
@@ -1026,7 +1026,7 @@
                 "rotation": null
             },
             {
-                "regionName": "مخرج",
+                "regionName": "출구",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1038,7 +1038,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رواق",
+                "regionName": "복도",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1050,7 +1050,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1062,7 +1062,7 @@
                 "rotation": null
             },
             {
-                "regionName": "نافورة",
+                "regionName": "분수",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1074,7 +1074,7 @@
                 "rotation": null
             },
             {
-                "regionName": "الممر الطويل",
+                "regionName": "긴 길",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1086,7 +1086,7 @@
                 "rotation": null
             },
             {
-                "regionName": "الممر القصير",
+                "regionName": "짧은 길",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1098,7 +1098,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1110,7 +1110,7 @@
                 "rotation": null
             },
             {
-                "regionName": "ناقل سريع",
+                "regionName": "순간이동기",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1122,7 +1122,7 @@
                 "rotation": null
             },
             {
-                "regionName": "نافذة",
+                "regionName": "창문",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1134,7 +1134,7 @@
                 "rotation": null
             },
             {
-                "regionName": "حمام",
+                "regionName": "목욕탕",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -1146,9 +1146,9 @@
                 "rotation": null
             },
             {
-                "regionName": "قبو",
+                "regionName": "동굴",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 3920.3887,
                     "y": 256.94193,
@@ -1162,7 +1162,7 @@
                 }
             },
             {
-                "regionName": "قمرة",
+                "regionName": "은신처",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -1174,9 +1174,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 14641.918,
                     "y": -1017.6743,
@@ -1186,7 +1186,7 @@
                 "rotation": null
             },
             {
-                "regionName": "منعطف",
+                "regionName": "ㄱ자 골목",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1198,7 +1198,7 @@
                 "rotation": null
             },
             {
-                "regionName": "حديقة",
+                "regionName": "정원",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1210,7 +1210,7 @@
                 "rotation": null
             },
             {
-                "regionName": "مصابيح",
+                "regionName": "램프",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -1222,7 +1222,7 @@
                 "rotation": null
             },
             {
-                "regionName": "برج",
+                "regionName": "탑",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -1237,7 +1237,7 @@
     },
     {
         "uuid": "a9009649-421f-d5d5-f80c-0cbe02c125bb",
-        "displayName": "مناوشة A",
+        "displayName": "난투 A",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -1257,7 +1257,7 @@
     },
     {
         "uuid": "a38a3f9a-4042-844c-8970-a3ac2f7ce93d",
-        "displayName": "مناوشة B",
+        "displayName": "난투 B",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -1277,7 +1277,7 @@
     },
     {
         "uuid": "a264de0f-4a04-9c78-c97a-a6b192ce6e86",
-        "displayName": "مناوشة C",
+        "displayName": "난투 C",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -1297,7 +1297,7 @@
     },
     {
         "uuid": "2fb9a4fd-47b8-4e7d-a969-74b4046ebd53",
-        "displayName": "بريز",
+        "displayName": "브리즈",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "26°11'AG\"N 71°10'WY\"W",
@@ -1315,7 +1315,7 @@
         "yScalarToAdd": 0.833078,
         "callouts": [
             {
-                "regionName": "الرواق",
+                "regionName": "복도",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -1327,7 +1327,7 @@
                 "rotation": null
             },
             {
-                "regionName": "الجسر",
+                "regionName": "다리",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -1339,9 +1339,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 8900,
                     "y": 3525,
@@ -1351,9 +1351,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الأقواس",
+                "regionName": "아치",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 9400,
                     "y": -1300,
@@ -1363,9 +1363,9 @@
                 "rotation": null
             },
             {
-                "regionName": "أبواب الخشب",
+                "regionName": "나무 문",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 4825,
                     "y": 2550,
@@ -1375,9 +1375,9 @@
                 "rotation": null
             },
             {
-                "regionName": "العمود",
+                "regionName": "기둥",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 4175,
                     "y": 475,
@@ -1387,9 +1387,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الأعلى",
+                "regionName": "상단부",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 6175,
                     "y": 525,
@@ -1399,9 +1399,9 @@
                 "rotation": null
             },
             {
-                "regionName": "العش",
+                "regionName": "망대",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 8650,
                     "y": 275,
@@ -1411,7 +1411,7 @@
                 "rotation": null
             },
             {
-                "regionName": "النافذة",
+                "regionName": "창문",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1423,7 +1423,7 @@
                 "rotation": null
             },
             {
-                "regionName": "الرئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1435,9 +1435,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الأفعى",
+                "regionName": "굽은 길",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 550,
                     "y": -2450,
@@ -1447,7 +1447,7 @@
                 "rotation": null
             },
             {
-                "regionName": "المرفق",
+                "regionName": "ㄱ자 골목",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1459,7 +1459,7 @@
                 "rotation": null
             },
             {
-                "regionName": "الموقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1471,7 +1471,7 @@
                 "rotation": null
             },
             {
-                "regionName": "النفق",
+                "regionName": "터널",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1483,7 +1483,7 @@
                 "rotation": null
             },
             {
-                "regionName": "المحوّل",
+                "regionName": "스위치",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -1495,9 +1495,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منزلق",
+                "regionName": "연결 통로",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 3875,
                     "y": 1800,
@@ -1507,7 +1507,7 @@
                 "rotation": null
             },
             {
-                "regionName": "الخلف",
+                "regionName": "후방",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1519,7 +1519,7 @@
                 "rotation": null
             },
             {
-                "regionName": "الجدار",
+                "regionName": "벽",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -1531,7 +1531,7 @@
                 "rotation": null
             },
             {
-                "regionName": "الحبل",
+                "regionName": "밧줄",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -1543,9 +1543,9 @@
                 "rotation": null
             },
             {
-                "regionName": "المدفع",
+                "regionName": "대포",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 2900,
                     "y": -1850,
@@ -1555,7 +1555,7 @@
                 "rotation": null
             },
             {
-                "regionName": "أبواب المعدن",
+                "regionName": "금속 문",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -1567,9 +1567,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الأسفل",
+                "regionName": "하단부",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 1575,
                     "y": 475,
@@ -1579,7 +1579,7 @@
                 "rotation": null
             },
             {
-                "regionName": "البهو",
+                "regionName": "로비",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -1591,7 +1591,7 @@
                 "rotation": null
             },
             {
-                "regionName": "المتجر",
+                "regionName": "상점",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -1603,7 +1603,7 @@
                 "rotation": null
             },
             {
-                "regionName": "الموقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -1615,7 +1615,7 @@
                 "rotation": null
             },
             {
-                "regionName": "الأهرامات",
+                "regionName": "피라미드",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -1627,9 +1627,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": -575,
                     "y": -450,
@@ -1642,7 +1642,7 @@
     },
     {
         "uuid": "690b3ed2-4dff-945b-8223-6da834e30d24",
-        "displayName": "ديستريكت",
+        "displayName": "디스트릭트",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -1660,9 +1660,9 @@
         "yScalarToAdd": 0,
         "callouts": [
             {
-                "regionName": "صندوق",
+                "regionName": "상자",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": -2225,
                     "y": 1700,
@@ -1672,9 +1672,9 @@
                 "rotation": null
             },
             {
-                "regionName": "عش",
+                "regionName": "망대",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": -2200,
                     "y": 800,
@@ -1684,9 +1684,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": -1200,
                     "y": 3000,
@@ -1696,9 +1696,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سلم",
+                "regionName": "계단",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": -200,
                     "y": 1200,
@@ -1708,9 +1708,9 @@
                 "rotation": null
             },
             {
-                "regionName": "جدار",
+                "regionName": "벽",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 700,
                     "y": 900,
@@ -1720,9 +1720,9 @@
                 "rotation": null
             },
             {
-                "regionName": "صندوق",
+                "regionName": "상자",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": -2225,
                     "y": -2900,
@@ -1732,9 +1732,9 @@
                 "rotation": null
             },
             {
-                "regionName": "عش",
+                "regionName": "망대",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": -2200,
                     "y": -1700,
@@ -1744,9 +1744,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": -1200,
                     "y": -3000,
@@ -1756,9 +1756,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سلم",
+                "regionName": "계단",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": -200,
                     "y": -1200,
@@ -1768,9 +1768,9 @@
                 "rotation": null
             },
             {
-                "regionName": "جدار",
+                "regionName": "벽",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 700,
                     "y": -900,
@@ -1780,9 +1780,9 @@
                 "rotation": null
             },
             {
-                "regionName": "مولّد",
+                "regionName": "발전기",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": -1400,
                     "y": -1000,
@@ -1792,9 +1792,9 @@
                 "rotation": null
             },
             {
-                "regionName": "حدوة حصان",
+                "regionName": "U자",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": -3200,
                     "y": -900,
@@ -1804,9 +1804,9 @@
                 "rotation": null
             },
             {
-                "regionName": "مجاري",
+                "regionName": "하수도",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 700,
                     "y": -900,
@@ -1819,7 +1819,7 @@
     },
     {
         "uuid": "12452a9d-48c3-0b02-e7eb-0381c3520404",
-        "displayName": "القصبة",
+        "displayName": "카즈바",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -1837,9 +1837,9 @@
         "yScalarToAdd": 0,
         "callouts": [
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1853,9 +1853,9 @@
                 }
             },
             {
-                "regionName": "صندوق بزاوية",
+                "regionName": "사선 상자",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1869,9 +1869,9 @@
                 }
             },
             {
-                "regionName": "رابط",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1881,9 +1881,9 @@
                 "rotation": null
             },
             {
-                "regionName": "حفرة",
+                "regionName": "구덩이",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1897,9 +1897,9 @@
                 }
             },
             {
-                "regionName": "برج",
+                "regionName": "탑",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1913,9 +1913,9 @@
                 }
             },
             {
-                "regionName": "منحدر",
+                "regionName": "경사로",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1925,9 +1925,9 @@
                 "rotation": null
             },
             {
-                "regionName": "صندوق مسطح",
+                "regionName": "평행 상자",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1941,9 +1941,9 @@
                 }
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1957,9 +1957,9 @@
                 }
             },
             {
-                "regionName": "عش",
+                "regionName": "망대",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1973,9 +1973,9 @@
                 }
             },
             {
-                "regionName": "نفق",
+                "regionName": "터널",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1989,9 +1989,9 @@
                 }
             },
             {
-                "regionName": "نافذة",
+                "regionName": "창문",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2001,9 +2001,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2017,9 +2017,9 @@
                 }
             },
             {
-                "regionName": "صندوق بزاوية",
+                "regionName": "사선 상자",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2033,9 +2033,9 @@
                 }
             },
             {
-                "regionName": "رابط",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2049,9 +2049,9 @@
                 }
             },
             {
-                "regionName": "حفرة",
+                "regionName": "구덩이",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2065,9 +2065,9 @@
                 }
             },
             {
-                "regionName": "برج",
+                "regionName": "탑",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2081,9 +2081,9 @@
                 }
             },
             {
-                "regionName": "منحدر",
+                "regionName": "경사로",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2097,9 +2097,9 @@
                 }
             },
             {
-                "regionName": "صندوق مسطح",
+                "regionName": "평행 상자",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2113,9 +2113,9 @@
                 }
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2129,9 +2129,9 @@
                 }
             },
             {
-                "regionName": "عش",
+                "regionName": "망대",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2145,9 +2145,9 @@
                 }
             },
             {
-                "regionName": "نفق",
+                "regionName": "터널",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2161,9 +2161,9 @@
                 }
             },
             {
-                "regionName": "نافذة",
+                "regionName": "창문",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2180,7 +2180,7 @@
     },
     {
         "uuid": "2c09d728-42d5-30d8-43dc-96a05cc7ee9d",
-        "displayName": "دريفت",
+        "displayName": "드리프트",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -2198,9 +2198,9 @@
         "yScalarToAdd": 0,
         "callouts": [
             {
-                "regionName": "زقاق",
+                "regionName": "골목",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 3200,
                     "y": 2200,
@@ -2214,9 +2214,9 @@
                 }
             },
             {
-                "regionName": "عش",
+                "regionName": "망대",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 2000,
                     "y": -3400,
@@ -2230,9 +2230,9 @@
                 }
             },
             {
-                "regionName": "منطقة تولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 1200,
                     "y": -2200,
@@ -2246,9 +2246,9 @@
                 }
             },
             {
-                "regionName": "برج",
+                "regionName": "탑",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": -400,
                     "y": -1800,
@@ -2258,9 +2258,9 @@
                 "rotation": null
             },
             {
-                "regionName": "ساحة",
+                "regionName": "안뜰",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": -1600,
                     "y": -3400,
@@ -2274,9 +2274,9 @@
                 }
             },
             {
-                "regionName": "زقاق",
+                "regionName": "골목",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": -3200,
                     "y": -2200,
@@ -2290,9 +2290,9 @@
                 }
             },
             {
-                "regionName": "عش",
+                "regionName": "망대",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": -2000,
                     "y": 3400,
@@ -2306,9 +2306,9 @@
                 }
             },
             {
-                "regionName": "منطقة تولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": -1200,
                     "y": 2200,
@@ -2322,9 +2322,9 @@
                 }
             },
             {
-                "regionName": "برج",
+                "regionName": "탑",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 400,
                     "y": 1800,
@@ -2338,9 +2338,9 @@
                 }
             },
             {
-                "regionName": "ساحة",
+                "regionName": "안뜰",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 1600,
                     "y": 3400,
@@ -2354,9 +2354,9 @@
                 }
             },
             {
-                "regionName": "مياه",
+                "regionName": "배수로",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": -800,
                     "y": -600,
@@ -2369,7 +2369,7 @@
     },
     {
         "uuid": "d6336a5a-428f-c591-98db-c8a291159134",
-        "displayName": "غليتش",
+        "displayName": "글리치",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -2389,7 +2389,7 @@
     },
     {
         "uuid": "de28aa9b-4cbe-1003-320e-6cb3ec309557",
-        "displayName": "بياتزا",
+        "displayName": "피아자",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -2409,7 +2409,7 @@
     },
     {
         "uuid": "224b0a95-48b9-f703-1bd8-67aca101a61f",
-        "displayName": "آبيس",
+        "displayName": "어비스",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "70° 50' AJ\" N, 9° 00' VX\" W",
@@ -2427,7 +2427,7 @@
         "yScalarToAdd": 0.5,
         "callouts": [
             {
-                "regionName": "جسر",
+                "regionName": "다리",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2439,7 +2439,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2451,7 +2451,7 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "로비",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2463,7 +2463,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2475,7 +2475,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2487,9 +2487,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة تولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 950,
                     "y": 4950,
@@ -2499,7 +2499,7 @@
                 "rotation": null
             },
             {
-                "regionName": "برج",
+                "regionName": "탑",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2511,9 +2511,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منعطف",
+                "regionName": "굽은 길",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": -1700,
                     "y": 1075,
@@ -2523,7 +2523,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -2535,7 +2535,7 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "로비",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -2547,7 +2547,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -2559,7 +2559,7 @@
                 "rotation": null
             },
             {
-                "regionName": "عش",
+                "regionName": "망대",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -2571,9 +2571,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سفلي",
+                "regionName": "하단부",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": -400,
                     "y": 575,
@@ -2583,7 +2583,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -2595,9 +2595,9 @@
                 "rotation": null
             },
             {
-                "regionName": "ممر",
+                "regionName": "통로",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 600,
                     "y": 525,
@@ -2607,7 +2607,7 @@
                 "rotation": null
             },
             {
-                "regionName": "خطر",
+                "regionName": "위험 구역",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -2619,9 +2619,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة تولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 950,
                     "y": -5275,
@@ -2631,9 +2631,9 @@
                 "rotation": null
             },
             {
-                "regionName": "مكتبة",
+                "regionName": "도서관",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": -325,
                     "y": -600,
@@ -2643,7 +2643,7 @@
                 "rotation": null
             },
             {
-                "regionName": "سر",
+                "regionName": "은신처",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2655,7 +2655,7 @@
                 "rotation": null
             },
             {
-                "regionName": "أمن",
+                "regionName": "보안실",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2667,9 +2667,9 @@
                 "rotation": null
             },
             {
-                "regionName": "علوي",
+                "regionName": "상단부",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 775,
                     "y": -2375,
@@ -2679,7 +2679,7 @@
                 "rotation": null
             },
             {
-                "regionName": "برج",
+                "regionName": "탑",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -2691,7 +2691,7 @@
                 "rotation": null
             },
             {
-                "regionName": "تهوية",
+                "regionName": "환기구",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2706,7 +2706,7 @@
     },
     {
         "uuid": "2fe4ed3a-450a-948b-6d6b-e89a78e680a9",
-        "displayName": "لوتس",
+        "displayName": "로터스",
         "narrativeDescription": null,
         "tacticalDescription": "A/B/C Sites",
         "coordinates": "14°07'AD.4\"N8 74°53'XY\"E8",
@@ -2724,7 +2724,7 @@
         "yScalarToAdd": 0.917752,
         "callouts": [
             {
-                "regionName": "علوي",
+                "regionName": "상단부",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2736,7 +2736,7 @@
                 "rotation": null
             },
             {
-                "regionName": "منحدر",
+                "regionName": "경사",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2748,7 +2748,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2760,7 +2760,7 @@
                 "rotation": null
             },
             {
-                "regionName": "كوخ",
+                "regionName": "오두막",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2772,7 +2772,7 @@
                 "rotation": null
             },
             {
-                "regionName": "شجرة",
+                "regionName": "나무",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2784,7 +2784,7 @@
                 "rotation": null
             },
             {
-                "regionName": "باب",
+                "regionName": "문",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2796,7 +2796,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2808,7 +2808,7 @@
                 "rotation": null
             },
             {
-                "regionName": "أنقاض",
+                "regionName": "잔해",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2820,7 +2820,7 @@
                 "rotation": null
             },
             {
-                "regionName": "جذر",
+                "regionName": "뿌리",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2832,7 +2832,7 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "로비",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2844,7 +2844,7 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "로비",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -2856,7 +2856,7 @@
                 "rotation": null
             },
             {
-                "regionName": "أعمدة",
+                "regionName": "기둥",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -2868,7 +2868,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -2880,7 +2880,7 @@
                 "rotation": null
             },
             {
-                "regionName": "باب",
+                "regionName": "문",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -2892,7 +2892,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -2904,7 +2904,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2916,7 +2916,7 @@
                 "rotation": null
             },
             {
-                "regionName": "علوي",
+                "regionName": "상단",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -2928,7 +2928,7 @@
                 "rotation": null
             },
             {
-                "regionName": "شلال",
+                "regionName": "폭포",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -2940,7 +2940,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -2952,7 +2952,7 @@
                 "rotation": null
             },
             {
-                "regionName": "سلم",
+                "regionName": "계단",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -2964,7 +2964,7 @@
                 "rotation": null
             },
             {
-                "regionName": "تلة",
+                "regionName": "언덕",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -2976,7 +2976,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -2988,7 +2988,7 @@
                 "rotation": null
             },
             {
-                "regionName": "منعطف",
+                "regionName": "굽은 길",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -3000,7 +3000,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -3012,7 +3012,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رواق",
+                "regionName": "복도",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -3024,7 +3024,7 @@
                 "rotation": null
             },
             {
-                "regionName": "حصى",
+                "regionName": "자갈",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -3036,9 +3036,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 9686.767,
                     "y": 1697.8223,
@@ -3048,9 +3048,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 1401.2915,
                     "y": 777.29834,
@@ -3063,7 +3063,7 @@
     },
     {
         "uuid": "92584fbe-486a-b1b2-9faa-39b0f486b498",
-        "displayName": "سَنسِت",
+        "displayName": "선셋",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "34° 2′ C″ N, 118° 12′ YT″ W",
@@ -3081,7 +3081,7 @@
         "yScalarToAdd": 0.515625,
         "callouts": [
             {
-                "regionName": "بوبا",
+                "regionName": "보바",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3093,9 +3093,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بلاط",
+                "regionName": "타일",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": -1800,
                     "y": 400,
@@ -3105,7 +3105,7 @@
                 "rotation": null
             },
             {
-                "regionName": "سوق",
+                "regionName": "시장",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3117,7 +3117,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3129,7 +3129,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3141,7 +3141,7 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "로비",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3153,9 +3153,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سفلي",
+                "regionName": "하단부",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": -1800,
                     "y": -2025,
@@ -3165,9 +3165,9 @@
                 "rotation": null
             },
             {
-                "regionName": "ساحة",
+                "regionName": "안뜰",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": -600,
                     "y": -1200,
@@ -3177,7 +3177,7 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "로비",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3189,7 +3189,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3201,7 +3201,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3217,7 +3217,7 @@
                 }
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3229,7 +3229,7 @@
                 "rotation": null
             },
             {
-                "regionName": "منعطف",
+                "regionName": "ㄱ자 골목",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3241,7 +3241,7 @@
                 "rotation": null
             },
             {
-                "regionName": "زقاق",
+                "regionName": "골목",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3253,9 +3253,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 3805.4785,
                     "y": -1989.0962,
@@ -3265,9 +3265,9 @@
                 "rotation": null
             },
             {
-                "regionName": "علوي",
+                "regionName": "상단부",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 2000,
                     "y": -2000,
@@ -3277,9 +3277,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": -6025,
                     "y": -400,
@@ -3292,7 +3292,7 @@
     },
     {
         "uuid": "1f10dab3-4294-3827-fa35-c2aa00213cf3",
-        "displayName": "التدريبات الأساسية",
+        "displayName": "기초 훈련",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -3312,7 +3312,7 @@
     },
     {
         "uuid": "fd267378-4d1d-484f-ff52-77821ed10dc2",
-        "displayName": "بيرل",
+        "displayName": "펄",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "38°42'ED\"N8 9°08'XS\"W8",
@@ -3330,7 +3330,7 @@
         "yScalarToAdd": 0.916016,
         "callouts": [
             {
-                "regionName": "رواق",
+                "regionName": "복도",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3350,9 +3350,9 @@
                 }
             },
             {
-                "regionName": "أبواب",
+                "regionName": "문",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 4701.24,
                     "y": 597.23285,
@@ -3366,9 +3366,9 @@
                 }
             },
             {
-                "regionName": "موصل",
+                "regionName": "연결로",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 6047.0464,
                     "y": 1800.0436,
@@ -3382,9 +3382,9 @@
                 }
             },
             {
-                "regionName": "مياه",
+                "regionName": "배수로",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 7808.019,
                     "y": 1800.0419,
@@ -3398,9 +3398,9 @@
                 }
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 11092.458,
                     "y": 378.79883,
@@ -3418,7 +3418,7 @@
                 }
             },
             {
-                "regionName": "زهور",
+                "regionName": "꽃집",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3434,7 +3434,7 @@
                 }
             },
             {
-                "regionName": "سر",
+                "regionName": "은신처",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3450,7 +3450,7 @@
                 }
             },
             {
-                "regionName": "مخبأ",
+                "regionName": "대피호",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3470,7 +3470,7 @@
                 }
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3486,9 +3486,9 @@
                 }
             },
             {
-                "regionName": "سجلات",
+                "regionName": "레코드샵",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 8973.152,
                     "y": -1470.2677,
@@ -3502,9 +3502,9 @@
                 }
             },
             {
-                "regionName": "علوي",
+                "regionName": "상단부",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 2075,
                     "y": 725,
@@ -3514,7 +3514,7 @@
                 "rotation": null
             },
             {
-                "regionName": "نفق",
+                "regionName": "터널",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3530,7 +3530,7 @@
                 }
             },
             {
-                "regionName": "برج",
+                "regionName": "탑",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3550,7 +3550,7 @@
                 }
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3566,7 +3566,7 @@
                 }
             },
             {
-                "regionName": "مطعم",
+                "regionName": "식당",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3582,7 +3582,7 @@
                 }
             },
             {
-                "regionName": "رابط",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3598,7 +3598,7 @@
                 }
             },
             {
-                "regionName": "فن",
+                "regionName": "그림",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3614,7 +3614,7 @@
                 }
             },
             {
-                "regionName": "رابط",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3634,9 +3634,9 @@
                 }
             },
             {
-                "regionName": "بلازا",
+                "regionName": "광장",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 2750,
                     "y": -325,
@@ -3646,9 +3646,9 @@
                 "rotation": null
             },
             {
-                "regionName": "متاجر",
+                "regionName": "상점",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 800,
                     "y": -1450,
@@ -3658,7 +3658,7 @@
                 "rotation": null
             },
             {
-                "regionName": "نادي",
+                "regionName": "클럽",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3678,7 +3678,7 @@
                 }
             },
             {
-                "regionName": "منحدر",
+                "regionName": "경사로",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3698,7 +3698,7 @@
                 }
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3714,7 +3714,7 @@
                 }
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3730,7 +3730,7 @@
                 }
             },
             {
-                "regionName": "شاشة",
+                "regionName": "스크린룸",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3750,9 +3750,9 @@
                 }
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": -550,
                     "y": -600,
@@ -3765,7 +3765,7 @@
     },
     {
         "uuid": "e2ad5c54-4114-a870-9641-8ea21279579a",
-        "displayName": "آيس بوكس",
+        "displayName": "아이스박스",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "76°44' A\"N 149°30' Z\"E",
@@ -3783,7 +3783,7 @@
         "yScalarToAdd": 0.304687,
         "callouts": [
             {
-                "regionName": "مرآب",
+                "regionName": "차고",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3795,7 +3795,7 @@
                 "rotation": null
             },
             {
-                "regionName": "حزام",
+                "regionName": "컨베이어 벨트",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3807,7 +3807,7 @@
                 "rotation": null
             },
             {
-                "regionName": "عش",
+                "regionName": "망대",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3819,7 +3819,7 @@
                 "rotation": null
             },
             {
-                "regionName": "أنابيب",
+                "regionName": "파이프",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3831,7 +3831,7 @@
                 "rotation": null
             },
             {
-                "regionName": "عوارض سقف",
+                "regionName": "서까래",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3843,7 +3843,7 @@
                 "rotation": null
             },
             {
-                "regionName": "شاشة",
+                "regionName": "스크린룸",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3859,7 +3859,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "스파이크 지점",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -3871,9 +3871,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": -3925,
                     "y": -4450,
@@ -3883,7 +3883,7 @@
                 "rotation": null
             },
             {
-                "regionName": "أصفر",
+                "regionName": "노란색",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3895,7 +3895,7 @@
                 "rotation": null
             },
             {
-                "regionName": "خلفية",
+                "regionName": "후방",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3907,7 +3907,7 @@
                 "rotation": null
             },
             {
-                "regionName": "حجيرة",
+                "regionName": "은신처",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3919,7 +3919,7 @@
                 "rotation": null
             },
             {
-                "regionName": "أخضر",
+                "regionName": "녹색",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3931,7 +3931,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رواق",
+                "regionName": "복도",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3943,7 +3943,7 @@
                 "rotation": null
             },
             {
-                "regionName": "كوخ",
+                "regionName": "오두막",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3955,7 +3955,7 @@
                 "rotation": null
             },
             {
-                "regionName": "مطبخ",
+                "regionName": "주방",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3967,7 +3967,7 @@
                 "rotation": null
             },
             {
-                "regionName": "برتقالي",
+                "regionName": "주황색",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3983,7 +3983,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "스파이크 지점",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -3995,7 +3995,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رجل ثلج",
+                "regionName": "눈사람",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -4011,7 +4011,7 @@
                 "rotation": null
             },
             {
-                "regionName": "كومة ثلج",
+                "regionName": "눈더미",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -4023,7 +4023,7 @@
                 "rotation": null
             },
             {
-                "regionName": "أنبوب",
+                "regionName": "튜브",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -4035,9 +4035,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": -3750,
                     "y": 7075,
@@ -4051,9 +4051,9 @@
                 "rotation": null
             },
             {
-                "regionName": "أزرق",
+                "regionName": "파란색",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": -2825,
                     "y": 975,
@@ -4063,9 +4063,9 @@
                 "rotation": null
             },
             {
-                "regionName": "مرجل",
+                "regionName": "보일러실",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": -3375,
                     "y": 2925,
@@ -4079,9 +4079,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منصة",
+                "regionName": "화물 운반대",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": -4450,
                     "y": 1775,
@@ -4091,7 +4091,7 @@
                 "rotation": null
             },
             {
-                "regionName": "سياج",
+                "regionName": "담장",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -4106,7 +4106,7 @@
     },
     {
         "uuid": "ee613ee9-28b7-4beb-9666-08db13bb2244",
-        "displayName": "ميدان الرماية",
+        "displayName": "사격장",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": "45°26'FF'N,12°20'Q'E",
@@ -4126,7 +4126,7 @@
     },
     {
         "uuid": "5914d1e0-40c4-cfdd-6b88-eba06347686c",
-        "displayName": "ميدان الرماية",
+        "displayName": "사격장",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": "45°26'FF'N,12°20'Q'E",
@@ -4146,7 +4146,7 @@
     },
     {
         "uuid": "1c18ab1f-420d-0d8b-71d0-77ad3c439115",
-        "displayName": "كورود",
+        "displayName": "코로드",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "48° 38' FH\" N8, 1° 33' YV\" W8",
@@ -4164,7 +4164,7 @@
         "yScalarToAdd": 0.5,
         "callouts": [
             {
-                "regionName": "رافعة",
+                "regionName": "크레인",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -4180,7 +4180,7 @@
                 }
             },
             {
-                "regionName": "منعطف",
+                "regionName": "ㄱ자 골목",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -4196,7 +4196,7 @@
                 }
             },
             {
-                "regionName": "رابط",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -4212,7 +4212,7 @@
                 }
             },
             {
-                "regionName": "بهو",
+                "regionName": "로비",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -4228,7 +4228,7 @@
                 }
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -4244,7 +4244,7 @@
                 }
             },
             {
-                "regionName": "جيب",
+                "regionName": "포켓",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -4260,7 +4260,7 @@
                 }
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -4276,9 +4276,9 @@
                 }
             },
             {
-                "regionName": "منطقة تولّد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": -25,
                     "y": 5675,
@@ -4288,7 +4288,7 @@
                 "rotation": null
             },
             {
-                "regionName": "ساحة",
+                "regionName": "안뜰",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -4304,7 +4304,7 @@
                 }
             },
             {
-                "regionName": "قنطرة",
+                "regionName": "아치",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -4320,7 +4320,7 @@
                 }
             },
             {
-                "regionName": "منعطف",
+                "regionName": "ㄱ자 골목",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -4336,7 +4336,7 @@
                 }
             },
             {
-                "regionName": "رابط",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -4352,7 +4352,7 @@
                 }
             },
             {
-                "regionName": "بهو",
+                "regionName": "로비",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -4368,7 +4368,7 @@
                 }
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "메인",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -4384,9 +4384,9 @@
                 }
             },
             {
-                "regionName": "سفلي",
+                "regionName": "하단부",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 133.27757,
                     "y": 175.49072,
@@ -4400,7 +4400,7 @@
                 }
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -4416,7 +4416,7 @@
                 }
             },
             {
-                "regionName": "برج",
+                "regionName": "탑",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -4432,9 +4432,9 @@
                 }
             },
             {
-                "regionName": "منطقة تولّد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 8.286561,
                     "y": -5749.507,
@@ -4448,9 +4448,9 @@
                 }
             },
             {
-                "regionName": "سلم",
+                "regionName": "계단",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 133.28067,
                     "y": -1474.5093,
@@ -4464,9 +4464,9 @@
                 }
             },
             {
-                "regionName": "نافذة",
+                "regionName": "창문",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 133.28421,
                     "y": -3099.5093,
@@ -4480,9 +4480,9 @@
                 }
             },
             {
-                "regionName": "علوي",
+                "regionName": "상단부",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 133.2815,
                     "y": -1824.5093,
@@ -4499,7 +4499,7 @@
     },
     {
         "uuid": "2bee0dc9-4ffe-519b-1cbd-7fbe763a6047",
-        "displayName": "هايفن",
+        "displayName": "헤이븐",
         "narrativeDescription": null,
         "tacticalDescription": "A/B/C Sites",
         "coordinates": "27°28'A'N,89°38'WZ'E",
@@ -4517,7 +4517,7 @@
         "yScalarToAdd": 0.642728,
         "callouts": [
             {
-                "regionName": "حديقة",
+                "regionName": "정원",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -4529,7 +4529,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -4541,7 +4541,7 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "로비",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -4553,7 +4553,7 @@
                 "rotation": null
             },
             {
-                "regionName": "الممر الطويل",
+                "regionName": "긴 길",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -4565,7 +4565,7 @@
                 "rotation": null
             },
             {
-                "regionName": "مجاري",
+                "regionName": "하수도",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -4577,7 +4577,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {
@@ -4589,9 +4589,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "공격팀 진영",
                 "location": {
                     "x": 1741.7622,
                     "y": -2642.7925,
@@ -4601,7 +4601,7 @@
                 "rotation": null
             },
             {
-                "regionName": "خلفية",
+                "regionName": "후방",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -4613,7 +4613,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::B",
                 "superRegionName": "B",
                 "location": {
@@ -4625,7 +4625,7 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "연결부",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -4637,7 +4637,7 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "로비",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -4653,7 +4653,7 @@
                 "rotation": null
             },
             {
-                "regionName": "الممر الطويل",
+                "regionName": "긴 길",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -4669,7 +4669,7 @@
                 "rotation": null
             },
             {
-                "regionName": "كراج",
+                "regionName": "차고",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -4681,7 +4681,7 @@
                 "rotation": null
             },
             {
-                "regionName": "نافذة",
+                "regionName": "창문",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -4693,7 +4693,7 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "지점",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -4705,7 +4705,7 @@
                 "rotation": null
             },
             {
-                "regionName": "حجيرة",
+                "regionName": "은신처",
                 "superRegion": "ECalloutSuperRegion::C",
                 "superRegionName": "C",
                 "location": {
@@ -4717,9 +4717,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "시작 지점",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "수비팀 진영",
                 "location": {
                     "x": 2946.3042,
                     "y": -12714.707,
@@ -4729,9 +4729,9 @@
                 "rotation": null
             },
             {
-                "regionName": "أبواب",
+                "regionName": "문",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 151.11594,
                     "y": -6262.9155,
@@ -4741,9 +4741,9 @@
                 "rotation": null
             },
             {
-                "regionName": "فناء",
+                "regionName": "안뜰",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 1822.1299,
                     "y": -6712.6875,
@@ -4753,9 +4753,9 @@
                 "rotation": null
             },
             {
-                "regionName": "نافذة",
+                "regionName": "창문",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "중앙",
                 "location": {
                     "x": 1950.2218,
                     "y": -5567.912,
@@ -4765,7 +4765,7 @@
                 "rotation": null
             },
             {
-                "regionName": "برج",
+                "regionName": "탑",
                 "superRegion": "ECalloutSuperRegion::A",
                 "superRegionName": "A",
                 "location": {

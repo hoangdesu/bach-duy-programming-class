@@ -1,22 +1,36 @@
 const express = require('express')
 const router = express.Router();
 
+const fs = require('fs');
+const path = require('path');
 
-router.get('/api/v1/agents', (req, res) => {
+const agentsDataPath = path.join('data', 'agents');
+// console.log('> agentsDataPath', agentsDataPath);
 
-    // console.log('selected lang: ', req.selectedLang);
+// const agentFiles = languageOptions.map(lang => {
+//     const agentFilePath = path.join(agentsDataPath, lang)  + '.json';
+//     console.log('> agentFile:', agentFilePath);
     
-    // res.json(agents);
+//     return JSON.parse(fs.readFileSync(agentFilePath))['data'];
+// });
 
-    console.log('> req.lang:', req.lang);
+// const agents = JSON.parse(file)['data'];
+
+
+router.get('/agents', (req, res) => {
+    // console.log('> req.selectedLang:', req.selectedLang);
+
+    const agentsFile = `${agentsDataPath}/${req.selectedLang}.json`;
+    const fileContent = fs.readFileSync(agentsFile);
+    const agents = JSON.parse(fileContent);
     
-
-    res.send('agents');
+    res.json(agents);
 });
 
 
-router.get('/api/v1/agents/:uuid', (req, res) => {
-    const { uuid } = req.params;
+router.get('/agents/:q', (req, res) => {
+    // query can either be uuid or agent's displayName
+    const { q } = req.params;
 
     // for (const agent of agents) {
     //     if (agent.uuid === uuid) {
@@ -26,7 +40,15 @@ router.get('/api/v1/agents/:uuid', (req, res) => {
 
     // return res.status(404).json('Invalid UUID');
 
-    return res.send(uuid);
+    const agentsFile = `${agentsDataPath}/${req.selectedLang}.json`;
+    const fileContent = fs.readFileSync(agentsFile);
+    const agents = JSON.parse(fileContent);
+
+    const agent = agents.find(agent => agent.uuid === q || agent.displayName.toLowerCase() === q);
+
+    if (!agent) return res.status(404).send('Invalid agent name or UUID');
+
+    return res.json(agent);
 });
 
 

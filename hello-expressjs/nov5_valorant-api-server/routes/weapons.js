@@ -10,34 +10,38 @@ const Router = require('express').Router;
 // // require then destructure
 // const { Router } = require('express');
 
+const fs = require('fs');
+const path = require('path');
 
-
+const weaponsDataPath = path.join('data', 'weapons');
 
 const router = Router();
 
-router.get('/', (req, res) => {
+router.get('/weapons', (req, res) => {
 
-    // console.log('selected lang: ', req.selectedLang);
-    
-    // res.json(agents);
+    const weaponsFile = `${weaponsDataPath}/${req.selectedLang}.json`;
+    const fileContent = fs.readFileSync(weaponsFile);
+    const weapons = JSON.parse(fileContent);
 
-    res.send('weapons');
+    return res.json(weapons);
 });
 
 
-// /api/v1/weapons/:uuid
-router.get('/:uuid', (req, res) => {
-    const { uuid } = req.params;
+// /api/v1/weapons/:q
+router.get('/weapons/:q', (req, res) => {
+    const { q } = req.params;
 
-    // for (const agent of agents) {
-    //     if (agent.uuid === uuid) {
-    //         return res.json(agent);
-    //     }
-    // }
+    const weaponsFile = `${weaponsDataPath}/${req.selectedLang}.json`;
+    const fileContent = fs.readFileSync(weaponsFile);
+    const weapons = JSON.parse(fileContent);
 
-    // return res.status(404).json('Invalid UUID');
+    const weapon = weapons.find(weapon => weapon.uuid === q || weapon.displayName.toLowerCase() === q);
+    console.log('> weapon:', weapon);
+    
 
-    return res.send(uuid);
+    if (!weapon) return res.status(404).send('Invalid weapon name or UUID');
+
+    return res.json(weapon);
 });
 
 

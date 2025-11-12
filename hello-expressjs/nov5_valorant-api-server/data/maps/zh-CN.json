@@ -1,7 +1,7 @@
 [
     {
         "uuid": "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319",
-        "displayName": "أسينت",
+        "displayName": "亚海悬城",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "45°26'BF'N,12°20'Q'E",
@@ -19,9 +19,9 @@
         "yScalarToAdd": 0.573242,
         "callouts": [
             {
-                "regionName": "شجرة",
+                "regionName": "树木",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 3980.9062,
                     "y": -5938.758,
@@ -31,9 +31,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "大厅",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4489.032,
                     "y": -3014.0515,
@@ -43,9 +43,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "大道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 5321.6206,
                     "y": -4710.1274,
@@ -55,9 +55,9 @@
                 "rotation": null
             },
             {
-                "regionName": "نافذة",
+                "regionName": "窗口",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4023.0244,
                     "y": -8180.692,
@@ -71,9 +71,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6153.585,
                     "y": -6626.2114,
@@ -87,9 +87,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 60,
                     "y": 50,
@@ -107,9 +107,9 @@
                 }
             },
             {
-                "regionName": "بهو",
+                "regionName": "大厅",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -1490.5864,
                     "y": -1389.9706,
@@ -119,9 +119,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "大道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -1983.6713,
                     "y": -5840.8125,
@@ -131,9 +131,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بيت القارب",
+                "regionName": "船屋",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -4484.774,
                     "y": -7763.3584,
@@ -143,9 +143,9 @@
                 "rotation": null
             },
             {
-                "regionName": "قاع",
+                "regionName": "坡底",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 1122.2262,
                     "y": -5951.704,
@@ -159,9 +159,9 @@
                 }
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -2344.065,
                     "y": -7548.511,
@@ -171,9 +171,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منصة",
+                "regionName": "窄道",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 2315.7944,
                     "y": -4127.2554,
@@ -187,9 +187,9 @@
                 }
             },
             {
-                "regionName": "حجيرة",
+                "regionName": "小房间",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 3387.3167,
                     "y": -5129.764,
@@ -199,9 +199,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 1995.2354,
                     "y": -9744.923,
@@ -219,9 +219,9 @@
                 }
             },
             {
-                "regionName": "حديقة",
+                "regionName": "花园",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 3773.6653,
                     "y": -7551.3535,
@@ -231,9 +231,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سوق",
+                "regionName": "市场",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 1089.1044,
                     "y": -7363.1914,
@@ -243,9 +243,9 @@
                 "rotation": null
             },
             {
-                "regionName": "فناء",
+                "regionName": "庭院",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 1222.7029,
                     "y": -4586.6,
@@ -255,9 +255,9 @@
                 "rotation": null
             },
             {
-                "regionName": "وصلة",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": -632.0929,
                     "y": -4280.2573,
@@ -267,9 +267,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بيتزا",
+                "regionName": "比萨",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 1801.5667,
                     "y": -7262.1704,
@@ -279,9 +279,9 @@
                 "rotation": null
             },
             {
-                "regionName": "عوارض خشبية",
+                "regionName": "高台",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6129.893,
                     "y": -8210,
@@ -291,9 +291,9 @@
                 "rotation": null
             },
             {
-                "regionName": "قمة",
+                "regionName": "坡顶",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 2753.9297,
                     "y": -2129.6155,
@@ -303,9 +303,9 @@
                 "rotation": null
             },
             {
-                "regionName": "شراب",
+                "regionName": "酒庄",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 7358.7407,
                     "y": -4689.2705,
@@ -322,7 +322,7 @@
     },
     {
         "uuid": "d960549e-485c-e861-8d71-aa9d1aed12a2",
-        "displayName": "سبليت",
+        "displayName": "霓虹町",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "35°41'CD'N,139°41'WX'E",
@@ -340,9 +340,9 @@
         "yScalarToAdd": 0.697578,
         "callouts": [
             {
-                "regionName": "خلفي",
+                "regionName": "后房",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 7345.049,
                     "y": -7858.0405,
@@ -352,9 +352,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "大厅",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6814.217,
                     "y": -2457.7468,
@@ -364,9 +364,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "大道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6279.9795,
                     "y": -4492.833,
@@ -376,9 +376,9 @@
                 "rotation": null
             },
             {
-                "regionName": "عوارض خشبية",
+                "regionName": "高台",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 5434.726,
                     "y": -6258.442,
@@ -388,9 +388,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منحدرات",
+                "regionName": "坡道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4330,
                     "y": -4750,
@@ -400,9 +400,9 @@
                 "rotation": null
             },
             {
-                "regionName": "شاشات",
+                "regionName": "屏幕",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 5648.7144,
                     "y": -8868.611,
@@ -412,9 +412,9 @@
                 "rotation": null
             },
             {
-                "regionName": "مجاري",
+                "regionName": "下水道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4862.6064,
                     "y": -2367.2578,
@@ -424,9 +424,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6588.6597,
                     "y": -6761.131,
@@ -436,9 +436,9 @@
                 "rotation": null
             },
             {
-                "regionName": "برج",
+                "regionName": "塔楼",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4636.7925,
                     "y": -6748.2334,
@@ -448,9 +448,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 1901.97,
                     "y": 59.588867,
@@ -460,9 +460,9 @@
                 "rotation": null
             },
             {
-                "regionName": "زقاق",
+                "regionName": "小巷",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -1158.0048,
                     "y": -8066.301,
@@ -472,9 +472,9 @@
                 "rotation": null
             },
             {
-                "regionName": "خلفي",
+                "regionName": "后房",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -3107.181,
                     "y": -7417.2607,
@@ -484,9 +484,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -27.670135,
                     "y": -2369.784,
@@ -496,9 +496,9 @@
                 "rotation": null
             },
             {
-                "regionName": "كراج",
+                "regionName": "车库",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -2190.7827,
                     "y": -3848.0293,
@@ -508,9 +508,9 @@
                 "rotation": null
             },
             {
-                "regionName": "عوارض خشبية",
+                "regionName": "高台",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -637.1397,
                     "y": -6070.6167,
@@ -524,9 +524,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -2167.2456,
                     "y": -6264.7715,
@@ -536,9 +536,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سلالم",
+                "regionName": "台阶",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 1061.493,
                     "y": -6760.976,
@@ -548,9 +548,9 @@
                 "rotation": null
             },
             {
-                "regionName": "برج",
+                "regionName": "塔楼",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 168.89589,
                     "y": -5290.194,
@@ -560,9 +560,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "大厅",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -1271.6421,
                     "y": -1983.6248,
@@ -572,9 +572,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 2142.3635,
                     "y": -8964.969,
@@ -584,9 +584,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سفلي",
+                "regionName": "坡底",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 1922.6552,
                     "y": -2899.4626,
@@ -596,9 +596,9 @@
                 "rotation": null
             },
             {
-                "regionName": "البريد",
+                "regionName": "邮箱",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 1155.3333,
                     "y": -4808.6436,
@@ -608,9 +608,9 @@
                 "rotation": null
             },
             {
-                "regionName": "علوي",
+                "regionName": "坡顶",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 2021.9575,
                     "y": -4596.936,
@@ -620,9 +620,9 @@
                 "rotation": null
             },
             {
-                "regionName": "فتحة تهوية",
+                "regionName": "通风口",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 3155.1648,
                     "y": -5338.5215,
@@ -635,7 +635,7 @@
     },
     {
         "uuid": "b529448b-4d60-346e-e89e-00a4c527a405",
-        "displayName": "فراكتشر",
+        "displayName": "裂变峡谷",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "35°48'BI\"N 106°08'YQ\"W",
@@ -653,9 +653,9 @@
         "yScalarToAdd": 1.155886,
         "callouts": [
             {
-                "regionName": "جسر",
+                "regionName": "桥",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 13204,
                     "y": -756,
@@ -665,9 +665,9 @@
                 "rotation": null
             },
             {
-                "regionName": "مقعد",
+                "regionName": "长椅",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 11473,
                     "y": -2897,
@@ -677,9 +677,9 @@
                 "rotation": null
             },
             {
-                "regionName": "قناطر",
+                "regionName": "拱廊",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 10181,
                     "y": -4179,
@@ -689,9 +689,9 @@
                 "rotation": null
             },
             {
-                "regionName": "برج",
+                "regionName": "塔楼",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 9155,
                     "y": -5601,
@@ -701,9 +701,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 8178,
                     "y": -5942,
@@ -713,9 +713,9 @@
                 "rotation": null
             },
             {
-                "regionName": "مولّد",
+                "regionName": "发电机",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 8362,
                     "y": -3380,
@@ -725,9 +725,9 @@
                 "rotation": null
             },
             {
-                "regionName": "وصلة",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 9198,
                     "y": -2741,
@@ -737,9 +737,9 @@
                 "rotation": null
             },
             {
-                "regionName": "مطعم",
+                "regionName": "餐厅",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 7111,
                     "y": -3138,
@@ -749,9 +749,9 @@
                 "rotation": null
             },
             {
-                "regionName": "وصلة",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 8578,
                     "y": 1302,
@@ -761,9 +761,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 9156,
                     "y": -677,
@@ -773,9 +773,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "大道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 5967,
                     "y": -5343,
@@ -785,9 +785,9 @@
                 "rotation": null
             },
             {
-                "regionName": "شجرة",
+                "regionName": "树木",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 4965,
                     "y": -4109,
@@ -797,9 +797,9 @@
                 "rotation": null
             },
             {
-                "regionName": "نفق",
+                "regionName": "隧道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 7402,
                     "y": -4058,
@@ -809,9 +809,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رواق",
+                "regionName": "大堂",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 5063.5464,
                     "y": 2057.6648,
@@ -821,9 +821,9 @@
                 "rotation": null
             },
             {
-                "regionName": "باب",
+                "regionName": "门",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 5807.855,
                     "y": 1940.4603,
@@ -833,9 +833,9 @@
                 "rotation": null
             },
             {
-                "regionName": "حبل",
+                "regionName": "绳索",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6638.828,
                     "y": 1052.6461,
@@ -845,9 +845,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "大道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 5878.792,
                     "y": 3450.9639,
@@ -857,9 +857,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 8125.7627,
                     "y": 3373.7861,
@@ -869,9 +869,9 @@
                 "rotation": null
             },
             {
-                "regionName": "إمدادات",
+                "regionName": "下坡",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 9306.803,
                     "y": 2826.1626,
@@ -881,9 +881,9 @@
                 "rotation": null
             },
             {
-                "regionName": "صحن",
+                "regionName": "卫星天线",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 11296.665,
                     "y": 1391.7144,
@@ -893,9 +893,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بوابة",
+                "regionName": "大门",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 12962,
                     "y": 1565,
@@ -905,9 +905,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 4345.554,
                     "y": -948.4505,
@@ -920,7 +920,7 @@
     },
     {
         "uuid": "2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba",
-        "displayName": "بايند",
+        "displayName": "源工重镇",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "34°2'A'N,6°51'Z'W",
@@ -938,9 +938,9 @@
         "yScalarToAdd": 0.967566,
         "callouts": [
             {
-                "regionName": "مخرج",
+                "regionName": "出口",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 7550.4106,
                     "y": 5874.497,
@@ -950,9 +950,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6365.635,
                     "y": -1007.0208,
@@ -966,9 +966,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "大厅",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6113.239,
                     "y": 3158.823,
@@ -978,9 +978,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الممر القصير",
+                "regionName": "短道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 7983.3467,
                     "y": 803.96063,
@@ -990,9 +990,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 10747.902,
                     "y": 2664.4436,
@@ -1002,9 +1002,9 @@
                 "rotation": null
             },
             {
-                "regionName": "ناقل سريع",
+                "regionName": "传送器",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 9432.303,
                     "y": 489.8803,
@@ -1014,9 +1014,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 161.64832,
                     "y": 77.51108,
@@ -1026,9 +1026,9 @@
                 "rotation": null
             },
             {
-                "regionName": "مخرج",
+                "regionName": "出口",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 8921.412,
                     "y": -1763.2295,
@@ -1038,9 +1038,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رواق",
+                "regionName": "大堂",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 12981.879,
                     "y": -4941.7544,
@@ -1050,9 +1050,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 6361.57,
                     "y": -2621.1829,
@@ -1062,9 +1062,9 @@
                 "rotation": null
             },
             {
-                "regionName": "نافورة",
+                "regionName": "喷泉",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 5737.1484,
                     "y": -5390.446,
@@ -1074,9 +1074,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الممر الطويل",
+                "regionName": "长道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 7666.669,
                     "y": -6512.8022,
@@ -1086,9 +1086,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الممر القصير",
+                "regionName": "短道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 7424.1313,
                     "y": -3056.4531,
@@ -1098,9 +1098,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 11108.108,
                     "y": -4831.4585,
@@ -1110,9 +1110,9 @@
                 "rotation": null
             },
             {
-                "regionName": "ناقل سريع",
+                "regionName": "传送器",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 9027.776,
                     "y": -7223.8066,
@@ -1122,9 +1122,9 @@
                 "rotation": null
             },
             {
-                "regionName": "نافذة",
+                "regionName": "窗口",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 8826.788,
                     "y": -4309.4116,
@@ -1134,9 +1134,9 @@
                 "rotation": null
             },
             {
-                "regionName": "حمام",
+                "regionName": "澡堂",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 9106.541,
                     "y": 4449.6587,
@@ -1146,9 +1146,9 @@
                 "rotation": null
             },
             {
-                "regionName": "قبو",
+                "regionName": "洞",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 3920.3887,
                     "y": 256.94193,
@@ -1162,9 +1162,9 @@
                 }
             },
             {
-                "regionName": "قمرة",
+                "regionName": "小房间",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 8605.168,
                     "y": 174.89832,
@@ -1174,9 +1174,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 14641.918,
                     "y": -1017.6743,
@@ -1186,9 +1186,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منعطف",
+                "regionName": "拐角",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 11212.901,
                     "y": -7095.3335,
@@ -1198,9 +1198,9 @@
                 "rotation": null
             },
             {
-                "regionName": "حديقة",
+                "regionName": "花园",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 9144.103,
                     "y": -5598.1274,
@@ -1210,9 +1210,9 @@
                 "rotation": null
             },
             {
-                "regionName": "مصابيح",
+                "regionName": "灯",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 10649.471,
                     "y": 79.904434,
@@ -1222,9 +1222,9 @@
                 "rotation": null
             },
             {
-                "regionName": "برج",
+                "regionName": "塔楼",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 12872.583,
                     "y": 2556.7708,
@@ -1237,7 +1237,7 @@
     },
     {
         "uuid": "a9009649-421f-d5d5-f80c-0cbe02c125bb",
-        "displayName": "مناوشة A",
+        "displayName": "斗牛 1",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -1257,7 +1257,7 @@
     },
     {
         "uuid": "a38a3f9a-4042-844c-8970-a3ac2f7ce93d",
-        "displayName": "مناوشة B",
+        "displayName": "斗牛 2",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -1277,7 +1277,7 @@
     },
     {
         "uuid": "a264de0f-4a04-9c78-c97a-a6b192ce6e86",
-        "displayName": "مناوشة C",
+        "displayName": "斗牛 3",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -1297,7 +1297,7 @@
     },
     {
         "uuid": "2fb9a4fd-47b8-4e7d-a969-74b4046ebd53",
-        "displayName": "بريز",
+        "displayName": "微风岛屿",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "26°11'AG\"N 71°10'WY\"W",
@@ -1315,9 +1315,9 @@
         "yScalarToAdd": 0.833078,
         "callouts": [
             {
-                "regionName": "الرواق",
+                "regionName": "大堂",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4825,
                     "y": 2550,
@@ -1327,9 +1327,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الجسر",
+                "regionName": "桥",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 8400,
                     "y": 3525,
@@ -1339,9 +1339,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 8900,
                     "y": 3525,
@@ -1351,9 +1351,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الأقواس",
+                "regionName": "拱门",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 9400,
                     "y": -1300,
@@ -1363,9 +1363,9 @@
                 "rotation": null
             },
             {
-                "regionName": "أبواب الخشب",
+                "regionName": "木门",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 4825,
                     "y": 2550,
@@ -1375,9 +1375,9 @@
                 "rotation": null
             },
             {
-                "regionName": "العمود",
+                "regionName": "柱子",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 4175,
                     "y": 475,
@@ -1387,9 +1387,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الأعلى",
+                "regionName": "坡顶",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 6175,
                     "y": 525,
@@ -1399,9 +1399,9 @@
                 "rotation": null
             },
             {
-                "regionName": "العش",
+                "regionName": "高台",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 8650,
                     "y": 275,
@@ -1411,9 +1411,9 @@
                 "rotation": null
             },
             {
-                "regionName": "النافذة",
+                "regionName": "窗口",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 2225,
                     "y": -4175,
@@ -1423,9 +1423,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الرئيسي",
+                "regionName": "大道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 3550,
                     "y": -4450,
@@ -1435,9 +1435,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الأفعى",
+                "regionName": "蛇形道",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 550,
                     "y": -2450,
@@ -1447,9 +1447,9 @@
                 "rotation": null
             },
             {
-                "regionName": "المرفق",
+                "regionName": "拐角",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 4675,
                     "y": -2900,
@@ -1459,9 +1459,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الموقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 6450,
                     "y": -5650,
@@ -1471,9 +1471,9 @@
                 "rotation": null
             },
             {
-                "regionName": "النفق",
+                "regionName": "隧道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 6450,
                     "y": -1450,
@@ -1483,9 +1483,9 @@
                 "rotation": null
             },
             {
-                "regionName": "المحوّل",
+                "regionName": "开关",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6425,
                     "y": 3050,
@@ -1495,9 +1495,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منزلق",
+                "regionName": "滑道",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 3875,
                     "y": 1800,
@@ -1507,9 +1507,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الخلف",
+                "regionName": "后房",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 7550,
                     "y": -5675,
@@ -1519,9 +1519,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الجدار",
+                "regionName": "墙",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 8550,
                     "y": -3000,
@@ -1531,9 +1531,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الحبل",
+                "regionName": "绳索",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 3100,
                     "y": 2550,
@@ -1543,9 +1543,9 @@
                 "rotation": null
             },
             {
-                "regionName": "المدفع",
+                "regionName": "大炮",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 2900,
                     "y": -1850,
@@ -1555,9 +1555,9 @@
                 "rotation": null
             },
             {
-                "regionName": "أبواب المعدن",
+                "regionName": "铁门",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6825,
                     "y": 2550,
@@ -1567,9 +1567,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الأسفل",
+                "regionName": "坡底",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 1575,
                     "y": 475,
@@ -1579,9 +1579,9 @@
                 "rotation": null
             },
             {
-                "regionName": "البهو",
+                "regionName": "大厅",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": -1250,
                     "y": 3400,
@@ -1591,9 +1591,9 @@
                 "rotation": null
             },
             {
-                "regionName": "المتجر",
+                "regionName": "商店",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 2150,
                     "y": 4250,
@@ -1603,9 +1603,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الموقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4825,
                     "y": 6325,
@@ -1615,9 +1615,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الأهرامات",
+                "regionName": "金字塔",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 5200,
                     "y": 5450,
@@ -1627,9 +1627,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": -575,
                     "y": -450,
@@ -1642,7 +1642,7 @@
     },
     {
         "uuid": "690b3ed2-4dff-945b-8223-6da834e30d24",
-        "displayName": "ديستريكت",
+        "displayName": "商街",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -1660,9 +1660,9 @@
         "yScalarToAdd": 0,
         "callouts": [
             {
-                "regionName": "صندوق",
+                "regionName": "方箱",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": -2225,
                     "y": 1700,
@@ -1672,9 +1672,9 @@
                 "rotation": null
             },
             {
-                "regionName": "عش",
+                "regionName": "高台",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": -2200,
                     "y": 800,
@@ -1684,9 +1684,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": -1200,
                     "y": 3000,
@@ -1696,9 +1696,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سلم",
+                "regionName": "台阶",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": -200,
                     "y": 1200,
@@ -1708,9 +1708,9 @@
                 "rotation": null
             },
             {
-                "regionName": "جدار",
+                "regionName": "墙",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 700,
                     "y": 900,
@@ -1720,9 +1720,9 @@
                 "rotation": null
             },
             {
-                "regionName": "صندوق",
+                "regionName": "方箱",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": -2225,
                     "y": -2900,
@@ -1732,9 +1732,9 @@
                 "rotation": null
             },
             {
-                "regionName": "عش",
+                "regionName": "高台",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": -2200,
                     "y": -1700,
@@ -1744,9 +1744,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": -1200,
                     "y": -3000,
@@ -1756,9 +1756,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سلم",
+                "regionName": "台阶",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": -200,
                     "y": -1200,
@@ -1768,9 +1768,9 @@
                 "rotation": null
             },
             {
-                "regionName": "جدار",
+                "regionName": "墙",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 700,
                     "y": -900,
@@ -1780,9 +1780,9 @@
                 "rotation": null
             },
             {
-                "regionName": "مولّد",
+                "regionName": "发电机",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": -1400,
                     "y": -1000,
@@ -1792,9 +1792,9 @@
                 "rotation": null
             },
             {
-                "regionName": "حدوة حصان",
+                "regionName": "U型道",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": -3200,
                     "y": -900,
@@ -1804,9 +1804,9 @@
                 "rotation": null
             },
             {
-                "regionName": "مجاري",
+                "regionName": "下水道",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 700,
                     "y": -900,
@@ -1819,7 +1819,7 @@
     },
     {
         "uuid": "12452a9d-48c3-0b02-e7eb-0381c3520404",
-        "displayName": "القصبة",
+        "displayName": "古城",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -1837,9 +1837,9 @@
         "yScalarToAdd": 0,
         "callouts": [
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1853,9 +1853,9 @@
                 }
             },
             {
-                "regionName": "صندوق بزاوية",
+                "regionName": "斜箱",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1869,9 +1869,9 @@
                 }
             },
             {
-                "regionName": "رابط",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1881,9 +1881,9 @@
                 "rotation": null
             },
             {
-                "regionName": "حفرة",
+                "regionName": "低地",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1897,9 +1897,9 @@
                 }
             },
             {
-                "regionName": "برج",
+                "regionName": "塔楼",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1913,9 +1913,9 @@
                 }
             },
             {
-                "regionName": "منحدر",
+                "regionName": "坡道",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1925,9 +1925,9 @@
                 "rotation": null
             },
             {
-                "regionName": "صندوق مسطح",
+                "regionName": "矮箱",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1941,9 +1941,9 @@
                 }
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1957,9 +1957,9 @@
                 }
             },
             {
-                "regionName": "عش",
+                "regionName": "高台",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1973,9 +1973,9 @@
                 }
             },
             {
-                "regionName": "نفق",
+                "regionName": "廊道",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -1989,9 +1989,9 @@
                 }
             },
             {
-                "regionName": "نافذة",
+                "regionName": "窗口",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2001,9 +2001,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2017,9 +2017,9 @@
                 }
             },
             {
-                "regionName": "صندوق بزاوية",
+                "regionName": "斜箱",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2033,9 +2033,9 @@
                 }
             },
             {
-                "regionName": "رابط",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2049,9 +2049,9 @@
                 }
             },
             {
-                "regionName": "حفرة",
+                "regionName": "低地",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2065,9 +2065,9 @@
                 }
             },
             {
-                "regionName": "برج",
+                "regionName": "塔楼",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2081,9 +2081,9 @@
                 }
             },
             {
-                "regionName": "منحدر",
+                "regionName": "坡道",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2097,9 +2097,9 @@
                 }
             },
             {
-                "regionName": "صندوق مسطح",
+                "regionName": "矮箱",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2113,9 +2113,9 @@
                 }
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2129,9 +2129,9 @@
                 }
             },
             {
-                "regionName": "عش",
+                "regionName": "高台",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2145,9 +2145,9 @@
                 }
             },
             {
-                "regionName": "نفق",
+                "regionName": "廊道",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2161,9 +2161,9 @@
                 }
             },
             {
-                "regionName": "نافذة",
+                "regionName": "窗口",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 0,
                     "y": 0,
@@ -2180,7 +2180,7 @@
     },
     {
         "uuid": "2c09d728-42d5-30d8-43dc-96a05cc7ee9d",
-        "displayName": "دريفت",
+        "displayName": "渔市",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -2198,9 +2198,9 @@
         "yScalarToAdd": 0,
         "callouts": [
             {
-                "regionName": "زقاق",
+                "regionName": "巷道",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 3200,
                     "y": 2200,
@@ -2214,9 +2214,9 @@
                 }
             },
             {
-                "regionName": "عش",
+                "regionName": "高台",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 2000,
                     "y": -3400,
@@ -2230,9 +2230,9 @@
                 }
             },
             {
-                "regionName": "منطقة تولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 1200,
                     "y": -2200,
@@ -2246,9 +2246,9 @@
                 }
             },
             {
-                "regionName": "برج",
+                "regionName": "塔楼",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": -400,
                     "y": -1800,
@@ -2258,9 +2258,9 @@
                 "rotation": null
             },
             {
-                "regionName": "ساحة",
+                "regionName": "庭院",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": -1600,
                     "y": -3400,
@@ -2274,9 +2274,9 @@
                 }
             },
             {
-                "regionName": "زقاق",
+                "regionName": "巷道",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": -3200,
                     "y": -2200,
@@ -2290,9 +2290,9 @@
                 }
             },
             {
-                "regionName": "عش",
+                "regionName": "高台",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": -2000,
                     "y": 3400,
@@ -2306,9 +2306,9 @@
                 }
             },
             {
-                "regionName": "منطقة تولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": -1200,
                     "y": 2200,
@@ -2322,9 +2322,9 @@
                 }
             },
             {
-                "regionName": "برج",
+                "regionName": "塔楼",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 400,
                     "y": 1800,
@@ -2338,9 +2338,9 @@
                 }
             },
             {
-                "regionName": "ساحة",
+                "regionName": "庭院",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 1600,
                     "y": 3400,
@@ -2354,9 +2354,9 @@
                 }
             },
             {
-                "regionName": "مياه",
+                "regionName": "水池",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": -800,
                     "y": -600,
@@ -2369,7 +2369,7 @@
     },
     {
         "uuid": "d6336a5a-428f-c591-98db-c8a291159134",
-        "displayName": "غليتش",
+        "displayName": "乱次元",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -2389,7 +2389,7 @@
     },
     {
         "uuid": "de28aa9b-4cbe-1003-320e-6cb3ec309557",
-        "displayName": "بياتزا",
+        "displayName": "小镇",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -2409,7 +2409,7 @@
     },
     {
         "uuid": "224b0a95-48b9-f703-1bd8-67aca101a61f",
-        "displayName": "آبيس",
+        "displayName": "幽邃地窟",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "70° 50' AJ\" N, 9° 00' VX\" W",
@@ -2427,9 +2427,9 @@
         "yScalarToAdd": 0.5,
         "callouts": [
             {
-                "regionName": "جسر",
+                "regionName": "窄桥",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 5700,
                     "y": -375,
@@ -2439,9 +2439,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 2800,
                     "y": -2450,
@@ -2451,9 +2451,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "大厅",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 3250,
                     "y": 3400,
@@ -2463,9 +2463,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "大道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 3800,
                     "y": 1650,
@@ -2475,9 +2475,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4300,
                     "y": -200,
@@ -2487,9 +2487,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة تولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 950,
                     "y": 4950,
@@ -2499,9 +2499,9 @@
                 "rotation": null
             },
             {
-                "regionName": "برج",
+                "regionName": "瞭望台",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 3025,
                     "y": -125,
@@ -2511,9 +2511,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منعطف",
+                "regionName": "拐角",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": -1700,
                     "y": 1075,
@@ -2523,9 +2523,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -2000,
                     "y": -2350,
@@ -2535,9 +2535,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "大厅",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -3650,
                     "y": 4025,
@@ -2547,9 +2547,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "大道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -4450,
                     "y": 1525,
@@ -2559,9 +2559,9 @@
                 "rotation": null
             },
             {
-                "regionName": "عش",
+                "regionName": "高台",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -4975,
                     "y": 2150,
@@ -2571,9 +2571,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سفلي",
+                "regionName": "坡底",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": -400,
                     "y": 575,
@@ -2583,9 +2583,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -4425,
                     "y": -1175,
@@ -2595,9 +2595,9 @@
                 "rotation": null
             },
             {
-                "regionName": "ممر",
+                "regionName": "天桥",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 600,
                     "y": 525,
@@ -2607,9 +2607,9 @@
                 "rotation": null
             },
             {
-                "regionName": "خطر",
+                "regionName": "险路",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -5850,
                     "y": 700,
@@ -2619,9 +2619,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة تولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 950,
                     "y": -5275,
@@ -2631,9 +2631,9 @@
                 "rotation": null
             },
             {
-                "regionName": "مكتبة",
+                "regionName": "图书馆",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": -325,
                     "y": -600,
@@ -2643,9 +2643,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سر",
+                "regionName": "密道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 3775,
                     "y": -3850,
@@ -2655,9 +2655,9 @@
                 "rotation": null
             },
             {
-                "regionName": "أمن",
+                "regionName": "保安室",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4900,
                     "y": -2975,
@@ -2667,9 +2667,9 @@
                 "rotation": null
             },
             {
-                "regionName": "علوي",
+                "regionName": "坡顶",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 775,
                     "y": -2375,
@@ -2679,9 +2679,9 @@
                 "rotation": null
             },
             {
-                "regionName": "برج",
+                "regionName": "瞭望台",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -3925,
                     "y": -2500,
@@ -2691,9 +2691,9 @@
                 "rotation": null
             },
             {
-                "regionName": "تهوية",
+                "regionName": "通风口",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 1700,
                     "y": -325,
@@ -2706,7 +2706,7 @@
     },
     {
         "uuid": "2fe4ed3a-450a-948b-6d6b-e89a78e680a9",
-        "displayName": "لوتس",
+        "displayName": "莲华古城",
         "narrativeDescription": null,
         "tacticalDescription": "A/B/C Sites",
         "coordinates": "14°07'AD.4\"N8 74°53'XY\"E8",
@@ -2724,9 +2724,9 @@
         "yScalarToAdd": 0.917752,
         "callouts": [
             {
-                "regionName": "علوي",
+                "regionName": "高地",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 9260.3,
                     "y": 5045.5884,
@@ -2736,9 +2736,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منحدر",
+                "regionName": "下坡",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 9516.38,
                     "y": 6092.8936,
@@ -2748,9 +2748,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 7735.5396,
                     "y": 5557.309,
@@ -2760,9 +2760,9 @@
                 "rotation": null
             },
             {
-                "regionName": "كوخ",
+                "regionName": "小屋",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 7917.4614,
                     "y": 5557.309,
@@ -2772,9 +2772,9 @@
                 "rotation": null
             },
             {
-                "regionName": "شجرة",
+                "regionName": "树",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6149.525,
                     "y": 5557.309,
@@ -2784,9 +2784,9 @@
                 "rotation": null
             },
             {
-                "regionName": "باب",
+                "regionName": "通道门",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 5608.7563,
                     "y": 5203.91,
@@ -2796,9 +2796,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "大道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 5288.3022,
                     "y": 4159.762,
@@ -2808,9 +2808,9 @@
                 "rotation": null
             },
             {
-                "regionName": "أنقاض",
+                "regionName": "碎石",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4401.0713,
                     "y": 4918.189,
@@ -2820,9 +2820,9 @@
                 "rotation": null
             },
             {
-                "regionName": "جذر",
+                "regionName": "树根",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4401.0713,
                     "y": 3294.1523,
@@ -2832,9 +2832,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "大厅",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 2685.951,
                     "y": 2927.1755,
@@ -2844,9 +2844,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "大厅",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": 1403.5685,
                     "y": -1576.5884,
@@ -2856,9 +2856,9 @@
                 "rotation": null
             },
             {
-                "regionName": "أعمدة",
+                "regionName": "柱子",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 3565.3691,
                     "y": 668.18317,
@@ -2868,9 +2868,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "大道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 4876.832,
                     "y": -47.87195,
@@ -2880,9 +2880,9 @@
                 "rotation": null
             },
             {
-                "regionName": "باب",
+                "regionName": "通道门",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": 4818.6655,
                     "y": -1752.8021,
@@ -2892,9 +2892,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 6368.0327,
                     "y": 668.18317,
@@ -2904,9 +2904,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6011.0664,
                     "y": 2087.6528,
@@ -2916,9 +2916,9 @@
                 "rotation": null
             },
             {
-                "regionName": "علوي",
+                "regionName": "上层",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 7682.943,
                     "y": 1517.3606,
@@ -2928,9 +2928,9 @@
                 "rotation": null
             },
             {
-                "regionName": "شلال",
+                "regionName": "瀑布",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": 6719.804,
                     "y": -1994.2986,
@@ -2940,9 +2940,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": 7504.109,
                     "y": -1377.893,
@@ -2952,9 +2952,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سلم",
+                "regionName": "台阶",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 8257.875,
                     "y": 3860.9312,
@@ -2964,9 +2964,9 @@
                 "rotation": null
             },
             {
-                "regionName": "تلة",
+                "regionName": "土丘",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": 3863.7183,
                     "y": -1576.5884,
@@ -2976,9 +2976,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "大道",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": 5311.2646,
                     "y": -3148.162,
@@ -2988,9 +2988,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منعطف",
+                "regionName": "弯道",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": 5657.522,
                     "y": -5281.4395,
@@ -3000,9 +3000,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": 6676.6636,
                     "y": -4265.876,
@@ -3012,9 +3012,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رواق",
+                "regionName": "走廊",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": 7902.0615,
                     "y": -4265.876,
@@ -3024,9 +3024,9 @@
                 "rotation": null
             },
             {
-                "regionName": "حصى",
+                "regionName": "碎石路",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": 8936.881,
                     "y": -1752.2874,
@@ -3036,9 +3036,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 9686.767,
                     "y": 1697.8223,
@@ -3048,9 +3048,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 1401.2915,
                     "y": 777.29834,
@@ -3063,7 +3063,7 @@
     },
     {
         "uuid": "92584fbe-486a-b1b2-9faa-39b0f486b498",
-        "displayName": "سَنسِت",
+        "displayName": "日落之城",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "34° 2′ C″ N, 118° 12′ YT″ W",
@@ -3081,9 +3081,9 @@
         "yScalarToAdd": 0.515625,
         "callouts": [
             {
-                "regionName": "بوبا",
+                "regionName": "奶茶店",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 2200,
                     "y": -4800,
@@ -3093,9 +3093,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بلاط",
+                "regionName": "红砖路",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": -1800,
                     "y": 400,
@@ -3105,9 +3105,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سوق",
+                "regionName": "市场",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -200,
                     "y": -3400,
@@ -3117,9 +3117,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -600,
                     "y": -5850,
@@ -3129,9 +3129,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "大道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -2000,
                     "y": -5650,
@@ -3141,9 +3141,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "大厅",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -3400,
                     "y": -2600,
@@ -3153,9 +3153,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سفلي",
+                "regionName": "坡底",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": -1800,
                     "y": -2025,
@@ -3165,9 +3165,9 @@
                 "rotation": null
             },
             {
-                "regionName": "ساحة",
+                "regionName": "庭院",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": -600,
                     "y": -1200,
@@ -3177,9 +3177,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "大厅",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": -1800,
                     "y": 2000,
@@ -3189,9 +3189,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "大道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": -400,
                     "y": 2200,
@@ -3201,9 +3201,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 2200,
                     "y": 3000,
@@ -3217,9 +3217,9 @@
                 }
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 1000,
                     "y": 3200,
@@ -3229,9 +3229,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منعطف",
+                "regionName": "拐角",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 200,
                     "y": 4200,
@@ -3241,9 +3241,9 @@
                 "rotation": null
             },
             {
-                "regionName": "زقاق",
+                "regionName": "巷道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 3400,
                     "y": 3600,
@@ -3253,9 +3253,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 3805.4785,
                     "y": -1989.0962,
@@ -3265,9 +3265,9 @@
                 "rotation": null
             },
             {
-                "regionName": "علوي",
+                "regionName": "坡顶",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 2000,
                     "y": -2000,
@@ -3277,9 +3277,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": -6025,
                     "y": -400,
@@ -3292,7 +3292,7 @@
     },
     {
         "uuid": "1f10dab3-4294-3827-fa35-c2aa00213cf3",
-        "displayName": "التدريبات الأساسية",
+        "displayName": "基础训练",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": null,
@@ -3312,7 +3312,7 @@
     },
     {
         "uuid": "fd267378-4d1d-484f-ff52-77821ed10dc2",
-        "displayName": "بيرل",
+        "displayName": "深海明珠",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "38°42'ED\"N8 9°08'XS\"W8",
@@ -3330,9 +3330,9 @@
         "yScalarToAdd": 0.916016,
         "callouts": [
             {
-                "regionName": "رواق",
+                "regionName": "走廊",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 7495.6177,
                     "y": -4954.14,
@@ -3350,9 +3350,9 @@
                 }
             },
             {
-                "regionName": "أبواب",
+                "regionName": "门",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 4701.24,
                     "y": 597.23285,
@@ -3366,9 +3366,9 @@
                 }
             },
             {
-                "regionName": "موصل",
+                "regionName": "路口",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 6047.0464,
                     "y": 1800.0436,
@@ -3382,9 +3382,9 @@
                 }
             },
             {
-                "regionName": "مياه",
+                "regionName": "排水沟",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 7808.019,
                     "y": 1800.0419,
@@ -3398,9 +3398,9 @@
                 }
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 11092.458,
                     "y": 378.79883,
@@ -3418,9 +3418,9 @@
                 }
             },
             {
-                "regionName": "زهور",
+                "regionName": "花店",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 9263.969,
                     "y": 2507.3403,
@@ -3434,9 +3434,9 @@
                 }
             },
             {
-                "regionName": "سر",
+                "regionName": "隐藏",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 10458.144,
                     "y": 3831.5127,
@@ -3450,9 +3450,9 @@
                 }
             },
             {
-                "regionName": "مخبأ",
+                "regionName": "低地",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 7660.6597,
                     "y": 5854.0664,
@@ -3470,9 +3470,9 @@
                 }
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6613.846,
                     "y": 5569.5254,
@@ -3486,9 +3486,9 @@
                 }
             },
             {
-                "regionName": "سجلات",
+                "regionName": "唱片店",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 8973.152,
                     "y": -1470.2677,
@@ -3502,9 +3502,9 @@
                 }
             },
             {
-                "regionName": "علوي",
+                "regionName": "高地",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 2075,
                     "y": 725,
@@ -3514,9 +3514,9 @@
                 "rotation": null
             },
             {
-                "regionName": "نفق",
+                "regionName": "地道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 8973.152,
                     "y": -2155.1323,
@@ -3530,9 +3530,9 @@
                 }
             },
             {
-                "regionName": "برج",
+                "regionName": "塔楼",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 8533.423,
                     "y": -2851.3516,
@@ -3550,9 +3550,9 @@
                 }
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "主门",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6368.5713,
                     "y": 3825,
@@ -3566,9 +3566,9 @@
                 }
             },
             {
-                "regionName": "مطعم",
+                "regionName": "餐厅",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4430.452,
                     "y": 2813.1267,
@@ -3582,9 +3582,9 @@
                 }
             },
             {
-                "regionName": "رابط",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 4503.3633,
                     "y": -591.64435,
@@ -3598,9 +3598,9 @@
                 }
             },
             {
-                "regionName": "فن",
+                "regionName": "画架",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4561.95,
                     "y": 3406.8806,
@@ -3614,9 +3614,9 @@
                 }
             },
             {
-                "regionName": "رابط",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6055.2104,
                     "y": 3782.704,
@@ -3634,9 +3634,9 @@
                 }
             },
             {
-                "regionName": "بلازا",
+                "regionName": "广场",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 2750,
                     "y": -325,
@@ -3646,9 +3646,9 @@
                 "rotation": null
             },
             {
-                "regionName": "متاجر",
+                "regionName": "商店",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 800,
                     "y": -1450,
@@ -3658,9 +3658,9 @@
                 "rotation": null
             },
             {
-                "regionName": "نادي",
+                "regionName": "夜店",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 800,
                     "y": -1450,
@@ -3678,9 +3678,9 @@
                 }
             },
             {
-                "regionName": "منحدر",
+                "regionName": "坡道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 1750,
                     "y": -3800,
@@ -3698,9 +3698,9 @@
                 }
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "主门",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 4050,
                     "y": -4375,
@@ -3714,9 +3714,9 @@
                 }
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 5800,
                     "y": -2850,
@@ -3730,9 +3730,9 @@
                 }
             },
             {
-                "regionName": "شاشة",
+                "regionName": "屏幕",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 6260.4326,
                     "y": -5000.933,
@@ -3750,9 +3750,9 @@
                 }
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": -550,
                     "y": -600,
@@ -3765,7 +3765,7 @@
     },
     {
         "uuid": "e2ad5c54-4114-a870-9641-8ea21279579a",
-        "displayName": "آيس بوكس",
+        "displayName": "森寒冬港",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "76°44' A\"N 149°30' Z\"E",
@@ -3783,9 +3783,9 @@
         "yScalarToAdd": 0.304687,
         "callouts": [
             {
-                "regionName": "مرآب",
+                "regionName": "车库",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -1250,
                     "y": -1425,
@@ -3795,9 +3795,9 @@
                 "rotation": null
             },
             {
-                "regionName": "حزام",
+                "regionName": "带状区",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": -7200,
                     "y": -850,
@@ -3807,9 +3807,9 @@
                 "rotation": null
             },
             {
-                "regionName": "عش",
+                "regionName": "高台",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": -6650,
                     "y": 900,
@@ -3819,9 +3819,9 @@
                 "rotation": null
             },
             {
-                "regionName": "أنابيب",
+                "regionName": "管道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": -6150,
                     "y": 450,
@@ -3831,9 +3831,9 @@
                 "rotation": null
             },
             {
-                "regionName": "عوارض سقف",
+                "regionName": "高台",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": -6450,
                     "y": 4250,
@@ -3843,9 +3843,9 @@
                 "rotation": null
             },
             {
-                "regionName": "شاشة",
+                "regionName": "屏幕",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": -5100,
                     "y": 3325,
@@ -3859,9 +3859,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": -6400,
                     "y": 3200,
@@ -3871,9 +3871,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": -3925,
                     "y": -4450,
@@ -3883,9 +3883,9 @@
                 "rotation": null
             },
             {
-                "regionName": "أصفر",
+                "regionName": "黄箱",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 2050,
                     "y": -25,
@@ -3895,9 +3895,9 @@
                 "rotation": null
             },
             {
-                "regionName": "خلفية",
+                "regionName": "后房",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 251,
                     "y": 4269,
@@ -3907,9 +3907,9 @@
                 "rotation": null
             },
             {
-                "regionName": "حجيرة",
+                "regionName": "小房间",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 1050,
                     "y": -975,
@@ -3919,9 +3919,9 @@
                 "rotation": null
             },
             {
-                "regionName": "أخضر",
+                "regionName": "绿箱",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -450,
                     "y": -700,
@@ -3931,9 +3931,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رواق",
+                "regionName": "大堂",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 300,
                     "y": 3050,
@@ -3943,9 +3943,9 @@
                 "rotation": null
             },
             {
-                "regionName": "كوخ",
+                "regionName": "小屋",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -1425,
                     "y": 4400,
@@ -3955,9 +3955,9 @@
                 "rotation": null
             },
             {
-                "regionName": "مطبخ",
+                "regionName": "厨房",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -2221.3618,
                     "y": 3403.649,
@@ -3967,9 +3967,9 @@
                 "rotation": null
             },
             {
-                "regionName": "برتقالي",
+                "regionName": "橙箱",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -632,
                     "y": 1700,
@@ -3983,9 +3983,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 1725,
                     "y": 2575,
@@ -3995,9 +3995,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رجل ثلج",
+                "regionName": "雪人",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 2250,
                     "y": 3960.3218,
@@ -4011,9 +4011,9 @@
                 "rotation": null
             },
             {
-                "regionName": "كومة ثلج",
+                "regionName": "雪堆",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -1775,
                     "y": 2500,
@@ -4023,9 +4023,9 @@
                 "rotation": null
             },
             {
-                "regionName": "أنبوب",
+                "regionName": "管道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -2300,
                     "y": 1275,
@@ -4035,9 +4035,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": -3750,
                     "y": 7075,
@@ -4051,9 +4051,9 @@
                 "rotation": null
             },
             {
-                "regionName": "أزرق",
+                "regionName": "蓝箱",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": -2825,
                     "y": 975,
@@ -4063,9 +4063,9 @@
                 "rotation": null
             },
             {
-                "regionName": "مرجل",
+                "regionName": "锅炉",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": -3375,
                     "y": 2925,
@@ -4079,9 +4079,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منصة",
+                "regionName": "平台",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": -4450,
                     "y": 1775,
@@ -4091,9 +4091,9 @@
                 "rotation": null
             },
             {
-                "regionName": "سياج",
+                "regionName": "栅栏",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 363,
                     "y": 3595,
@@ -4106,7 +4106,7 @@
     },
     {
         "uuid": "ee613ee9-28b7-4beb-9666-08db13bb2244",
-        "displayName": "ميدان الرماية",
+        "displayName": "靶场",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": "45°26'FF'N,12°20'Q'E",
@@ -4126,7 +4126,7 @@
     },
     {
         "uuid": "5914d1e0-40c4-cfdd-6b88-eba06347686c",
-        "displayName": "ميدان الرماية",
+        "displayName": "靶场",
         "narrativeDescription": null,
         "tacticalDescription": null,
         "coordinates": "45°26'FF'N,12°20'Q'E",
@@ -4146,7 +4146,7 @@
     },
     {
         "uuid": "1c18ab1f-420d-0d8b-71d0-77ad3c439115",
-        "displayName": "كورود",
+        "displayName": "盐海矿镇",
         "narrativeDescription": null,
         "tacticalDescription": "A/B Sites",
         "coordinates": "48° 38' FH\" N8, 1° 33' YV\" W8",
@@ -4164,9 +4164,9 @@
         "yScalarToAdd": 0.5,
         "callouts": [
             {
-                "regionName": "رافعة",
+                "regionName": "吊车",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4458.2866,
                     "y": -3999.4976,
@@ -4180,9 +4180,9 @@
                 }
             },
             {
-                "regionName": "منعطف",
+                "regionName": "拐角",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 5583.2793,
                     "y": -2074.4995,
@@ -4196,9 +4196,9 @@
                 }
             },
             {
-                "regionName": "رابط",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 1783.2793,
                     "y": -1049.5073,
@@ -4212,9 +4212,9 @@
                 }
             },
             {
-                "regionName": "بهو",
+                "regionName": "大厅",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4333.2793,
                     "y": 2600.4976,
@@ -4228,9 +4228,9 @@
                 }
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "大道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 5933.2793,
                     "y": 1225.4977,
@@ -4244,9 +4244,9 @@
                 }
             },
             {
-                "regionName": "جيب",
+                "regionName": "死角",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 5583.2793,
                     "y": -799.4995,
@@ -4260,9 +4260,9 @@
                 }
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 3458.2793,
                     "y": -1824.5004,
@@ -4276,9 +4276,9 @@
                 }
             },
             {
-                "regionName": "منطقة تولّد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": -25,
                     "y": 5675,
@@ -4288,9 +4288,9 @@
                 "rotation": null
             },
             {
-                "regionName": "ساحة",
+                "regionName": "庭院",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4333.2793,
                     "y": -799.50256,
@@ -4304,9 +4304,9 @@
                 }
             },
             {
-                "regionName": "قنطرة",
+                "regionName": "拱门",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -3216.7134,
                     "y": -4399.5156,
@@ -4320,9 +4320,9 @@
                 }
             },
             {
-                "regionName": "منعطف",
+                "regionName": "拐角",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -5591.7236,
                     "y": -2924.5183,
@@ -4336,9 +4336,9 @@
                 }
             },
             {
-                "regionName": "رابط",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -1291.7185,
                     "y": -1824.5093,
@@ -4352,9 +4352,9 @@
                 }
             },
             {
-                "regionName": "بهو",
+                "regionName": "大厅",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -1666.7264,
                     "y": 2775.4875,
@@ -4368,9 +4368,9 @@
                 }
             },
             {
-                "regionName": "رئيسي",
+                "regionName": "大道",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -2716.7236,
                     "y": 750.4862,
@@ -4384,9 +4384,9 @@
                 }
             },
             {
-                "regionName": "سفلي",
+                "regionName": "坡底",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 133.27757,
                     "y": 175.49072,
@@ -4400,9 +4400,9 @@
                 }
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -2716.7234,
                     "y": -1174.5138,
@@ -4416,9 +4416,9 @@
                 }
             },
             {
-                "regionName": "برج",
+                "regionName": "高台",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": -3516.7236,
                     "y": -2924.5183,
@@ -4432,9 +4432,9 @@
                 }
             },
             {
-                "regionName": "منطقة تولّد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 8.286561,
                     "y": -5749.507,
@@ -4448,9 +4448,9 @@
                 }
             },
             {
-                "regionName": "سلم",
+                "regionName": "台阶",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 133.28067,
                     "y": -1474.5093,
@@ -4464,9 +4464,9 @@
                 }
             },
             {
-                "regionName": "نافذة",
+                "regionName": "窗口",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 133.28421,
                     "y": -3099.5093,
@@ -4480,9 +4480,9 @@
                 }
             },
             {
-                "regionName": "علوي",
+                "regionName": "坡顶",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 133.2815,
                     "y": -1824.5093,
@@ -4499,7 +4499,7 @@
     },
     {
         "uuid": "2bee0dc9-4ffe-519b-1cbd-7fbe763a6047",
-        "displayName": "هايفن",
+        "displayName": "隐世修所",
         "narrativeDescription": null,
         "tacticalDescription": "A/B/C Sites",
         "coordinates": "27°28'A'N,89°38'WZ'E",
@@ -4517,9 +4517,9 @@
         "yScalarToAdd": 0.642728,
         "callouts": [
             {
-                "regionName": "حديقة",
+                "regionName": "花园",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 3100.261,
                     "y": -4683.6016,
@@ -4529,9 +4529,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 4244.4214,
                     "y": -10715.68,
@@ -4541,9 +4541,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "大厅",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 3438.537,
                     "y": -6260.409,
@@ -4553,9 +4553,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الممر الطويل",
+                "regionName": "长道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6209.695,
                     "y": -6901.142,
@@ -4565,9 +4565,9 @@
                 "rotation": null
             },
             {
-                "regionName": "مجاري",
+                "regionName": "下水道",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 3452.8735,
                     "y": -7915.7246,
@@ -4577,9 +4577,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6309.3076,
                     "y": -9225.703,
@@ -4589,9 +4589,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::AttackerSide",
-                "superRegionName": "الطرف المهاجم",
+                "superRegionName": "攻方",
                 "location": {
                     "x": 1741.7622,
                     "y": -2642.7925,
@@ -4601,9 +4601,9 @@
                 "rotation": null
             },
             {
-                "regionName": "خلفية",
+                "regionName": "后房",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 1966.1608,
                     "y": -10664.775,
@@ -4613,9 +4613,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::B",
-                "superRegionName": "B",
+                "superRegionName": "B区",
                 "location": {
                     "x": 1884.706,
                     "y": -9231.335,
@@ -4625,9 +4625,9 @@
                 "rotation": null
             },
             {
-                "regionName": "رابط",
+                "regionName": "小道",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": -87.761444,
                     "y": -10004.415,
@@ -4637,9 +4637,9 @@
                 "rotation": null
             },
             {
-                "regionName": "بهو",
+                "regionName": "大厅",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": -1642.189,
                     "y": -5720.345,
@@ -4653,9 +4653,9 @@
                 "rotation": null
             },
             {
-                "regionName": "الممر الطويل",
+                "regionName": "长道",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": -3356.814,
                     "y": -5990.872,
@@ -4669,9 +4669,9 @@
                 "rotation": null
             },
             {
-                "regionName": "كراج",
+                "regionName": "车库",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": 180.07678,
                     "y": -7999.5845,
@@ -4681,9 +4681,9 @@
                 "rotation": null
             },
             {
-                "regionName": "نافذة",
+                "regionName": "窗口",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": -10.126678,
                     "y": -8993.241,
@@ -4693,9 +4693,9 @@
                 "rotation": null
             },
             {
-                "regionName": "موقع",
+                "regionName": "部署区",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": -2378.1328,
                     "y": -9010.557,
@@ -4705,9 +4705,9 @@
                 "rotation": null
             },
             {
-                "regionName": "حجيرة",
+                "regionName": "小房间",
                 "superRegion": "ECalloutSuperRegion::C",
-                "superRegionName": "C",
+                "superRegionName": "C区",
                 "location": {
                     "x": -2119.7693,
                     "y": -6561.603,
@@ -4717,9 +4717,9 @@
                 "rotation": null
             },
             {
-                "regionName": "منطقة التولد",
+                "regionName": "重生点",
                 "superRegion": "ECalloutSuperRegion::DefenderSide",
-                "superRegionName": "الطرف المدافع",
+                "superRegionName": "守方",
                 "location": {
                     "x": 2946.3042,
                     "y": -12714.707,
@@ -4729,9 +4729,9 @@
                 "rotation": null
             },
             {
-                "regionName": "أبواب",
+                "regionName": "门",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 151.11594,
                     "y": -6262.9155,
@@ -4741,9 +4741,9 @@
                 "rotation": null
             },
             {
-                "regionName": "فناء",
+                "regionName": "庭院",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 1822.1299,
                     "y": -6712.6875,
@@ -4753,9 +4753,9 @@
                 "rotation": null
             },
             {
-                "regionName": "نافذة",
+                "regionName": "窗口",
                 "superRegion": "ECalloutSuperRegion::Mid",
-                "superRegionName": "أوسط",
+                "superRegionName": "中区",
                 "location": {
                     "x": 1950.2218,
                     "y": -5567.912,
@@ -4765,9 +4765,9 @@
                 "rotation": null
             },
             {
-                "regionName": "برج",
+                "regionName": "塔楼",
                 "superRegion": "ECalloutSuperRegion::A",
-                "superRegionName": "A",
+                "superRegionName": "A区",
                 "location": {
                     "x": 6721.4043,
                     "y": -10472.5205,

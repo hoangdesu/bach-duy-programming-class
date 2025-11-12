@@ -10,6 +10,7 @@ const app = express();
 const agentsRouter = require('./routes/agents');
 const weaponsRouter = require('./routes/weapons');
 const mapsRouter = require('./routes/maps');
+const weaponSkinsRouter = require('./routes/weaponSkins');
 
 
 // Middlewares
@@ -36,22 +37,18 @@ const mapsRouter = require('./routes/maps');
 //     next();
 // });
 
-const fs = require('fs');
-const path = require('path');
+// const fs = require('fs');
+// const path = require('path');
 
-const agentsDataPath = path.join(__dirname, 'data', 'agents');
-console.log('> agentsDataPath', agentsDataPath);
+// const agentsDataPath = path.join(__dirname, 'data', 'agents');
+// console.log('> agentsDataPath', agentsDataPath);
 
-
-const languageOptions = ['en', 'vi', 'jp'];
-let lang = languageOptions[0];
-
-const agentFiles = languageOptions.map(lang => {
-    const agentFilePath = path.join(agentsDataPath, lang)  + '.json';
-    console.log('> agentFile:', agentFilePath);
+// const agentFiles = languageOptions.map(lang => {
+//     const agentFilePath = path.join(agentsDataPath, lang)  + '.json';
+//     console.log('> agentFile:', agentFilePath);
     
-    return JSON.parse(fs.readFileSync(agentFilePath))['data'];
-});
+//     return JSON.parse(fs.readFileSync(agentFilePath))['data'];
+// });
 
 // const agents = JSON.parse(file)['data'];
 
@@ -69,7 +66,7 @@ app.use((req, res, next) => {
       
     // req.lang = !lang ? 'en' : lang;
     // req.lang = lang || 'en';
-    req.lang = lang ?? 'en';
+    req.selectedLang = lang ?? 'en-US';
 
     
     // Nullish Coalescing Operator
@@ -102,9 +99,11 @@ app.use((req, res, next) => {
 
 
 // Using Routers
-app.use('/', agentsRouter);
-app.use('/api/v1/weapons/', weaponsRouter);
+app.use('/api/v1/', agentsRouter);
 app.use('/api/v1/maps/', mapsRouter);
+app.use('/api/v1/', weaponsRouter);
+// app.use('/api/v1/weapons/skins', weaponSkinsRouter);
+
 
 
 // Combined route handlers
