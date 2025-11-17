@@ -2,6 +2,12 @@
 
 const express = require('express');
 const session = require('express-session');
+
+// Swagger docs
+const swaggerUi = require('swagger-ui-express');
+const swaggerJSONFile = require('./swagger.json');
+const swaggerJsdoc = require("swagger-jsdoc");
+
 const PORT = 4567;
 
 const app = express();
@@ -98,13 +104,47 @@ app.use((req, res, next) => {
 // });
 
 
+
 // Using Routers
 app.use('/api/v1/', agentsRouter);
 app.use('/api/v1/maps/', mapsRouter);
 app.use('/api/v1/', weaponsRouter);
 // app.use('/api/v1/weapons/skins', weaponSkinsRouter);
 
+// SWAGGER
+// Using JSON file
+app.use('/api-json-example', swaggerUi.serve, swaggerUi.setup(swaggerJSONFile));
 
+// Using JSDOCS in route files
+const options = {
+  definition: {
+    openapi: "3.1.0",
+    info: {
+      title: "LogRocket Express API with Swagger",
+      version: "0.1.0",
+      description:
+        "This is a simple CRUD API application made with Express and documented with Swagger",
+      license: {
+        name: "MIT",
+        url: "https://spdx.org/licenses/MIT.html",
+      },
+      contact: {
+        name: "LogRocket",
+        url: "https://logrocket.com",
+        email: "info@email.com",
+      },
+    },
+    servers: [
+      {
+        url: "http://localhost:3000",
+      },
+    ],
+  },
+  apis: ["./routes/*.js"],
+};
+
+const JSDocSpecs = swaggerJsdoc(options);
+app.use("/jsdocs", swaggerUi.serve, swaggerUi.setup(JSDocSpecs, { explorer: true }));
 
 // Combined route handlers
 // app.route('/')

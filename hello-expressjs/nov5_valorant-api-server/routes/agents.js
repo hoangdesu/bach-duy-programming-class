@@ -1,3 +1,33 @@
+/**
+ * @openapi
+ * servers:
+ *   - url: /api/v1
+ */
+
+/**
+ * @swagger
+ * tags:
+ *   name: Agents
+ *   description: Get all agents
+ * /api/v1/agents:
+ *   get:
+ *     summary: Create a new book
+ *     tags: [Books]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *     responses:
+ *       200:
+ *         description: The created book.
+ *         content:
+ *           application/json:
+ *       500:
+ *         description: Some server error
+ *
+ */
+
+
 const express = require('express')
 const router = express.Router();
 

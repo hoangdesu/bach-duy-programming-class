@@ -4,3 +4,4 @@
 [x] Agent lookup by uuid or by name
 [x] protect routes with API KEY
 [ ] Script to download and parse data
+[ ] Convert all static data to local (download + parse data files) (static files)
