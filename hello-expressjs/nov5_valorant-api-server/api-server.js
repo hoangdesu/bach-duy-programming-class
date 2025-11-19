@@ -87,6 +87,8 @@ app.use((req, res, next) => {
 // make the folder named "static" to be publicly accessible via direct link
 app.use(express.static(path.join(__dirname, 'static')));
 
+// prefixed static folder
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // app.get('/api/v1/agents', (req, res) => {
 

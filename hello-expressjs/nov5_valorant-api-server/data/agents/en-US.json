@@ -6,7 +6,7 @@
         "developerName": "Aggrobot",
         "releaseDate": "1970-01-01T00:00:00Z",
         "characterTags": null,
-        "displayIcon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/displayicon.png",
+        "displayIcon": "http://localhost:4567/agents/e370fa57-4757-3604-3648-499e1f642d3f/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/displayicon.png",
         "bustPortrait": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/fullportrait.png",
         "fullPortrait": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/fullportrait.png",

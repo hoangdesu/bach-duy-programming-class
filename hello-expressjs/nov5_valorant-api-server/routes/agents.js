@@ -74,7 +74,7 @@ router.get('/agents/:q', (req, res) => {
     const fileContent = fs.readFileSync(agentsFile);
     const agents = JSON.parse(fileContent);
 
-    const agent = agents.find(agent => agent.uuid === q || agent.displayName.toLowerCase() === q);
+    const agent = agents.find(agent => agent.uuid === q || agent.displayName.toLowerCase() === q.toLowerCase());
 
     if (!agent) return res.status(404).send('Invalid agent name or UUID');
 
