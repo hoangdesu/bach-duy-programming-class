@@ -2,6 +2,7 @@
 
 const express = require('express');
 const session = require('express-session');
+const path = require('path');
 
 // Swagger docs
 const swaggerUi = require('swagger-ui-express');
@@ -83,6 +84,10 @@ app.use((req, res, next) => {
 });
 
 
+// make the folder named "static" to be publicly accessible via direct link
+app.use(express.static(path.join(__dirname, 'static')));
+
+
 // app.get('/api/v1/agents', (req, res) => {
 
 //     console.log('selected lang: ', req.selectedLang);
@@ -144,12 +149,20 @@ const options = {
 };
 
 const JSDocSpecs = swaggerJsdoc(options);
-app.use("/jsdocs", swaggerUi.serve, swaggerUi.setup(JSDocSpecs, { explorer: true }));
 
+app.use("/jsdocs", swaggerUi.serve, swaggerUi.setup(JSDocSpecs, { explorer: true }));
+// app.use("/", swaggerUi.serve, swaggerUi.setup(JSDocSpecs, { explorer: true }));
 // Combined route handlers
 // app.route('/')
 //     .get(callback handler)
 //     .post(callback handler)
+
+
+// Catch all routes
+app.use((req, res, next) => {
+  res.status(404).send('404 not found');
+});
+
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
