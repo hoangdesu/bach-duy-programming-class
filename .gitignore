@@ -38,3 +38,8 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+/duy-git
+
+### Large database files ###
+learn-sqlite/movies/movies.db
