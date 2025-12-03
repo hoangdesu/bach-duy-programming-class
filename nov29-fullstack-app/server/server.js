@@ -12,6 +12,7 @@ const db = Database('./data/app-data.db');
 
 app.use(cors({
   origin: 'http://localhost:3000', // Your Next.js client URL
+  // origin: '*',
   credentials: true, // Allow cookies to be sent
 }));
 
@@ -59,9 +60,19 @@ app.use((req, res, next) => {
     console.log('user:', req.session.user);
 
     console.log('cookies:', req.headers.cookie);
+
+    // console.log('> headers', req.headers);
     
     next();
 });
+
+
+const requiresLoggedIn = (req, res, next) => {
+    if (req.session.user && req.session.user.isLoggedIn)
+      return next();
+
+    return next('You are not logged in');
+}
 
 app.post('/login', (req, res) => {
 
@@ -111,14 +122,50 @@ app.post('/signup', (req, res) => {
 
 
 app.get('/users', (req, res) => {
-
+    // // Access the session - this is how you identify the client
+    // const session = req.session;
+    // const user = req.session.user;
+    
+    // // Log session information for debugging
+    // console.log('Session ID:', req.sessionID);
+    // console.log('Session user:', user);
+    // console.log('Full session:', session);
+    
+    // // You can also identify the client by:
+    // // - req.sessionID (unique session identifier)
+    // // - req.ip (client IP address)
+    // // - req.headers['user-agent'] (browser/client info)
+    // console.log('Client IP:', req.ip || req.connection.remoteAddress);
+    // console.log('User-Agent:', req.headers['user-agent']);
+    
+    // // Check if user is logged in
+    // if (!user || !user.isLoggedIn) {
+    //     return res.status(401).json({ error: 'Unauthorized - Please login first' });
+    // }
+    
+    if (!req.session.user)
+      return res.status(401).send('error');
+    
+    // // User is authenticated, proceed with the request
     const statement = db.prepare('SELECT username FROM users');
     const usernames = statement.all();
 
     console.log(usernames);
 
-    res.json(usernames);
+    return res.json(usernames);
 });
+
+
+app.get('/logout', (req, res) => {
+  req.session.destroy(function(err) {
+    if (err) {
+      return next(err);
+    }
+    
+    // // Session destroyed, redirect or send a response
+    res.redirect('/'); 
+  });
+})
 
 
 

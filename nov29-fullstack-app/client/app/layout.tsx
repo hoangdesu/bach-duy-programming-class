@@ -3,6 +3,7 @@
 // import "./globals.css";
 
 import Link from "next/link";
+import NavBar from "./components/NavBar";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -29,12 +30,16 @@ export default function RootLayout({
       <body
       // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav>
+        {/* <nav>
           <Link href='/'>Home</Link>
           <Link href='/login'>Login</Link>
           <Link href='/signup'>Sign up</Link>
           <Link href='/users'>Users</Link>
-        </nav>
+        </nav> */}
+
+          
+          <NavBar/>
+
 
         {children}
       </body>
