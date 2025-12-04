@@ -51,6 +51,7 @@ app.use(
       httpOnly: true, // Prevents client-side JavaScript from accessing the cookie
       sameSite: 'lax', // Allows cookie to be sent in cross-site requests
       maxAge: 1000 * 60 * 60 * 24 // 24 hours
+      // maxAge: 1000 * 5 // 5s
     },
   })
 );
@@ -64,6 +65,15 @@ app.use((req, res, next) => {
     // console.log('> headers', req.headers);
     
     next();
+});
+
+
+app.get('/auth', (req, res) => {
+
+  if (req.session.user && req.session.user.isLoggedIn) return res.json(req.session.user.username);
+
+  return res.json(false);
+
 });
 
 
@@ -143,8 +153,10 @@ app.get('/users', (req, res) => {
     //     return res.status(401).json({ error: 'Unauthorized - Please login first' });
     // }
     
+    // TODO: improve error handling
     if (!req.session.user)
-      return res.status(401).send('error');
+      return res.status(401).json({'message': 'error'});
+      // return res.status(401).send('error');
     
     // // User is authenticated, proceed with the request
     const statement = db.prepare('SELECT username FROM users');
@@ -152,7 +164,7 @@ app.get('/users', (req, res) => {
 
     console.log(usernames);
 
-    return res.json(usernames);
+    return res.status(200).json(usernames);
 });
 
 

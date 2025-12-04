@@ -25,6 +25,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  // const [globalIsAuthorized] = useState(false);
+
+  // initial load:
+  //   fetch('/auth')
+  //     .then(
+  //       set global isAuthorized(true)
+  //     )
+
+
+  //   useEffect(() => {
+
+  //   }, [])
+
   return (
     <html lang='en'>
       <body
