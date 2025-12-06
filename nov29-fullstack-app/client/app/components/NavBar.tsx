@@ -2,9 +2,11 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function NavBar() {
   const [loggedInUser, setLoggedInUser] = useState(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     fetch('http://localhost:3001/auth', {
@@ -18,18 +20,20 @@ export default function NavBar() {
         console.log('nav data:', data);
         setLoggedInUser(data);
       });
-  }, [loggedInUser]);
+  }, [pathname]);
 
   return (
     <nav style={{ display: 'flex', 'flexDirection': 'row', 'justifyContent': 'space-between' }}>
       <div>
         <Link href='/'>Home</Link>
         <Link href='/users'>Users</Link>
+        {loggedInUser && <Link href='/new-post'>New post</Link>}
       </div>
 
       {loggedInUser ? (
         <div>
           {loggedInUser}
+          <Link href='http://localhost:3001/logout'>Logout</Link>
         </div>
       ) : (
         <div>
@@ -40,3 +44,10 @@ export default function NavBar() {
     </nav>
   );
 }
+
+
+// app.post('server/logout', {
+//   username,
+//   cookies
+// })
+

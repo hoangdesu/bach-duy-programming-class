@@ -29,6 +29,7 @@ export default function LoginPage() {
       .then((res) => {
         console.log('res:', res);
         if (res.ok) {
+          router.refresh(); // Refresh the router to update server components
           router.push('/'); // Use router.push() for client-side navigation
         } else {
           console.log('Login failed:', res.statusText);
