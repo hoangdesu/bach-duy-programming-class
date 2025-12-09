@@ -222,12 +222,32 @@ app.get('/posts', (req, res) => {
     LIMIT 10
   `);
 
-  const rows = statement.all();
+  const posts = statement.all();
 
-  return res.json(rows);
+  return res.json(posts);
 });
 
 app.get('/posts/:id', (req, res) => {});
+
+
+app.get('/users/:username/posts/', (req, res) => {
+  const { username } = req.params;
+
+  // Authorization
+  // const usr = req.session.user
+
+  const statement = db.prepare(`
+    SELECT * FROM posts
+    WHERE username = ?
+    ORDER BY created_at DESC
+    LIMIT 10
+  `);
+
+  const posts = statement.all(username);
+
+  return res.json(posts);
+});
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port http://localhost:${port}`);

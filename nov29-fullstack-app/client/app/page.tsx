@@ -35,7 +35,7 @@ export default function Home() {
               }}
             >
               <h3>{post.title}</h3>
-              <p>Author: {post.username}</p>
+              <p>Author: <Link href={`/${post.username}`}>{post.username}</Link></p>
               <p>Created at: {post.created_at}</p>
               <pre
                 style={{
