@@ -1,6 +1,7 @@
 'use client'
 
 import { use, useEffect, useState } from 'react';
+import UserPost from './UserPost';
 
  
 export default function UserPage({
@@ -22,16 +23,23 @@ export default function UserPage({
         setPosts(posts);
       });
   }, []);
+
+
+  // GET /posts?username=username {username}
+  // GET /posts/user/:username
+  // GET /posts_by_user/:username
  
   return (
     <div>
       <p>User: {username}</p>
 
       <h1>My posts</h1>
-      ...
+      {posts.map(post => (
+        <UserPost key={post.id} post={post} />
+      ))}
 
-      <h1>Liked posts</h1>
-      ...
+      {/* <h1>Liked posts</h1>
+      ... */}
 
     </div>
   )
