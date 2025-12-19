@@ -2,7 +2,7 @@
 
 import { use, useEffect, useState } from 'react';
 import UserPost from './UserPost';
-
+import axios from '../configs/axiosInstance';
  
 export default function UserPage({
   params,
@@ -14,14 +14,26 @@ export default function UserPage({
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/users/${username}/posts/`, {
-      credentials: 'include', // Include cookies in the request
-    })
-      .then((res) => res.json())
-      .then((posts) => {
-        console.log(posts);
-        setPosts(posts);
-      });
+    // fetch(`http://localhost:3001/users/${username}/posts/`, {
+    //   credentials: 'include', // Include cookies in the request
+    // })
+    //   .then((res) => res.json())
+    //   .then((posts) => {
+    //     console.log(posts);
+    //     setPosts(posts);
+    //   });
+
+    (async () => {
+      try {
+        const { data: posts } = await axios.get(`users/${username}/posts/`);
+        setPosts(posts)
+
+      } catch (err) {
+        // ...
+      }
+    })();
+
+
   }, []);
 
 

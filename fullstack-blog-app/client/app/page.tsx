@@ -4,19 +4,65 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import axios from './configs/axiosInstance';
 
 export default function Home() {
   const [posts, setPosts] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:3001/posts', {
-      credentials: 'include', // Include cookies in the request
-    })
-      .then((res) => res.json())
-      .then((posts) => {
-        console.log(posts);
+    // fetch('http://localhost:3001/posts', {
+    //   credentials: 'include', // Include cookies in the request
+    // })
+    //   .then((res) => res.json())
+    //   .then((posts) => {
+    //     console.log(posts);
+    //     setPosts(posts);
+    //   });
+
+    // const fetchData = async () => {}
+
+    // async function fetchData() {
+    //   try {
+    //     const { data: posts } = await axios.get('/posts');
+    //     setPosts(posts);
+    //   } catch (err) {
+    //     console.error(err);
+    //   }
+    // }
+
+    // fetchData();
+
+    // IIFE: Immediately invoked function expression
+
+    (async () => {
+      try {
+        const { data: posts } = await axios.get('/posts');
         setPosts(posts);
-      });
+      } catch (err) {
+        console.error(err);
+      }
+    })();
+
+
+    // (function () {
+    //   ...
+    // })()
+
+    // () => {}
+    // function
+
+    // const a = function() {
+    //   console.log('calling this from function a:', this);
+    // };
+
+    // a();
+
+    // function b() {
+    //   console.log('calling this from function b:', this);
+    // }
+
+    // b();
+  
   }, []);
 
   return (

@@ -79,10 +79,19 @@ app.use((req, res, next) => {
 
   console.log('cookies:', req.headers.cookie);
 
-  // console.log('> headers', req.headers);
+  console.log('> headers', req.headers);
 
   next();
 });
+
+
+// protect app on the global scope
+app.use((req, res, next) => {
+  if (req.headers['fking-secret-message'] !== '=)))') return next('Error: where u from bro??');
+
+  return next();
+});
+
 
 app.get('/auth', (req, res) => {
   if (req.session.user && req.session.user.isLoggedIn)
@@ -111,9 +120,9 @@ app.post('/login', (req, res) => {
   // const pwds = statement.all(password);
   // console.log(pwds);
 
-  if (!pwdDB) return res.send('username does not exists');
+  if (!pwdDB) return res.status(404).send('username does not exists');
 
-  if (password !== pwdDB.password) return res.send('wrong password');
+  if (password !== pwdDB.password) return res.status(401).send('wrong password');
 
   // return res.send('login ok');
 
