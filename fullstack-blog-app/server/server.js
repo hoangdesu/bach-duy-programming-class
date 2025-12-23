@@ -56,6 +56,7 @@ const SQLiteStore = SQLiteStoreFactory(session);
 
 app.use(
   session({
+    name: 'secret-session',
     store: new SQLiteStore({
       db: 'app-data.db',
       dir: './data',
@@ -275,7 +276,14 @@ app.get('/users/:username/posts/', (req, res) => {
 
   const posts = statement.all(username);
 
-  return res.json(posts);
+  // mimic data loading
+  setTimeout(() => {
+    // return res.json(posts);
+
+    // mimic error
+    return res.status(400).json(posts);
+  }, 2000);
+
 });
 
 

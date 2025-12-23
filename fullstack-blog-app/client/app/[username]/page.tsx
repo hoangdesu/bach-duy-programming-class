@@ -12,6 +12,10 @@ export default function UserPage({
   const { username } = use(params);
 
   const [posts, setPosts] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+
+  // data: success | loading | error
 
   useEffect(() => {
     // fetch(`http://localhost:3001/users/${username}/posts/`, {
@@ -24,18 +28,29 @@ export default function UserPage({
     //   });
 
     (async () => {
+      setIsLoading(true);
+
       try {
         const { data: posts } = await axios.get(`users/${username}/posts/`);
-        setPosts(posts)
-
+        setPosts(posts);
+        setIsLoading(false);
+        setIsError(false);
+        
       } catch (err) {
         // ...
+        setPosts([]);
+        setIsError(true);
+        setIsLoading(false);
       }
+
     })();
 
 
   }, []);
 
+  // useEffect(() => {
+  //   setIsLoading(false);
+  // }, [posts])
 
   // GET /posts?username=username {username}
   // GET /posts/user/:username
@@ -46,6 +61,30 @@ export default function UserPage({
       <p>User: {username}</p>
 
       <h1>My posts</h1>
+      {isError && (
+        <div>Error!</div>
+      )}
+
+      {isLoading && (
+        <div>Loading...</div>
+      )}
+
+
+      {isError ? (
+        <div>Error!</div>
+      ) : (
+        <>
+          {isLoading ? (
+            <div>Loading...</div>
+          ) : (
+            <div>
+              DATA
+            </div>
+          )} 
+        </>
+      )}
+
+
       {posts.map(post => (
         <UserPost key={post.id} post={post} />
       ))}
