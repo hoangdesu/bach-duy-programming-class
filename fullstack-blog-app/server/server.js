@@ -6,10 +6,15 @@ import SQLiteStoreFactory from 'connect-sqlite3';
 
 import session from 'express-session';
 
+
 const app = express();
 const port = 3001;
 
 const db = Database('./data/app-data.db');
+
+import morgan from 'morgan';
+
+
 
 // handle session persist manually
 // app.use(() => {
@@ -21,7 +26,8 @@ const db = Database('./data/app-data.db');
 
 app.use(
   cors({
-    origin: 'http://localhost:3000', // Your Next.js client URL
+    // origin: ['http://localhost:3000', 'http://192.168.1.93:3000'], // Your Next.js client URL
+    origin: 'http://localhost:3000',
     // origin: '*',
     credentials: true, // Allow cookies to be sent
   })
@@ -75,13 +81,35 @@ app.use(
   })
 );
 
+// Morgan logger
+// app.use(morgan('>>>> :method :url :status :res[content-length] - :response-time ms'));
+app.use(morgan(function (tokens, req, res) {
+  const user = req.session.user?.username || 'not logged in';
+
+  return [
+    '>', 
+    tokens.method(req, res),
+    tokens.url(req, res),
+    tokens.status(req, res),
+    tokens.res(req, res, 'content-length'), '-',
+    tokens['response-time'](req, res), 'ms',
+    '- user:',user
+  ].join(' ')
+}));
+
+// Custom logger
 app.use((req, res, next) => {
-  console.log('user:', req.session.user);
+  console.log('> user:', req.session.user);
+  console.log('> cookies:', req.headers.cookie);
 
-  console.log('cookies:', req.headers.cookie);
+  console.log('\n');
 
-  console.log('> headers', req.headers);
+  // console.log('> headers', req.headers);
 
+  // build custom log message
+  // const logMessage = `> ${req.method} ${req.path}`;
+  // console.log(logMessage);
+  
   next();
 });
 
@@ -276,18 +304,25 @@ app.get('/users/:username/posts/', (req, res) => {
 
   const posts = statement.all(username);
 
-  // mimic data loading
-  setTimeout(() => {
-    // return res.json(posts);
+  return res.json(posts);
 
-    // mimic error
-    return res.status(400).json(posts);
-  }, 2000);
+  // // mimic data loading
+  // setTimeout(() => {
+  //   // return res.json(posts);
+
+  //   // mimic error
+  //   return res.status(400).json(posts);
+  // }, 2000);
 
 });
 
 
 // liked_posts(:username) -> post_id []
+
+// catch all routes
+app.use((req, res, next) => {
+  return res.status(404).send('404 not found :<');
+});
 
 
 app.listen(port, () => {
