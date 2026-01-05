@@ -4,11 +4,15 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import axiosInstance from '../configs/axiosInstance';
+import clsx from 'clsx';
+
+type tabTypes = 'home' | 'users' | 'new-post';
 
 export default function NavBar() {
   const [loggedInUser, setLoggedInUser] = useState(null);
   const pathname = usePathname();
   const [isLoading, setIsLoading] = useState(true);
+  const [activeTab, setActiveTab] = useState<tabTypes>('home');
 
   useEffect(() => {
     // fetch('http://localhost:3001/auth', {
@@ -37,18 +41,24 @@ export default function NavBar() {
 
   return (
     <nav
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-      }}
+      className="my-container flex flex-row justify-between my-8"
     >
       {!isLoading ? (
         <>
-          <div>
-            <Link href='/'>Home</Link>
-            <Link href='/users'>Users</Link>
-            {loggedInUser && <Link href='/new-post'>New post</Link>}
+          <div className='flex flex-row gap-8'>
+            <Link href='/' 
+              // className={`my-link ${activeTab === 'home' && 'font-bold'}`}
+              className={clsx('my-link', activeTab === 'home' && 'font-bold')}
+              onClick={() => setActiveTab('home')}>
+                Home
+            </Link>
+            <Link href='/users' 
+              // className={`my-link ${activeTab === 'users' && 'font-bold'}`} 
+              className={clsx('my-link', { 'font-bold': activeTab === 'users' })}
+              onClick={() => setActiveTab('users')}>
+                Users
+            </Link>
+            {loggedInUser && <Link href='/new-post' className='my-link'>New post</Link>}
           </div>
 
           {loggedInUser ? (

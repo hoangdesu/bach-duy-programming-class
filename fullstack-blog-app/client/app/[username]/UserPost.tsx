@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Button } from '@/components/ui/button';
 
 const UserPost = ({ post: postProp }) => {
   const [isEditing, setIsEditing] = useState(false);
@@ -30,7 +31,8 @@ const UserPost = ({ post: postProp }) => {
   return (
     <div
       key={post.id}
-      style={{ border: '1px solid pink', marginBottom: '16px' }}
+      // style={{ border: '1px solid pink', marginBottom: '16px' }}
+      className="p-8 border-2 rounded-2xl"
     >
       {isEditing ? (
         <div>
@@ -39,14 +41,15 @@ const UserPost = ({ post: postProp }) => {
           <textarea name='' id='' defaultValue={post.content} />
 
           <button onClick={() => setIsEditing(false)}>Cancel</button>
-          <button onClick={onSaveHandler}>Save</button>
+          {/* <button onClick={onSaveHandler}>Save</button> */}
+          <Button>Save</Button>
         </div>
       ) : (
         <div>
           <h1>{post.title}</h1>
           <p>{post.content}</p>
           <button onClick={() => setIsEditing(true)}>Edit</button>
-          <button>Delete</button>
+          <Button variant="ahri">Delete</Button>
         </div>
       )}
     </div>

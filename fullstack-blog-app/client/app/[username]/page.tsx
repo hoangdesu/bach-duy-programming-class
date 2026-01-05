@@ -84,10 +84,12 @@ export default function UserPage({
         </>
       )}
 
-
-      {posts.map(post => (
-        <UserPost key={post.id} post={post} />
-      ))}
+      {/* this is when data is ready */}
+      <div className='my-container flex flex-col gap-6'>
+        {posts.map(post => (
+          <UserPost key={post.id} post={post} />
+        ))}
+      </div>
 
       {/* <h1>Liked posts</h1>
       ... */}

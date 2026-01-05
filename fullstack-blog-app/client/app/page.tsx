@@ -104,7 +104,7 @@ export function HomePage() {
 
 
   return (
-    <div>
+    <div className='my-container'>
       
         <h1>News Feed</h1>
 
@@ -112,14 +112,14 @@ export function HomePage() {
 
         {error && (<div>Sum thing wong</div>)}
 
-        <div>
+        <div className='flex flex-col gap-8'>
           {posts &&
             posts.map((post) => (
               <div
                 key={post.id}
                 style={{
                   border: '1px solid pink',
-                  margin: '16px 0',
+                  // margin: '16px 0',
                   padding: '16px',
                 }}
               >
