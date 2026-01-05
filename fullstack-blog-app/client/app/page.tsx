@@ -4,12 +4,38 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import axios from './configs/axiosInstance';
 
-export default function Home() {
-  const [posts, setPosts] = useState(null);
+import {
+  useQuery,
+  // useMutation,
+  // useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query';
+import axiosInstance from './configs/axiosInstance';
 
-  useEffect(() => {
+// import { notFound } from 'next/navigation'
+
+// Create a client -> must be a global object
+const queryClient = new QueryClient();
+
+const fetchAllPosts = async () => {
+  const res = await axiosInstance.get('/posts');
+  return res.data;
+}
+
+export default function HomeContainer() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <HomePage />
+    </QueryClientProvider>
+  )
+}
+
+export function HomePage() {
+  // const [posts, setPosts] = useState(null);
+
+  // useEffect(() => {
     // fetch('http://localhost:3001/posts', {
     //   credentials: 'include', // Include cookies in the request
     // })
@@ -34,15 +60,14 @@ export default function Home() {
 
     // IIFE: Immediately invoked function expression
 
-    (async () => {
-      try {
-        const { data: posts } = await axios.get('/posts');
-        setPosts(posts);
-      } catch (err) {
-        console.error(err);
-      }
-    })();
-
+    // (async () => {
+    //   try {
+    //     const { data: posts } = await axios.get('/posts');
+    //     setPosts(posts);
+    //   } catch (err) {
+    //     console.error(err);
+    //   }
+    // })();
 
     // (function () {
     //   ...
@@ -62,41 +87,62 @@ export default function Home() {
     // }
 
     // b();
-  
-  }, []);
+  // }, []);
+
+
+  // switch over to using react query to manage states
+
+  const { isPending, error, data: posts } = useQuery({
+     queryKey: ['postsData'], // use internally for caching
+     queryFn: fetchAllPosts
+    // queryFn: () => axiosInstance.get('/posts').then(res => res.data)
+  });
+
+  // if (isPending) return <div>Loading...</div>
+
+  // if (error) return <div>Error</div>
+
 
   return (
     <div>
-      <h1>News Feed</h1>
+      
+        <h1>News Feed</h1>
 
-      <div>
-        {posts &&
-          posts.map((post) => (
-            <div
-              key={post.id}
-              style={{
-                border: '1px solid pink',
-                margin: '16px 0',
-                padding: '16px',
-              }}
-            >
-              <h3>{post.title}</h3>
-              <p>Author: <Link href={`/${post.username}`}>{post.username}</Link></p>
-              <p>Created at: {post.created_at}</p>
-              <pre
+        {isPending && <div>Loading...</div>}
+
+        {error && (<div>Sum thing wong</div>)}
+
+        <div>
+          {posts &&
+            posts.map((post) => (
+              <div
+                key={post.id}
                 style={{
-                  fontFamily: 'sans-serif',
-                  whiteSpace:
-                    'pre-wrap' /* Allows text to wrap within the pre tag */,
-                  wordWrap:
-                    'break-word' /* Prevents long words from overflowing */,
+                  border: '1px solid pink',
+                  margin: '16px 0',
+                  padding: '16px',
                 }}
               >
-                {post.content}
-              </pre>
-            </div>
-          ))}
-      </div>
+                <h3>{post.title}</h3>
+                <p>
+                  Author:{' '}
+                  <Link href={`/${post.username}`}>{post.username}</Link>
+                </p>
+                <p>Created at: {post.created_at}</p>
+                <pre
+                  style={{
+                    fontFamily: 'sans-serif',
+                    whiteSpace:
+                      'pre-wrap' /* Allows text to wrap within the pre tag */,
+                    wordWrap:
+                      'break-word' /* Prevents long words from overflowing */,
+                  }}
+                >
+                  {post.content}
+                </pre>
+              </div>
+            ))}
+        </div>
     </div>
   );
 }

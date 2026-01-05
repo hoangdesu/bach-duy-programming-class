@@ -253,7 +253,7 @@ app.post('/posts/new', (req, res) => {
   return res.status(201).json({ post_id: row.id });
 });
 
-app.get('/posts', (req, res) => {
+app.get('/posts', async (req, res) => {
   const statement = db.prepare(`
     SELECT * FROM posts
     ORDER BY created_at DESC
@@ -262,7 +262,21 @@ app.get('/posts', (req, res) => {
 
   const posts = statement.all();
 
+  // setTimeout(() => {
+  //     return res.json(posts);
+  // }, timeout);
+
+  // return res.json(posts);
+
+  try {
+
+    await new Promise((resolve, reject) => setTimeout(resolve, 1000));
+  } catch (err) {
+    return res.status(400).send(':<');
+  }
+  
   return res.json(posts);
+
 });
 
 app.get('/posts/:id', (req, res) => {});
