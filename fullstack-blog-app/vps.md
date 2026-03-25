@@ -1,0 +1,2 @@
+- node, pnpm
+- ubuntu firewall
