@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Simple chat client</h1>
+  
+  <div id="output" style="white-space: pre-wrap; font-family: sans-serif;"></div>
+
+  <script>
+    /*fetch('http://localhost:11434/api/generate', {
+      method: 'POST',
+      body: JSON.stringify({
+        model: 'llama3.1:8b',
+        prompt: 'Why is the sky blue?',
+        stream: false, // Disables streaming for a single JSON response
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+      */
+
+      /*
+
+    fetch('http://localhost:11434/api/generate', {
+      method: 'POST',
+      body: JSON.stringify({
+        model: 'llama3.1:8b',
+        prompt: 'Why is the sky blue?',
+        stream: true,
+      }),
+    })
+      .then(async (response) => {
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          // Decode the chunk (it arrives as a Uint8Array)
+          const chunk = decoder.decode(value, { stream: true });
+
+          try {
+            // Ollama sends individual JSON objects per line
+            const json = JSON.parse(chunk);
+            process.stdout.write(json.response); // Or update your UI state here
+
+            if (json.done) {
+              console.log("\nStream finished.");
+            }
+          } catch (e) {
+            console.error("Error parsing chunk", e);
+          }
+        }
+      })
+      .catch((err) => console.error("Fetch error:", err)); */
+
+      async function startGeneration() {
+    const outputDiv = document.getElementById('output');
+    
+    try {
+      const response = await fetch('http://localhost:11434/api/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'llama3.1:8b',
+          prompt: 'Why is the sky blue?',
+          stream: true,
+        }),
+      });
+
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        // Decode the current chunk of data
+        const chunk = decoder.decode(value, { stream: true });
+        
+        // Ollama sends chunks as stringified JSON objects
+        try {
+          const json = JSON.parse(chunk);
+          
+          // Append the 'response' piece to the HTML element
+          if (json.response) {
+            outputDiv.textContent += json.response;
+          }
+        } catch (e) {
+          // If a chunk contains multiple JSON objects, this simple parse might fail.
+          // For a more robust version, split by newlines:
+          const lines = chunk.split('\n');
+          for (const line of lines) {
+            if (!line.trim()) continue;
+            const parsedLine = JSON.parse(line);
+            outputDiv.textContent += parsedLine.response;
+          }
+        }
+      }
+    } catch (err) {
+      console.error('Error:', err);
+      outputDiv.textContent = "Error connecting to Ollama. Make sure it is running!";
+    }
+  }
+
+  startGeneration();
+
+  </script>
+</body>
+
+</html>
