@@ -35,10 +35,11 @@ def chat():
 
 
 def generate_chat():
+    ques = input('> Ask sth: ')
     stream = ollama.chat(
         model='llama3.1:8b',
         messages=[
-            {'role': 'user', 'content': 'what is ca phe sua da'}],
+            {'role': 'user', 'content': ques}],
         stream=True,
         options={
             'temperature': 0.9,
